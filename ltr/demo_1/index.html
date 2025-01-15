@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>Agop Minimal eCommerce HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font-awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- themify-icons CSS -->
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <!-- owl CSS -->
+    <link href="css/owl.css" rel="stylesheet">
+    <!-- pogo-slider CSS -->
+    <link href="css/pogo-slider.css" rel="stylesheet">
+    <!-- stellarnav CSS -->
+    <link href="css/stellarnav.min.css" rel="stylesheet">
+    <!-- lightbox.min CSS -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <!-- animations.min CSS -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- YouTubePopUp CSS -->
+    <link href="css/YouTubePopUp.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Live Chat Start -->
+    <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="https://gico.io/action_page.php" class="form-container">
+        <h4>Live Chat</h4>
+        <input class="form-control mb-3" type="text" placeholder="Your Name">
+        <input class="form-control mb-3" type="email" placeholder="Your Mail">
+        <textarea class="mb-3" placeholder="Type message.." name="msg" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
+      </form>
+    </div>
+
+    <!-- Overlay Search box -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
+      <div class="overlay-content">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Here">
+          <div class="input-group-prepend">
+            <div class="input-group-text p-0">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Start -->
+    <header class="header-area">
+      <div class="header-menubar">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="navbar-col">
+                <div id="main-nav" class="stellarnav">
+                  <div class="header-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
+                  </div>
+                   <ul>
+                      <li><a href="index.html">Home <i class="ti-angle-down"></i></a>
+                        <ul>
+                          <li><a href="index.html">Home 1</a></li>
+                          <li><a href="index-2.html">Home 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Shop <i class="ti-angle-down"></i></a>
+                          <ul>
+                            <li><a href="shop-1.html">Shop 1</a></li>
+                            <li><a href="shop-2.html">Shop 2</a></li>
+                            <li><a href="shop-3.html">Shop 3</a></li>
+                            <li><a href="shop-4.html">Shop 4</a></li>
+                            <li><a href="#">Shop Related Page <i class="ti-angle-down"></i></a>
+                              <ul>
+                                <li><a href="cart.html">cart page</a></li>
+                                <li><a href="checkout.html">checkout page</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                      </li>
+                      <li><a href="#">product <i class="ti-angle-down"></i></a>
+                          <ul>
+                            <li><a href="product-details-1.html">product details 1</a></li>
+                            <li><a href="product-details-2.html">product details 2</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Blog <i class="ti-angle-down"></i></a>
+                        <ul>
+                          <li><a href="blog.html">our blog</a></li>
+                          <li><a href="blog-details.html">blog details</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Pages <i class="ti-angle-down"></i></a>
+                        <ul>
+                          <li><a href="about.html">about us</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                   </ul>
+                </div>
+                <div class="menu-right-side">
+                  <ul>
+                    <li><a href="#"><i class="ti-user"></i></a></li>
+                    <li>
+                      <div class="dropdown">
+                        <a href="cart.html">
+                          <i class="ti-shopping-cart"></i>
+                          <span class="cart-items">2</span>
+                        </a>
+                        <div class="cart-dropdown-content">
+                          <div class="cart-dropdown-item">
+                            <div class="cart-dropdown-img">
+                              <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
+                              <a href="#"><i class="ti-close"></i></a>
+                            </div>
+                            <h6>ladies bag</h6>
+                            <p>1 x $49.00</p>
+                          </div>
+                          <div class="cart-dropdown-item">
+                            <div class="cart-dropdown-img">
+                              <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
+                              <a href="#"><i class="ti-close"></i></a>
+                            </div>
+                            <h6>Woman Dress</h6>
+                            <p>1 x $99.00</p>
+                          </div>
+                          <div class="total">
+                            <h6><span>Total</span> $148</h6>
+                            <a href="checkout.html">Checkout</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="search-icon">
+                        <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
+                      </div>
+                    </li>
+                    <li><a href="#"><i class="ti-heart"></i></a></li>
+                  </ul>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Start -->
+    <section class="hero-area background-image" data-src="images/bg/1.jpg">
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="hero-col">
+              <!-- Pogo Silder Start -->
+              <div class="pogoSlider" id="pogo-slider">
+                  <div class="pogoSlider-slide" data-transition="fade" data-duration="1000">
+                      <!-- Slider Elements -->
+                      <div class="silder-elements">
+                          <h6 class="pogoSlider-slide-element slider-sub-title" data-in="slideRight" data-out="slideUp" data-duration="1000" data-delay="500">Above $800</h6>
+                          <h2 class="pogoSlider-slide-element slider-main-title" data-in="slideUp" data-out="slideUp" data-duration="1000" data-delay="500">SOFAS</h2>
+                          <p class="pogoSlider-slide-element slider-para" data-in="slideDown" data-out="slideUp" data-duration="1000" data-delay="500">Complete your interior design with this beautiful smoky-blue sofa. Its performance-fabric upholstery offers comfortable seating, and its clean lines and modern narrow-arm and thin-leg design make.</p>
+                          <div class="pogoSlider-slide-element slider-btn" data-in="slideLeft" data-out="slideUp" data-duration="1000" data-delay="500">
+                            <a href="shop-3.html">Shop Now</a>
+                          </div>
+                          <div class="pogoSlider-slide-element slider-img" data-in="expand" data-out="slideUp" data-duration="1000" data-delay="500">
+                              <img src="images/bed.png" alt="" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="pogoSlider-slide" data-transition="fade" data-duration="1000">
+                      <!-- Slider Elements -->
+                      <div class="silder-elements">
+                          <h6 class="pogoSlider-slide-element slider-sub-title" data-in="slideRight" data-out="slideUp" data-duration="1000" data-delay="500">Above $800</h6>
+                          <h2 class="pogoSlider-slide-element slider-main-title" data-in="slideUp" data-out="slideUp" data-duration="1000" data-delay="500">SOFAS</h2>
+                          <p class="pogoSlider-slide-element slider-para" data-in="slideDown" data-out="slideUp" data-duration="1000" data-delay="500">Complete your interior design with this beautiful smoky-blue sofa. Its performance-fabric upholstery offers comfortable seating, and its clean lines and modern narrow-arm and thin-leg design make.</p>
+                          <div class="pogoSlider-slide-element slider-btn" data-in="slideLeft" data-out="slideUp" data-duration="1000" data-delay="500">
+                            <a href="shop-3.html">Shop Now</a>
+                          </div>
+                          <div class="pogoSlider-slide-element slider-img" data-in="expand" data-out="slideUp" data-duration="1000" data-delay="500">
+                              <img src="images/bed.png" alt="" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="pogoSlider-slide" data-transition="fade" data-duration="1000">
+                      <!-- Slider Elements -->
+                      <div class="silder-elements">
+                          <h6 class="pogoSlider-slide-element slider-sub-title" data-in="slideRight" data-out="slideUp" data-duration="1000" data-delay="500">Above $800</h6>
+                          <h2 class="pogoSlider-slide-element slider-main-title" data-in="slideUp" data-out="slideUp" data-duration="1000" data-delay="500">SOFAS</h2>
+                          <p class="pogoSlider-slide-element slider-para" data-in="slideDown" data-out="slideUp" data-duration="1000" data-delay="500">Complete your interior design with this beautiful smoky-blue sofa. Its performance-fabric upholstery offers comfortable seating, and its clean lines and modern narrow-arm and thin-leg design make.</p>
+                          <div class="pogoSlider-slide-element slider-btn" data-in="slideLeft" data-out="slideUp" data-duration="1000" data-delay="500">
+                            <a href="shop-3.html">Shop Now</a>
+                          </div>
+                          <div class="pogoSlider-slide-element slider-img" data-in="expand" data-out="slideUp" data-duration="1000" data-delay="500">
+                              <img src="images/bed.png" alt="" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Pogo Silder End -->
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-col hero-col-right">
+              <div class="hero-col-right-img">
+                <img src="images/chair.png" alt="" class="img-fluid">
+                <div class="hover-box">
+                  <a href="#" class="hvr-ripple-out"><i class="ti-plus"></i></a>
+                  <div class="hover-box-content">
+                    <h3>Chair</h3>
+                    <p>I thought I was ordering a nice light green color, as in the product photos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="helo-social">
+        <ul>
+          <li>
+            <a href="#" target="_blank">FB <span>Facebook</span></a>
+          </li>
+          <li>
+            <a href="#" target="_blank">TW <span>Twitter</span></a>
+          </li>
+          <li>
+            <a href="#" target="_blank">PI <span>Pinterest</span></a>
+          </li>
+          <li>
+            <a href="#" target="_blank">IN <span>Instagram</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="layer abstract-img shape-img-1" data-speed="-8">
+        <img src="images/shape-1.png" alt="" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Featured Product -->
+    <section class="features-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="features-col have-img">
+              <div class="hover-img">
+                <img src="images/product/p-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="features-content">
+                <h4>Classic travel<br> Backpack</h4>
+                <span>$17.99</span>
+                <a href="shop-3.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="features-col have-img">
+              <div class="hover-img">
+                <img src="images/product/p-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="features-content">
+                <h4>High Quality<br> Canvas Tote Bags</h4>
+                <span>$17.99</span>
+                <a href="shop-3.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Start -->
+    <section class="banner-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner-col background-image" data-src="images/bg/2.jpg">
+              <div class="row justify-content-end">
+                <div class="col-lg-6">
+                  <div class="banner-content">
+                    <div class="off-circle hvr-ripple-out">
+                      <img src="images/circle-shape.png" alt="" class="img-fluid">
+                      <h2>30% Off</h2>
+                    </div>
+                    <h4><a href="shop-3.html">Furniture for every space every style.</a></h4>
+                    <p>Flexible pieces from top brands. match and inspire everyone on the team</p>
+                    <img src="images/woman.png" alt="" class="img-fluid woman-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Start -->
+    <section class="product-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2><a href="shop-3.html">Trending Woman collection</a></h2>
+              <p>There are some tranding product that recently published </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="product-col">
+              <div class="product-slider">
+                <div class="product-item have-img">
+                  <div class="product-img hover-img">
+                    <img src="images/product/1.jpg" alt="" class="img-fluid">
+                    <div class="product-item-text">
+                      <p>$12.45 <span>Hot</span></p>
+                    </div>
+                  </div>
+                  <h4><a href="product-details-1.html">LiftKits Women's 1.25 inch Shoe</a></h4>
+                  <span>women shoe</span>
+                  <a href="product-details-1.html">Shop Now</a>
+                </div>
+                <div class="product-item have-img">
+                  <div class="product-img hover-img">
+                    <img src="images/product/2.jpg" alt="" class="img-fluid">
+                    <div class="product-item-text">
+                      <p>$72.16 <span>Hot</span></p>
+                    </div>
+                  </div>
+                  <h4><a href="product-details-1.html">Colors Lipstick 6 Color Lipstick</a></h4>
+                  <span>Lipstick</span>
+                  <a href="product-details-1.html">Shop Now</a>
+                </div>
+                <div class="product-item have-img">
+                  <div class="product-img hover-img">
+                    <img src="images/product/3.jpg" alt="" class="img-fluid">
+                    <div class="product-item-text">
+                      <p>$142 <span>Hot</span></p>
+                    </div>
+                  </div>
+                  <h4><a href="product-details-1.html">Les Secrets Laduree & LeSportsac</a></h4>
+                  <span>Woman Bag</span>
+                  <a href="product-details-1.html">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Start -->
+    <section class="product-area product-two-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2><a href="shop-3.html">Top Furniture collection</a></h2>
+              <p>There are some tranding product that recently published</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="product-col">
+              <div class="product-slider">
+                <div class="product-item have-img">
+                  <div class="product-img hover-img">
+                    <img src="images/product/4.jpg" alt="" class="img-fluid">
+                    <div class="product-item-text">
+                      <p>$12.45 <span>Hot</span></p>
+                    </div>
+                  </div>
+                  <h4><a href="product-details-1.html">strong wood chair collection</a></h4>
+                  <span>women shoe</span>
+                  <a href="product-details-1.html">Shop Now</a>
+                </div>
+                <div class="product-item have-img">
+                  <div class="product-img hover-img">
+                    <img src="images/product/5.jpg" alt="" class="img-fluid">
+                    <div class="product-item-text">
+                      <p>$72.16 <span>Hot</span></p>
+                    </div>
+                  </div>
+                  <h4><a href="product-details-1.html">strong wood chair collection</a></h4>
+                  <span>Lipstick</span>
+                  <a href="product-details-1.html">Shop Now</a>
+                </div>
+                <div class="product-item have-img">
+                  <div class="product-img hover-img">
+                    <img src="images/product/6.jpg" alt="" class="img-fluid">
+                    <div class="product-item-text">
+                      <p>$142 <span>Hot</span></p>
+                    </div>
+                  </div>
+                  <h4><a href="product-details-1.html">strong wood chair collection</a></h4>
+                  <span>Woman Bag</span>
+                  <a href="product-details-1.html">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Two Start -->
+    <section class="banner-two-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="banner-two-col p-0">
+              <div class="banner-two-img">
+                <img src="images/chair-2.png" alt="" class="img-fluid rotating">
+                <img src="images/shape-2.png" alt="" class="img-fluid bg-shape-img">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner-two-col">
+              <p>$84.15- $90</p>
+              <h2>Your Zone Flip Chair, Available inMultiple Colors</h2>
+              <a href="cart.html">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layer abstract-img woman-img-two" data-speed="-5">
+        <img src="images/woman-2.png" alt="" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Product Categories Start -->
+    <section class="product-categories-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title text-center">
+              <h2>Product Categories</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="product-categories-col have-img">
+              <a href="shop-3.html">
+                <div class="hover-img">
+                  <img src="images/product/c-1.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <p><a href="shop-3.html">Smart Home</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-categories-col have-img">
+              <a href="shop-3.html">
+                <div class="hover-img">
+                  <img src="images/product/c-2.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <p><a href="shop-3.html">Smart Home</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-categories-col have-img">
+              <a href="shop-3.html">
+                <div class="hover-img">
+                  <img src="images/product/c-3.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <p><a href="#">Smart Home</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="product-categories-col have-img">
+              <a href="shop-3.html">
+                <div class="hover-img">
+                  <img src="images/product/c-4.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <p><a href="#">Smart Home</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Start -->
+    <section class="blog-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title text-center">
+              <h2>What Babes Are Reading</h2>
+              <p>There are latest news post from our website</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-col have-img">
+              <div class="hover-img">
+                <img src="images/blog/1.jpg" alt="" class="img-fluid">
+              </div>
+              <h5><a href="blog-details.html">What’s Coming in 2020? Home Decor Ideas for the New Year</a></h5>
+              <ul>
+                <li>By <a href="#">Jerome Rackers</a></li>
+                <li>|</li>
+                <li>Dec 31, 2019</li>
+                <li>|</li>
+                <li><a href="#">Decorating</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-col have-img">
+              <div class="hover-img">
+                <img src="images/blog/2.jpg" alt="" class="img-fluid">
+              </div>
+              <h5><a href="blog-details.html">Entertain with Dining Room Furniture that Fits Your Lifestyle</a></h5>
+              <ul>
+                <li>By <a href="#">Jerome Rackers</a></li>
+                <li>|</li>
+                <li>Dec 31, 2019</li>
+                <li>|</li>
+                <li><a href="#">Decorating</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-col have-img">
+              <div class="hover-img">
+                <img src="images/blog/3.jpg" alt="" class="img-fluid">
+              </div>
+              <h5><a href="blog-details.html">Impress with Picture-Perfect Home or Summer Entertaining</a></h5>
+              <ul>
+                <li>By <a href="#">Jerome Rackers</a></li>
+                <li>|</li>
+                <li>Dec 31, 2019</li>
+                <li>|</li>
+                <li><a href="#">Decorating</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facility Start -->
+    <section class="facility-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center facility-col">
+              <div class="facility-icon">
+                <img src="images/icons/1.png" alt="" class="img-fluid">
+              </div>
+              <h5>Connect with verified sellers</h5>
+              <p>Tell us your requirement & let our experts find verified sellers for you</p>
+              <a href="#" class="btn">Verified sellers</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center facility-col">
+              <div class="facility-icon">
+                <img src="images/icons/2.png" alt="" class="img-fluid">
+              </div>
+              <h5>Payment Protection</h5>
+              <p>Tell us your requirement & let our experts find verified sellers for you</p>
+              <a href="#" class="btn">Learn more</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center facility-col">
+              <div class="facility-icon">
+                <img src="images/icons/3.png" alt="" class="img-fluid">
+              </div>
+              <h5>Download our App</h5>
+              <p>Tell us your requirement & let our experts find verified sellers for you</p>
+              <a href="#" class="btn">Download apps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-7">
+                <div class="newsletter-col">
+                  <h2>Newsletter</h2>
+                  <p>Subscribe for email updates <span>(only once a week)</span></p>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Your email">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-7 col-md-6">
+                <div class="footer-col">
+                  <p>75 Arlington St. Suite 500 Boston, MA<br> 02116, USA</p>
+                  <p>infooffice@gmail.com</p>
+                  <ul>
+                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                    <li><a href="#"><i class="ti-dribbble"></i></a></li>
+                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="footer-col">
+                      <h6>Shop</h6>
+                      <ul class="links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="footer-col">
+                      <h6>About</h6>
+                      <ul class="links">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Doin' Our Bit</a></li>
+                        <li><a href="#">Customer Testimonials</a></li>
+                        <li><a href="#">Your Go-To Routine</a></li>
+                        <li><a href="#">Go-To TV</a></li>
+                        <li><a href="#">Press</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row copyright-row">
+              <div class="col-lg-4 col-md-6">
+                <div class="copyright-col">
+                  <p>Copyrights ©2021 AGOP</p>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-6">
+                <div class="copyright-col">
+                  <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li>|</li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li>|</li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- popper.min -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- All Included JavaScript -->
+    <script src="js/stellarnav.min.js"></script>
+    <script src="js/full-overlay.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jquery.pogo-slider.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="js/livechat-open-close.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles-app.js"></script>
+    <script src="js/range-slider.js"></script>
+    <script src="js/slider-with-thumbnail.js"></script>
+    <script src="js/YouTubePopUp.jquery.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+
+</html>

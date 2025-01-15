@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>Agop Minimal eCommerce HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="css/font.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font-awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- themify-icons CSS -->
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <!-- owl CSS -->
+    <link href="css/owl.css" rel="stylesheet">
+    <!-- pogo-slider CSS -->
+    <link href="css/pogo-slider.css" rel="stylesheet">
+    <!-- stellarnav CSS -->
+    <link href="css/stellarnav.min.css" rel="stylesheet">
+    <!-- lightbox.min CSS -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <!-- animations.min CSS -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- YouTubePopUp CSS -->
+    <link href="css/YouTubePopUp.css" rel="stylesheet">
+
+
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Live Chat Start -->
+    <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="https://gico.io/action_page.php" class="form-container">
+        <h4>چت انلاین</h4>
+        <input class="form-control mb-3" type="text" placeholder="نام">
+        <input class="form-control mb-3" type="email" placeholder="ایمیل">
+        <textarea class="mb-3" placeholder="Type message.." name="msg" required></textarea>
+        <button type="submit" class="btn">ارسال</button>
+        <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
+      </form>
+    </div>
+  
+    <!-- Overlay Search box -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
+      <div class="overlay-content">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text p-0">
+                <button class="btn btn-primary" type="submit">جستجو</button>
+            </div>
+          </div>
+          <input type="text" class="form-control" placeholder="Search Here">
+        </div>
+      </div>
+    </div>
+  
+     <!-- Header Start -->
+     <header class="header-area header-inner-area">
+      <div class="header-menubar">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="navbar-col">
+                <div id="main-nav" class="stellarnav">
+                  <div class="header-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
+                  </div>
+                   <ul>
+                      <li><a href="index.html"><i class="ti-angle-down"></i>خانه</a>
+                        <ul>
+                          <li><a href="index.html">پیج اول</a></li>
+                          <li><a href="index-2.html">پیج دوم</a></li>
+                        </ul>
+                      </li>
+                      <li class="drop-left"><a href="#"><i class="ti-angle-down"></i>فروشگاه</a>
+                          <ul>
+                            <li><a href="shop-1.html">فروشگاه اول</a></li>
+                            <li><a href="shop-2.html">فروشگاه دوم</a></li>
+                            <li><a href="shop-3.html">فروشگاه سوم</a></li>
+                            <li><a href="shop-4.html">فروشگاه چهارم</a></li>
+                            <li><a href="#"><i class="ti-angle-down"></i>صفحات مرتبط</a>
+                              <ul>
+                                <li><a href="cart.html">سبد خرید</a></li>
+                                <li><a href="checkout.html">صفحه نهایی</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                      </li>
+                      <li><a href="#"><i class="ti-angle-down"></i>محصول</a>
+                          <ul>
+                            <li><a href="product-details-1.html">جزییات محصول</a></li>
+                            <li><a href="product-details-2.html">جزییات محصول</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#"><i class="ti-angle-down"></i>بلاگ</a>
+                        <ul>
+                          <li><a href="blog.html">بلاگ شما</a></li>
+                          <li><a href="blog-details.html">جزییات بلاگ</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#"><i class="ti-angle-down"></i>صفحات</a>
+                        <ul>
+                          <li><a href="about.html">درباره ما</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">تماس با ما</a></li>
+                   </ul>
+                </div>
+                <div class="menu-right-side">
+                  <ul>
+                    <li><a href="#"><i class="ti-user"></i></a></li>
+                    <li>
+                      <div class="dropdown">
+                        <a href="cart.html">
+                          <i class="ti-shopping-cart"></i>
+                          <span class="cart-items">2</span>
+                        </a>
+                        <div class="cart-dropdown-content">
+                          <div class="cart-dropdown-item">
+                            <div class="cart-dropdown-img">
+                              <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
+                              <a href="#"><i class="ti-close"></i></a>
+                            </div>
+                            <h6>کیف زنانه</h6>
+                            <p>1 x $49.00</p>
+                          </div>
+                          <div class="cart-dropdown-item">
+                            <div class="cart-dropdown-img">
+                              <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
+                              <a href="#"><i class="ti-close"></i></a>
+                            </div>
+                            <h6>لباس زنانه</h6>
+                            <p>1 x $99.00</p>
+                          </div>
+                          <div class="total">
+                            <h6><span>کل</span> $148</h6>
+                            <a href="checkout.html">پرداخت</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="search-icon">
+                        <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
+                      </div>
+                    </li>
+                    <li><a href="#"><i class="ti-heart"></i></a></li>
+                  </ul>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+  
+      <!-- Page Name Start -->
+      <section class="page-name-area jarallax background-image" data-src="images/bg/4.jpg">
+        <div id="particles-js"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="page-name-col">
+                <h2>بلاگ ما</h2>
+                <p>پنج دوست در کافه‌ای دنج نشسته بودند، فنجان‌های قهوه‌شان را برمی‌داشتند و با شور و شوق از ساختن این سایت حرف می‌زدند؛ جایی که حالا شما در حال خواندن این متن هستید.
+  
+  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Blog Start -->
+    <section class="blog-two-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="blog-two-col">
+              <div class="blog-two-item have-img">
+                <div class="hover-img">
+                  <img src="images/blog/b-1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="blog-two-content">
+                  <ul>
+                    <li><a href="#">6 دی 1402</a></li>
+                    <li><span>نکات</span></li>
+                  </ul>
+                  <h4><a href="blog-details.html">عوامل پیشرفت ما</a></h4>
+                  <p>عوامل پیشرفت شرکت ما در تمام جزئیات نهفته است؛ از تیم متخصص و خلاق گرفته تا تکنولوژی‌های نوین و فرآیندهای بهینه‌سازی شده. هر گام که برداشتیم، بر پایه‌ ارتقای کیفیت و رضایت مشتریان بوده است. ما همیشه در تلاشیم تا با نوآوری و پشتکار، مرزهای موفقیت را جابه‌جا کنیم.</p>
+                  <a class="btn btn-primary" href="blog-details.html" role="button"> ادامه مطلب<i class="ti-angle-double-left"></i></a>
+                </div>
+              </div>
+              <div class="blog-two-item have-img">
+                <div class="hover-img">
+                  <img src="images/blog/b-2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="blog-two-content">
+                  <ul>
+                    <li><a href="#">21 آذر 1402</a></li>
+                    <li><span>نکات</span></li>
+                  </ul>
+                  <h4><a href="blog-details.html">مشتریان ما که هستند</a></h4>
+                  <p>مشتریان ما افرادی هستند که به دنبال کیفیت بالا، طراحی منحصر به فرد و تجربه‌ای بی‌دغدغه از خرید هستند. آن‌ها کسانی هستند که ارزش واقعی محصولات را می‌دانند و برای ما، فراهم کردن بهترین تجربه خرید، همیشه در اولویت قرار دارد.</p>
+                  <a class="btn btn-primary" href="blog-details.html" role="button"> ادامه مطلب<i class="ti-angle-double-left"></i></a>
+                </div>
+              </div>
+              <div class="blog-two-item have-img">
+                <div class="hover-img">
+                  <img src="images/blog/b-3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="blog-two-content">
+                  <ul>
+                    <li><a href="#">2 آذر 1402</a></li>
+                    <li><span>نکات</span></li>
+                  </ul>
+                  <h4><a href="blog-details.html">آیا فروش انلاین جایگزین فروش حضوری خواهد شد</a></h4>
+                  <p>فروش آنلاین به سرعت در حال رشد است و بسیاری از نیازهای مشتریان را به راحتی برطرف می‌کند، اما فروش حضوری همچنان جایگاه خود را دارد، به‌ویژه برای تجربه مستقیم و مشاوره شخصی. هرکدام مکمل دیگری هستند.</p>
+                  <a class="btn btn-primary" href="blog-details.html" role="button"> ادامه مطلب<i class="ti-angle-double-left"></i></a>
+                </div>
+              </div>
+              <div class="blog-two-item have-img">
+                <div class="hover-img">
+                  <img src="images/blog/b-4.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="blog-two-content">
+                  <ul>
+                    <li><a href="#">4 مهر 1402</a></li>
+                    <li><span>نکات</span></li>
+                  </ul>
+                  <h4><a href="blog-details.html">جلب مشتریان جدید</a></h4>
+                  <p>برای جلب مشتریان جدید، می‌توان از تبلیغات هدفمند آنلاین، ارائه تخفیف‌ها و پیشنهادات ویژه، و همکاری با اینفلوئنسرها استفاده کرد. همچنین تجربه خرید منحصر به فرد و بازاریابی ارجاعی می‌تواند مشتریان جدید را جذب کند.</p>
+                  <a class="btn btn-primary" href="blog-details.html" role="button"> ادامه مطلب<i class="ti-angle-double-left"></i></a>
+                </div>
+              </div>
+              <nav aria-label="Page navigation example" class="my-pagination">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <i class="ti-angle-double-left"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="blog-sidebar">
+              <div class="product-search-box">
+                <h5 class="blog-sidebar-title">جستجو</h5>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <input type="text" class="form-control" placeholder="جستجو...">
+                      <div class="input-group-text p-0">
+                          <button class="btn btn-primary" type="submit"><i class="ti-search"></i></button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="blog-categories-box">
+                <h5 class="blog-sidebar-title">دسته بندی</h5>
+                <ul>
+                  <li><a href="#">مشتریان<span>(45)</span></a></li>
+                  <li><a href="#">نکات<span>(02)</span></a></li>
+                  <li><a href="#">محصولات<span>(15)</span></a></li>
+                  <li><a href="#">رفع باگ<span>(20)</span></a></li>
+                  <li><a href="#">دانستنی<span>(05)</span></a></li>
+                </ul>
+              </div>
+              <div class="instagram-box">
+                <h5 class="blog-sidebar-title">گوشه ای از صفحه اینستاگرام</h5>
+                <div class="instagram-images">
+                  <div><a href="#"><img src="images/instagram/1.jpg" alt="" class="img-fluid"></a></div>
+                  <div><a href="#"><img src="images/instagram/2.jpg" alt="" class="img-fluid"></a></div>
+                  <div><a href="#"><img src="images/instagram/3.jpg" alt="" class="img-fluid"></a></div>
+                  <div><a href="#"><img src="images/instagram/4.jpg" alt="" class="img-fluid"></a></div>
+                  <div><a href="#"><img src="images/instagram/5.jpg" alt="" class="img-fluid"></a></div>
+                  <div><a href="#"><img src="images/instagram/6.jpg" alt="" class="img-fluid"></a></div>
+                  <div><a href="#"><img src="images/instagram/7.jpg" alt="" class="img-fluid"></a></div>
+                  <div><a href="#"><img src="images/instagram/8.jpg" alt="" class="img-fluid"></a></div>
+                  <div><a href="#"><img src="images/instagram/9.jpg" alt="" class="img-fluid"></a></div>
+                </div>
+              </div>
+              <div class="tag-box">
+                <h5 class="blog-sidebar-title">Tags</h5>
+                <ul>
+                  <li><a href="#">نکات</a></li>
+                  <li><a href="#">آرایشی</a></li>
+                  <li><a href="#">سایت خرید</a></li>
+                  <li><a href="#">بهداشتی</a></li>
+                  <li><a href="#">نظر</a></li>
+                  <li><a href="#">آنلاین</a></li>
+                  <li><a href="#">مبلمان</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facility-area pt-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center facility-col">
+              <div class="facility-icon">
+                <img src="images/icons/1.png" alt="" class="img-fluid">
+              </div>
+              <h5>با ما در تماس باشید</h5>
+              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
+              <a href="#" class="btn">متخصصین مجرب</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center facility-col">
+              <div class="facility-icon">
+                <img src="images/icons/2.png" alt="" class="img-fluid">
+              </div>
+              <h5>امنیت تسویه</h5>
+              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
+              <a href="#" class="btn">بیشتر بخوانید</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="text-center facility-col">
+              <div class="facility-icon">
+                <img src="images/icons/3.png" alt="" class="img-fluid">
+              </div>
+              <h5>دانلود برنامه</h5>
+              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
+              <a href="#" class="btn">دانلود برنامه</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-7">
+                <div class="newsletter-col">
+                  <h2>روزنامه</h2>
+                  <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Your email">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <button class="btn btn-primary" type="submit">سابسکرایب</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-7 col-md-6">
+                <div class="footer-col">
+                  <p>تهران - مطهری - خیابان شفا<br>بعد از آژانس آزالیا</p>
+                  <p>infooffice@gmail.com</p>
+                  <ul>
+                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                    <li><a href="#"><i class="ti-dribbble"></i></a></li>
+                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="footer-col">
+                      <h6>Shop</h6>
+                      <ul class="links">
+                        <li><a href="#">با ما در ارتباط باشید</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#">ارسال</a></li>
+                        <li><a href="#">برگشت خورده</a></li>
+                        <li><a href="#">امنیت</a></li>
+                        <li><a href="#">شیوه استفاده</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="footer-col">
+                      <h6>درباره ی ما</h6>
+                      <ul class="links">
+                        <li><a href="#">داستان ما</a></li>
+                        <li><a href="#">گواهی دریافتی</a></li>
+                        <li><a href="#">رضایت مشتری</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row copyright-row">
+              <div class="col-lg-4 col-md-6">
+                <div class="copyright-col">
+                  <p>Copyrights ©2021 AGOP</p>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-6">
+                <div class="copyright-col">
+                  <ul>
+                    <li><a href="#">سیاست حفظ حریم</a></li>
+                    <li>|</li>
+                    <li><a href="#">مشاغل</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- popper.min -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- All Included JavaScript -->
+    <script src="js/stellarnav.min.js"></script>
+    <script src="js/full-overlay.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jquery.pogo-slider.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
+    <script src="js/livechat-open-close.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles-app.js"></script>
+    <script src="js/range-slider.js"></script>
+    <script src="js/slider-with-thumbnail.js"></script>
+    <script src="js/YouTubePopUp.jquery.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
