@@ -248,7 +248,7 @@
 .ti-angle-left:before {
 	content: "\e64a";
 }
-.ti-angle-down:before {
+.ti-angle-down:after {
 	content: "\e64b";
 }
 .ti-check:before {

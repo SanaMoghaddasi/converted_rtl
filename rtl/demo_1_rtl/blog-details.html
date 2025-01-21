@@ -1,463 +1,812 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
 
+        <title>جزییات اخبار</title>
 
-<head>
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" />
+        <link href="css/font.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>Agop Minimal eCommerce HTML Template</title>
+        <!-- font-awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- themify-icons CSS -->
+        <link href="css/themify-icons.css" rel="stylesheet" />
+        <!-- owl CSS -->
+        <link href="css/owl.css" rel="stylesheet" />
+        <!-- pogo-slider CSS -->
+        <link href="css/pogo-slider.css" rel="stylesheet" />
+        <!-- stellarnav CSS -->
+        <link href="css/stellarnav.min.css" rel="stylesheet" />
+        <!-- lightbox.min CSS -->
+        <link href="css/lightbox.min.css" rel="stylesheet" />
+        <!-- animations.min CSS -->
+        <link href="css/animations.css" rel="stylesheet" />
+        <!-- YouTubePopUp CSS -->
+        <link href="css/YouTubePopUp.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="css/font.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="css/responsive.css" rel="stylesheet" />
 
-    <!-- font-awesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- themify-icons CSS -->
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <!-- owl CSS -->
-    <link href="css/owl.css" rel="stylesheet">
-    <!-- pogo-slider CSS -->
-    <link href="css/pogo-slider.css" rel="stylesheet">
-    <!-- stellarnav CSS -->
-    <link href="css/stellarnav.min.css" rel="stylesheet">
-    <!-- lightbox.min CSS -->
-    <link href="css/lightbox.min.css" rel="stylesheet">
-    <!-- animations.min CSS -->
-    <link href="css/animations.css" rel="stylesheet">
-    <!-- YouTubePopUp CSS -->
-    <link href="css/YouTubePopUp.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
+    <body>
+        <!-- Live Chat Start -->
+          <!-- Live Chat Start -->
+          <button class="open-button" onclick="openForm()">
+            <i class="ti-comments"></i>
+        </button>
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Live Chat Start -->
-    <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
-
-    <div class="chat-popup" id="myForm">
-      <form action="https://gico.io/action_page.php" class="form-container">
-        <h4>Live Chat</h4>
-        <input class="form-control mb-3" type="text" placeholder="Your Name">
-        <input class="form-control mb-3" type="email" placeholder="Your Mail">
-        <textarea class="mb-3" placeholder="Type message.." name="msg" required></textarea>
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
-      </form>
-    </div>
-
-    <!-- Overlay Search box -->
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
-      <div class="overlay-content">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text p-0">
-                <button class="btn btn-primary" type="submit">Search</button>
-            </div>
-          </div>
-          <input type="text" class="form-control" placeholder="Search Here">
+        <div class="chat-popup" id="myForm">
+            <form
+                action="https://gico.io/action_page.php"
+                class="form-container"
+            >
+                <h4>چت انلاین</h4>
+                <input
+                    class="form-control mb-3"
+                    type="text"
+                    placeholder="نام"
+                />
+                <input
+                    class="form-control mb-3"
+                    type="email"
+                    placeholder="ایمیل"
+                />
+                <textarea
+                    class="mb-3"
+                    placeholder="Type message.."
+                    name="msg"
+                    required
+                ></textarea>
+                <button type="submit" class="btn">ارسال</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                    <i class="ti-close"></i>
+                </button>
+            </form>
         </div>
-      </div>
-    </div>
 
-    <!-- Header Start -->
-    <header class="header-area header-inner-area">
-      <div class="header-menubar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="navbar-col">
-                <div id="main-nav" class="stellarnav">
-                  <div class="header-logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
-                  </div>
-                   <ul>
-                      <li><a href="index.html">Home <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="index.html">Home 1</a></li>
-                          <li><a href="index-2.html">Home 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Shop <i class="ti-angle-down"></i></a>
-                          <ul>
-                            <li><a href="shop-1.html">Shop 1</a></li>
-                            <li><a href="shop-2.html">Shop 2</a></li>
-                            <li><a href="shop-3.html">Shop 3</a></li>
-                            <li><a href="shop-4.html">Shop 4</a></li>
-                            <li><a href="#">Shop Related Page <i class="ti-angle-down"></i></a>
-                              <ul>
-                                <li><a href="cart.html">cart page</a></li>
-                                <li><a href="checkout.html">checkout page</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                      </li>
-                      <li><a href="#">product <i class="ti-angle-down"></i></a>
-                          <ul>
-                            <li><a href="product-details-1.html">product details 1</a></li>
-                            <li><a href="product-details-2.html">product details 2</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">Blog <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="blog.html">our blog</a></li>
-                          <li><a href="blog-details.html">blog details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Pages <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="about.html">about us</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">Contact</a></li>
-                   </ul>
-                </div>
-                <div class="menu-right-side">
-                  <ul>
-                    <li><a href="#"><i class="ti-user"></i></a></li>
-                    <li>
-                      <div class="dropdown">
-                        <a href="cart.html">
-                          <i class="ti-shopping-cart"></i>
-                          <span class="cart-items">2</span>
-                        </a>
-                        <div class="cart-dropdown-content">
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>ladies bag</h6>
-                            <p>1 x $49.00</p>
-                          </div>
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>Woman Dress</h6>
-                            <p>1 x $99.00</p>
-                          </div>
-                          <div class="total">
-                            <h6><span>Total</span> $148</h6>
-                            <a href="checkout.html">Checkout</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="search-icon">
-                        <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
-                      </div>
-                    </li>
-                    <li><a href="#"><i class="ti-heart"></i></a></li>
-                  </ul>
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Page Name Start -->
-    <section class="page-name-area jarallax background-image" data-src="images/bg/4.jpg">
-      <div id="particles-js"></div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="page-name-col">
-              <h2>Blog Details</h2>
-              <p>Five years ago in a Agop shop, five friends had a drink and an idea: a humble coffee scrub</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Start -->
-    <section class="blog-details-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9">
-            <div class="blog-details-col">
-              <div class="blog-details-top">
-                <img src="images/blog/big.jpg" alt="" class="img-fluid">
-                <span>Creative</span>
-                <h3>Five steps to organize your home office A home office allows you the freedom</h3>
-                <ul>
-                  <li>by <a href="#">Jolil Sultan</a></li>
-                  <li>on <a href="#">10 March 2020</a></li>
-                </ul>
-                <p>A home office allows you the freedom to tune out the distractions of everyday life and focus on your work. In addition, you can get more done in less time because there is no commute. However, the key to this productivity is organization. </p>
-              </div>
-              <div class="blog-details-middle">
-                <p>No matter how hard bagel shops elsewhere in the country try, they can never make them quite like New York does. Is it the placebo effect or are New York bagel makers adding some secret ingredient that no one else knows about? Maybe it’s all about the best way to cut a bagel.</p>
-                <p>In fact, New York bagels are superior to other bagels due to two things: The New York water, which is a key ingredient, plus the way the bagels are cooked. Tap water in New York is very soft, meaning it has low concentrations of minerals like calcium and magnesium. In fact, the state has some of the softest water in the country. The chemical makeup of water effects the gluten in the dough. Hard water toughens gluten, while soft water softens it, making the dough goopier. This produces a more delicious, chewy bagel. When in New York you should not miss the chance to have a bagel. In fact, never miss a chance to try the most iconic food in every state.</p>
-                <div class="pair-imgs">
-                  <div>
-                    <img src="images/blog/blog-1.jpg" alt="" class="img-fluid">
-                  </div>
-                  <div>
-                    <img src="images/blog/blog-2.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-                <p>In fact, New York bagels are superior to other bagels due to two things: The New York water, which is a key ingredient, plus the way the bagels are cooked. Tap water in New York is very soft, meaning it has low concentrations of minerals like calcium and magnesium. </p>
-                <p>New York bagels are superior to other bagels due to two things: The New York water, which is a key ingredient, plus the way the bagels are cooked. Tap water in New York is very soft, meaning it has low concentrations of minerals like calcium and magnesium. In fact, the state has some of the softest water in the country. The chemical makeup of water effects the gluten in the dough. Hard water toughens gluten, while soft water softens it, making the dough goopier. This produces a more delicious, chewy </p>
-                <div class="share-links">
-                  <ul>
-                    <li><i class="ti-sharethis"></i></li>
-                    <li><a href="#">Facebook</a> .</li>
-                    <li><a href="#">Twitter</a> .</li>
-                    <li><a href="#">Linkein</a> .</li>
-                    <li><a href="#">Pinterest</a> .</li>
-                    <li><a href="#">Instragram</a></li>
-                  </ul>
-                </div>
-                <div class="more-blog-links">
-                  <div><a href="#">key to this productivity is organization. <i class="ti-arrow-right"></i></a></div>
-                  <div><a href="#"><i class="ti-arrow-left"></i> Sort Your Materials</a></div>
-                </div>
-              </div>
-              <div class="blog-details-comment">
-                <h4><a href="#">1 Comment</a></h4>
-                <div class="comment-item">
-                  <img src="images/blog/comment-1.jpg" alt="" class="img-fluid">
-                  <h6>Jemlin Adom <a href="#">Reply</a></h6>
-                  <span>02 March 2020</span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad inim </p>
-                </div>
-                <div class="comment-item">
-                  <img src="images/blog/comment-2.jpg" alt="" class="img-fluid">
-                  <h6>Maslin Rose <a href="#">Reply</a></h6>
-                  <span>02 March 2020</span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad inim </p>
-                </div>
-              </div>
-              <div class="comment-form">
-                <h4>Leave a reply</h4>
-                <p>Your email address will not be published. Required fields are marked *</p>
-                <form>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <textarea class="form-control" rows="6" placeholder="Type your comment "></textarea>
-                    </div>
-                    <div class="col-lg-4">
-                      <input class="form-control" type="text" placeholder="Name">
-                    </div>
-                    <div class="col-lg-4">
-                      <input class="form-control" type="email" placeholder="Email">
-                    </div>
-                    <div class="col-lg-4">
-                      <input class="form-control" type="text" placeholder="Website">
-                    </div>
-                    <div class="col-lg-12">
-                      <button class="btn btn-primary" type="submit">Submit Comment</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="blog-sidebar">
-              <div class="product-search-box">
-                <h5 class="blog-sidebar-title">Search</h5>
+        <!-- Overlay Search box -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="ti-close"></i
+            ></a>
+            <div class="overlay-content">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                      <input type="text" class="form-control" placeholder="Search...">
-                      <div class="input-group-text p-0">
-                          <button class="btn btn-primary" type="submit"><i class="ti-search"></i></button>
-                      </div>
+                        <div class="input-group-text p-0">
+                            <button class="btn btn-primary" type="submit">
+                                جستجو
+                            </button>
+                        </div>
                     </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="جستجو کنید"
+                    />
                 </div>
-              </div>
-              <div class="blog-categories-box">
-                <h5 class="blog-sidebar-title">Categories</h5>
-                <ul>
-                  <li><a href="#">Event and Travel <span>(45)</span></a></li>
-                  <li><a href="#">Software <span>(02)</span></a></li>
-                  <li><a href="#">Political <span>(15)</span></a></li>
-                  <li><a href="#">Election <span>(20)</span></a></li>
-                  <li><a href="#">Food & drink <span>(05)</span></a></li>
-                  <li><a href="#">Traditional <span>(12)</span></a></li>
-                </ul>
-              </div>
-              <div class="instagram-box">
-                <h5 class="blog-sidebar-title">From Instagram</h5>
-                <div class="instagram-images">
-                  <div><a href="#"><img src="images/instagram/1.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/2.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/3.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/4.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/5.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/6.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/7.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/8.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/9.jpg" alt="" class="img-fluid"></a></div>
-                </div>
-              </div>
-              <div class="tag-box">
-                <h5 class="blog-sidebar-title">Tags</h5>
-                <ul>
-                  <li><a href="#">Things</a></li>
-                  <li><a href="#">Culture</a></li>
-                  <li><a href="#">Tradition</a></li>
-                  <li><a href="#">Things</a></li>
-                  <li><a href="#">Travel ca</a></li>
-                  <li><a href="#">Destination</a></li>
-                  <li><a href="#">Tour</a></li>
-                  <li><a href="#">Explore tour</a></li>
-                </ul>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer Start -->
-    <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-7">
-                <div class="newsletter-col">
-                  <h2>Newsletter</h2>
-                  <p>Subscribe for email updates <span>(only once a week)</span></p>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Your email">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <button class="btn btn-primary" type="submit">Subscribe</button>
-                      </div>
+        <!-- Header Start -->
+        <header class="header-area header-inner-area">
+            <div class="header-menubar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="navbar-col">
+                                <div id="main-nav" class="stellarnav">
+                                    <div class="header-logo">
+                                        <a href="index.html"
+                                            ><img
+                                                src="images/logo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"
+                                                ><i class="ti-angle-down"></i
+                                                >خانه</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="index.html"
+                                                        >پیج اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html"
+                                                        >پیج دوم</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop-left">
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >فروشگاه</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="shop-1.html"
+                                                        >فروشگاه اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-2.html"
+                                                        >فروشگاه دوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-3.html"
+                                                        >فروشگاه سوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-4.html"
+                                                        >فروشگاه چهارم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><i
+                                                            class="ti-angle-down"
+                                                        ></i
+                                                        >صفحات مرتبط</a
+                                                    >
+                                                    <ul>
+                                                        <li>
+                                                            <a href="cart.html"
+                                                                >سبد خرید</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="checkout.html"
+                                                                >صفحه نهایی</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >محصول</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="product-details-1.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="product-details-2.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >بلاگ</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="blog.html"
+                                                        >بلاگ شما</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html"
+                                                        >جزییات بلاگ</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >صفحات</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="about.html"
+                                                        >درباره ما</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html"
+                                                >تماس با ما</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-right-side">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-user"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="cart.html">
+                                                    <i
+                                                        class="ti-shopping-cart"
+                                                    ></i>
+                                                    <span class="cart-items"
+                                                        >2</span
+                                                    >
+                                                </a>
+                                                <div
+                                                    class="cart-dropdown-content"
+                                                >
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-1.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>کیف زنانه</h6>
+                                                        <p>1 x $49.00</p>
+                                                    </div>
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-2.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>لباس زنانه</h6>
+                                                        <p>1 x $99.00</p>
+                                                    </div>
+                                                    <div class="total">
+                                                        <h6>
+                                                            <span>کل</span> $148
+                                                        </h6>
+                                                        <a href="checkout.html"
+                                                            >پرداخت</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search-icon">
+                                                <a
+                                                    href="#"
+                                                    class="closebtn"
+                                                    onclick="openNav()"
+                                                    ><i class="ti-search"></i
+                                                ></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-heart"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div class="row">
-              <div class="col-lg-7 col-md-6">
-                <div class="footer-col">
-                  <p>75 Arlington St. Suite 500 Boston, MA<br> 02116, USA</p>
-                  <p>infooffice@gmail.com</p>
-                  <ul>
-                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                    <li><a href="#"><i class="ti-dribbble"></i></a></li>
-                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                  </ul>
+        </header>
+
+        <!-- Page Name Start -->
+        <section
+            class="page-name-area jarallax background-image"
+            data-src="images/bg/4.jpg"
+        >
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="page-name-col">
+                            <h2>بلاگ ما</h2>
+                            <p>
+                                پنج دوست در کافه‌ای دنج نشسته بودند، فنجان‌های
+                                قهوه‌شان را برمی‌داشتند و با شور و شوق از ساختن
+                                این سایت حرف می‌زدند؛ جایی که حالا شما در حال
+                                خواندن این متن هستید.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-5 col-md-6">
+            </div>
+        </section>
+
+        <!-- Blog Start -->
+        <section class="blog-details-area">
+            <div class="container">
                 <div class="row">
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>Shop</h6>
-                      <ul class="links">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                      </ul>
+                    <div class="col-lg-9">
+                        <div class="blog-details-col">
+                            <div class="blog-details-top">
+                                <img
+                                    src="images/blog/big.jpg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                                <span>خلاق</span>
+                                <h3>
+                                    5 مرحله برای ساخت یک دفتر کار خانگی کارآمد
+                                </h3>
+                                <ul>
+                                    <li>توسط <a href="#">مهندس کیوان مرادی</a></li>
+                                    <li>در <a href="#">10 آبان</a></li>
+                                </ul>
+                                <p>
+                                    فضای دفترکار خانگی اهمیت زیادی در بهره‌وری و سلامت روانی فرد دارد. با داشتن یک محیط منظم و متناسب، افراد می‌توانند تمرکز بیشتری بر روی وظایف خود داشته باشند و عملکرد بهتری از خود نشان دهند.
+                                </p>
+                            </div>
+                            <div class="blog-details-middle">
+                                <p>
+                                    طراحی مناسب این فضا، از جمله نورپردازی، تهویه و چیدمان، می‌تواند تأثیر زیادی در ایجاد حس راحتی و انگیزه در کار داشته باشد. همچنین، ایجاد مرزهای واضح بین زندگی کاری و شخصی، به حفظ تعادل میان این دو کمک می‌کند. این فضا باید طوری طراحی شود که به فرد امکان استراحت و بازسازی انرژی را در کنار کار فراهم کند. 
+                                </p>
+                                <p>
+                                    در نهایت، یک فضای کار خانگی به فرد کمک می‌کند تا در شرایط راحت‌تری وظایف خود را انجام دهد و از مزایای کار در خانه بهره‌مند شود.
+
+                                </p>
+                                <div class="pair-imgs">
+                                    <div>
+                                        <img
+                                            src="images/blog/blog-1.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="images/blog/blog-2.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                                <p>
+                                    نور، گرما و مرتب بودن فضا از عواملی هستند که تاثیر عمیقی بر کیفیت کار در دفتر خانگی دارند. نور طبیعی یکی از مهم‌ترین عوامل در افزایش بهره‌وری است، زیرا نور مناسب نه تنها به چشم‌ها آسیب نمی‌زند، بلکه روحیه فرد را نیز بالا می‌برد و باعث می‌شود تمرکز بیشتری داشته باشد. استفاده از نور مصنوعی مناسب در ساعات تاریکی روز نیز بسیار مهم است. 
+                                </p>
+                                <p>
+                                    در کنار نور، دمای محیط نیز باید به گونه‌ای تنظیم شود که فرد احساس راحتی کند. گرمای بیش از حد یا سرما می‌تواند مانع از تمرکز و کاهش بهره‌وری شود. در این میان، حفظ نظم و مرتب بودن فضا نیز اهمیت فراوانی دارد؛ زمانی که محیط کاری مرتب و سازماندهی شده باشد، فرد قادر است بدون حواس‌پرتی و با تمرکز بالا به وظایف خود رسیدگی کند. بنابراین، طراحی دفتر کار خانگی باید شامل توجه به این جزئیات باشد تا فضایی آرامش‌بخش و کارآمد برای فرد ایجاد کند.
+                                </p>
+                                <div class="share-links">
+                                    <ul>
+                                        <li><i class="ti-sharethis"></i></li>
+                                        <li><a href="#">فیسبوک</a> .</li>
+                                        <li><a href="#">توییتر</a> .</li>
+                                        <li><a href="#">لیکندین</a> .</li>
+                                        <li><a href="#">پینترست</a> .</li>
+                                        <li><a href="#">ایسنتاگرام</a></li>
+                                    </ul>
+                                </div>
+                                <div class="more-blog-links">
+                                    <div>
+                                        <a href="#"
+                                            >کلید این بهره‌وری، سازمان‌دهی است.
+                                            <i class="ti-arrow-right"></i
+                                        ></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><i class="ti-arrow-left"></i> اطراف خودت را مرتب کن</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-details-comment">
+                                <h4><a href="#">1 نظر</a></h4>
+                                <div class="comment-item">
+                                    <img
+                                        src="images/blog/comment-1.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                    <h6>کیارش کلهر<a href="#">پاسخ</a></h6>
+                                    <span>2 اسفند</span>
+                                    <p>
+                                        بسیار خوشحالم که مطالب مفید واقع شده‌اند و تاثیر مثبتی بر شما داشته‌اند. امیدوارم همیشه موفق و سربلند باشید.
+                                    </p>
+                                </div>
+                                <div class="comment-item">
+                                    <img
+                                        src="images/blog/comment-2.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                    <h6>شبنم دریایی<a href="#">پاسخ</a></h6>
+                                    <span>10 بهمن</span>
+                                    <p>
+                                        ممنون از مطالب عالیتون. تاثیر خیلی زیادی روی من داشت و واقعا به دردم خورد. امیدوارم همیشه اینطور مطالب مفید و ارزشمند به اشتراک بذارید.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <h4>شما هم کامنت بگذارید</h4>
+                                <p>
+                                    ایمیل شما برای سایرین نمایش داده نخواهد شد
+                                    <br>
+                                    پر کردن بخش‌های ستاره‌دار الزامی است*
+                                </p>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <textarea
+                                                class="form-control"
+                                                rows="6"
+                                                placeholder="نظر شما"
+                                            ></textarea>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <input
+                                                class="form-control"
+                                                type="text"
+                                                placeholder="نام"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <input
+                                                class="form-control"
+                                                type="email"
+                                                placeholder="ایمیل"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <input
+                                                class="form-control"
+                                                type="text"
+                                                placeholder="سایت"
+                                            />
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <button
+                                                class="btn btn-primary"
+                                                type="submit"
+                                            >
+                                                ثبت نظر
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>About</h6>
-                      <ul class="links">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Doin' Our Bit</a></li>
-                        <li><a href="#">Customer Testimonials</a></li>
-                        <li><a href="#">Your Go-To Routine</a></li>
-                        <li><a href="#">Go-To TV</a></li>
-                        <li><a href="#">Press</a></li>
-                      </ul>
+                    <div class="col-lg-3">
+                        <div class="blog-sidebar">
+                            <div class="product-search-box">
+                                <h5 class="blog-sidebar-title">جستجو</h5>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="جستجو..."
+                                        />
+                                        <div class="input-group-text p-0">
+                                            <button
+                                                class="btn btn-primary"
+                                                type="submit"
+                                            >
+                                                <i class="ti-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-categories-box">
+                                <h5 class="blog-sidebar-title">دسته بندی</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">مشتریان<span>(45)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">نکات<span>(02)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">محصولات<span>(15)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">رفع باگ<span>(20)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">دانستنی<span>(05)</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="instagram-box">
+                                <h5 class="blog-sidebar-title">
+                                    گوشه ای از صفحه اینستاگرام
+                                </h5>
+                                <div class="instagram-images">
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/1.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/2.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/3.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/4.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/5.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/6.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/7.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/8.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/9.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag-box">
+                                <h5 class="blog-sidebar-title">Tags</h5>
+                                <ul>
+                                    <li><a href="#">نکات</a></li>
+                                    <li><a href="#">آرایشی</a></li>
+                                    <li><a href="#">سایت خرید</a></li>
+                                    <li><a href="#">بهداشتی</a></li>
+                                    <li><a href="#">نظر</a></li>
+                                    <li><a href="#">آنلاین</a></li>
+                                    <li><a href="#">مبلمان</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div class="row copyright-row">
-              <div class="col-lg-4 col-md-6">
-                <div class="copyright-col">
-                  <p>Copyrights ©2021 AGOP</p>
+        </section>
+
+        <!-- Footer Start -->
+        <footer
+            class="footer-area background-image"
+            data-src="images/bg/footer.jpg"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="newsletter-col">
+                            <h2>روزنامه</h2>
+                            <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                />
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="submit"
+                                        >
+                                            سابسکرایب
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-8 col-md-6">
-                <div class="copyright-col">
-                  <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Careers</a></li>
-                  </ul>
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="footer-col">
+                            <p>
+                                تهران - مطهری - خیابان شفا<br />بعد از آژانس
+                                آزالیا
+                            </p>
+                            <p>infooffice@gmail.com</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="ti-twitter-alt"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>Shop</h6>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="#"
+                                                >با ما در ارتباط باشید</a
+                                            >
+                                        </li>
+                                        <li><a href="#">سوالات متداول</a></li>
+                                        <li><a href="#">ارسال</a></li>
+                                        <li><a href="#">برگشت خورده</a></li>
+                                        <li><a href="#">امنیت</a></li>
+                                        <li><a href="#">شیوه استفاده</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>درباره ی ما</h6>
+                                    <ul class="links">
+                                        <li><a href="#">داستان ما</a></li>
+                                        <li><a href="#">گواهی دریافتی</a></li>
+                                        <li><a href="#">رضایت مشتری</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="row copyright-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="copyright-col">
+                            <p>Copyrights ©2021 AGOP</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="copyright-col">
+                            <ul>
+                                <li><a href="#">سیاست حفظ حریم</a></li>
+                                <li>|</li>
+                                <li><a href="#">مشاغل</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
+        <a href="#" id="back-to-top" title="Back to top"
+            ><i class="ti-arrow-up"></i
+        ></a>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+        <a href="#" id="back-to-top" title="Back to top"
+            ><i class="ti-arrow-up"></i
+        ></a>
 
-    <!-- popper.min -->
-    <script src="js/popper.min.js"></script>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- popper.min -->
+        <script src="js/popper.min.js"></script>
 
-    <!-- All Included JavaScript -->
-    <script src="js/stellarnav.min.js"></script>
-    <script src="js/full-overlay.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jquery.pogo-slider.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/css3-animate-it.js"></script>
-    <script src="js/livechat-open-close.js"></script>
-    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles-app.js"></script>
-    <script src="js/range-slider.js"></script>
-    <script src="js/slider-with-thumbnail.js"></script>
-    <script src="js/YouTubePopUp.jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Js -->
-    <script src="js/custom.js"></script>
-    
-</body>
+        <!-- All Included JavaScript -->
+        <script src="js/stellarnav.min.js"></script>
+        <script src="js/full-overlay.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jarallax.min.js"></script>
+        <script src="js/jquery.pogo-slider.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+        <script src="js/livechat-open-close.js"></script>
+        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/particles-app.js"></script>
+        <script src="js/range-slider.js"></script>
+        <script src="js/slider-with-thumbnail.js"></script>
+        <script src="js/YouTubePopUp.jquery.js"></script>
 
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+    </body>
 
-<!--  from gico.io/agop/demos/demo_1_rtl/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 16:49:57 GMT -->
+    <!--  from gico.io/agop/demos/demo_1_rtl/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 16:49:57 GMT -->
 </html>

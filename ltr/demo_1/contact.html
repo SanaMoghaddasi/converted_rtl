@@ -1,391 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
 
+        <title>Agop Minimal eCommerce HTML Template</title>
 
-<head>
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
 
-    <title>Agop Minimal eCommerce HTML Template</title>
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <!-- font-awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- themify-icons CSS -->
+        <link href="css/themify-icons.css" rel="stylesheet" />
+        <!-- owl CSS -->
+        <link href="css/owl.css" rel="stylesheet" />
+        <!-- pogo-slider CSS -->
+        <link href="css/pogo-slider.css" rel="stylesheet" />
+        <!-- stellarnav CSS -->
+        <link href="css/stellarnav.min.css" rel="stylesheet" />
+        <!-- lightbox.min CSS -->
+        <link href="css/lightbox.min.css" rel="stylesheet" />
+        <!-- animations.min CSS -->
+        <link href="css/animations.css" rel="stylesheet" />
+        <!-- YouTubePopUp CSS -->
+        <link href="css/YouTubePopUp.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet" />
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="css/responsive.css" rel="stylesheet" />
 
-    <!-- font-awesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- themify-icons CSS -->
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <!-- owl CSS -->
-    <link href="css/owl.css" rel="stylesheet">
-    <!-- pogo-slider CSS -->
-    <link href="css/pogo-slider.css" rel="stylesheet">
-    <!-- stellarnav CSS -->
-    <link href="css/stellarnav.min.css" rel="stylesheet">
-    <!-- lightbox.min CSS -->
-    <link href="css/lightbox.min.css" rel="stylesheet">
-    <!-- animations.min CSS -->
-    <link href="css/animations.css" rel="stylesheet">
-    <!-- YouTubePopUp CSS -->
-    <link href="css/YouTubePopUp.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
+    <body>
+        <!-- Live Chat Start -->
+        <button class="open-button" onclick="openForm()">
+            <i class="ti-comments"></i>
+        </button>
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Live Chat Start -->
-    <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
-
-    <div class="chat-popup" id="myForm">
-      <form action="https://gico.io/action_page.php" class="form-container">
-        <h4>Live Chat</h4>
-        <input class="form-control mb-3" type="text" placeholder="Your Name">
-        <input class="form-control mb-3" type="email" placeholder="Your Mail">
-        <textarea class="mb-3" placeholder="Type message.." name="msg" required></textarea>
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
-      </form>
-    </div>
-
-    <!-- Overlay Search box -->
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
-      <div class="overlay-content">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search Here">
-          <div class="input-group-prepend">
-            <div class="input-group-text p-0">
-                <button class="btn btn-primary" type="submit">Search</button>
-            </div>
-          </div>
+        <div class="chat-popup" id="myForm">
+            <form
+                action="https://gico.io/action_page.php"
+                class="form-container"
+            >
+                <h4>Live Chat</h4>
+                <input
+                    class="form-control mb-3"
+                    type="text"
+                    placeholder="Your Name"
+                />
+                <input
+                    class="form-control mb-3"
+                    type="email"
+                    placeholder="Your Mail"
+                />
+                <textarea
+                    class="mb-3"
+                    placeholder="Type message.."
+                    name="msg"
+                    required
+                ></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                    <i class="ti-close"></i>
+                </button>
+            </form>
         </div>
-      </div>
-    </div>
 
-    <!-- Header Start -->
-    <header class="header-area header-inner-area">
-      <div class="header-menubar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="navbar-col">
-                <div id="main-nav" class="stellarnav">
-                  <div class="header-logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
-                  </div>
-                   <ul>
-                      <li><a href="index.html">Home <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="index.html">Home 1</a></li>
-                          <li><a href="index-2.html">Home 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Shop <i class="ti-angle-down"></i></a>
-                          <ul>
-                            <li><a href="shop-1.html">Shop 1</a></li>
-                            <li><a href="shop-2.html">Shop 2</a></li>
-                            <li><a href="shop-3.html">Shop 3</a></li>
-                            <li><a href="shop-4.html">Shop 4</a></li>
-                            <li><a href="#">Shop Related Page <i class="ti-angle-down"></i></a>
-                              <ul>
-                                <li><a href="cart.html">cart page</a></li>
-                                <li><a href="checkout.html">checkout page</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                      </li>
-                      <li><a href="#">product <i class="ti-angle-down"></i></a>
-                          <ul>
-                            <li><a href="product-details-1.html">product details 1</a></li>
-                            <li><a href="product-details-2.html">product details 2</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">Blog <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="blog.html">our blog</a></li>
-                          <li><a href="blog-details.html">blog details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Pages <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="about.html">about us</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">Contact</a></li>
-                   </ul>
-                </div>
-                <div class="menu-right-side">
-                  <ul>
-                    <li><a href="#"><i class="ti-user"></i></a></li>
-                    <li>
-                      <div class="dropdown">
-                        <a href="cart.html">
-                          <i class="ti-shopping-cart"></i>
-                          <span class="cart-items">2</span>
-                        </a>
-                        <div class="cart-dropdown-content">
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>ladies bag</h6>
-                            <p>1 x $49.00</p>
-                          </div>
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>Woman Dress</h6>
-                            <p>1 x $99.00</p>
-                          </div>
-                          <div class="total">
-                            <h6><span>Total</span> $148</h6>
-                            <a href="checkout.html">Checkout</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="search-icon">
-                        <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
-                      </div>
-                    </li>
-                    <li><a href="#"><i class="ti-heart"></i></a></li>
-                  </ul>
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Page Name Start -->
-    <section class="page-name-area jarallax background-image" data-src="images/bg/4.jpg">
-      <div id="particles-js"></div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="page-name-col">
-              <h2>Contact Us</h2>
-              <p>Five years ago in a Agop shop, five friends had a drink and an idea: a humble coffee scrub</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Start -->
-    <section class="contact-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="contact-col">
-              <h2>Please do not hesitate to contact me if you have any further question</h2>
-              <div class="location-box">
-                <i class="ti-location-pin"></i>
-                <p>28 Green TowerStreet New York City, USA</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="contact-col left-space">
-              <form>
-                <input class="form-control" type="text" placeholder="Your Name">
-                <input class="form-control" type="email" placeholder="Email Address">
-                <input class="form-control" type="text" placeholder="Subject">
-                <textarea class="form-control" rows="4" placeholder="Your Messages"></textarea>
-                <button class="btn btn-primary" type="submit">Send Request</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Info Start -->
-    <section class="contact-info">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="contact-info-col">
-              <div class="info-icon">
-                <img src="images/icons/info-1.png" alt="" class="img-fluid">
-              </div>
-              <h5>Contact</h5>
-              <p>Risus commodo viverra lorem</p>
-              <p>+01682648101 </p>
-              <p>029292162</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="contact-info-col">
-              <div class="info-icon">
-                <img src="images/icons/info-2.png" alt="" class="img-fluid">
-              </div>
-              <h5>Address</h5>
-              <p>Risus commodo viverra lorem</p>
-              <p>+01682648101 </p>
-              <p>029292162</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="contact-info-col">
-              <div class="info-icon">
-                <img src="images/icons/info-3.png" alt="" class="img-fluid">
-              </div>
-              <h5>Quick mail</h5>
-              <p>luctus nec ullamcorper mattis, pulvina</p>
-              <p>infosite@gmail.com</p>
-              <p>help4612@gmail.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Start -->
-    <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-7">
-                <div class="newsletter-col">
-                  <h2>Newsletter</h2>
-                  <p>Subscribe for email updates <span>(only once a week)</span></p>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Your email">
+        <!-- Overlay Search box -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="ti-close"></i
+            ></a>
+            <div class="overlay-content">
+                <div class="input-group">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="جستجو کنید"
+                    />
                     <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <button class="btn btn-primary" type="submit">Subscribe</button>
-                      </div>
+                        <div class="input-group-text p-0">
+                            <button class="btn btn-primary" type="submit">
+                                Search
+                            </button>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-7 col-md-6">
-                <div class="footer-col">
-                  <p>75 Arlington St. Suite 500 Boston, MA<br> 02116, USA</p>
-                  <p>infooffice@gmail.com</p>
-                  <ul>
-                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                    <li><a href="#"><i class="ti-dribbble"></i></a></li>
-                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-5 col-md-6">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>Shop</h6>
-                      <ul class="links">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>About</h6>
-                      <ul class="links">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Doin' Our Bit</a></li>
-                        <li><a href="#">Customer Testimonials</a></li>
-                        <li><a href="#">Your Go-To Routine</a></li>
-                        <li><a href="#">Go-To TV</a></li>
-                        <li><a href="#">Press</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row copyright-row">
-              <div class="col-lg-4 col-md-6">
-                <div class="copyright-col">
-                  <p>Copyrights ©2021 AGOP</p>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-6">
-                <div class="copyright-col">
-                  <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Careers</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
         </div>
-    </footer>
 
-    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
+        <!-- Header Start -->
+        <header class="header-area header-inner-area">
+            <div class="header-menubar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="navbar-col">
+                                <div id="main-nav" class="stellarnav">
+                                    <div class="header-logo">
+                                        <a href="index.html"
+                                            ><img
+                                                src="images/logo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"
+                                                >Home
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="index.html"
+                                                        >Home 1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html"
+                                                        >Home 2</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >Shop
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="shop-1.html"
+                                                        >Shop 1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-2.html"
+                                                        >Shop 2</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-3.html"
+                                                        >Shop 3</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-4.html"
+                                                        >Shop 4</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        >Shop Related Page
+                                                        <i
+                                                            class="ti-angle-down"
+                                                        ></i
+                                                    ></a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="cart.html"
+                                                                >cart page</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="checkout.html"
+                                                                >checkout
+                                                                page</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >product
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="product-details-1.html"
+                                                        >product details 1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="product-details-2.html"
+                                                        >product details 2</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >Blog
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="blog.html"
+                                                        >our blog</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html"
+                                                        >blog details</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >Pages
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="about.html"
+                                                        >about us</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-right-side">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-user"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="cart.html">
+                                                    <i
+                                                        class="ti-shopping-cart"
+                                                    ></i>
+                                                    <span class="cart-items"
+                                                        >2</span
+                                                    >
+                                                </a>
+                                                <div
+                                                    class="cart-dropdown-content"
+                                                >
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-1.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>ladies bag</h6>
+                                                        <p>1 x $49.00</p>
+                                                    </div>
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-2.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>Woman Dress</h6>
+                                                        <p>1 x $99.00</p>
+                                                    </div>
+                                                    <div class="total">
+                                                        <h6>
+                                                            <span>Total</span>
+                                                            $148
+                                                        </h6>
+                                                        <a href="checkout.html"
+                                                            >Checkout</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search-icon">
+                                                <a
+                                                    href="#"
+                                                    class="closebtn"
+                                                    onclick="openNav()"
+                                                    ><i class="ti-search"></i
+                                                ></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-heart"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+        <!-- Page Name Start -->
+        <section
+            class="page-name-area jarallax background-image"
+            data-src="images/bg/4.jpg"
+        >
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="page-name-col">
+                            <h2>Contact Us</h2>
+                            <p>
+                                Five years ago in a Agop shop, five friends had
+                                a drink and an idea: a humble coffee scrub
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- popper.min -->
-    <script src="js/popper.min.js"></script>
+        <!-- Contact Start -->
+        <section class="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-col">
+                            <h2>
+                                Please do not hesitate to contact me if you have
+                                any further question
+                            </h2>
+                            <div class="location-box">
+                                <i class="ti-location-pin"></i>
+                                <p>28 Green TowerStreet New York City, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-col left-space">
+                            <form>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Your Name"
+                                />
+                                <input
+                                    class="form-control"
+                                    type="email"
+                                    placeholder="Email Address"
+                                />
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Subject"
+                                />
+                                <textarea
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Your Messages"
+                                ></textarea>
+                                <button class="btn btn-primary" type="submit">
+                                    Send Request
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Contact Info Start -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-col">
+                            <div class="info-icon">
+                                <img
+                                    src="images/icons/info-1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>Contact</h5>
+                            <p>Risus commodo viverra lorem</p>
+                            <p>+01682648101</p>
+                            <p>029292162</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-col">
+                            <div class="info-icon">
+                                <img
+                                    src="images/icons/info-2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>Address</h5>
+                            <p>Risus commodo viverra lorem</p>
+                            <p>+01682648101</p>
+                            <p>029292162</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-col">
+                            <div class="info-icon">
+                                <img
+                                    src="images/icons/info-3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>Quick mail</h5>
+                            <p>luctus nec ullamcorper mattis, pulvina</p>
+                            <p>infosite@gmail.com</p>
+                            <p>help4612@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- All Included JavaScript -->
-    <script src="js/stellarnav.min.js"></script>
-    <script src="js/full-overlay.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jquery.pogo-slider.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/css3-animate-it.js"></script>
-    <script src="js/livechat-open-close.js"></script>
-    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles-app.js"></script>
-    <script src="js/range-slider.js"></script>
-    <script src="js/slider-with-thumbnail.js"></script>
-    <script src="js/YouTubePopUp.jquery.js"></script>
+        <!-- Footer Start -->
+        <footer
+            class="footer-area background-image"
+            data-src="images/bg/footer.jpg"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="newsletter-col">
+                            <h2>Newsletter</h2>
+                            <p>
+                                Subscribe for email updates
+                                <span>(only once a week)</span>
+                            </p>
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                />
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="submit"
+                                        >
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="footer-col">
+                            <p>
+                                75 Arlington St. Suite 500 Boston, MA<br />
+                                02116, USA
+                            </p>
+                            <p>infooffice@gmail.com</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="ti-twitter-alt"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>Shop</h6>
+                                    <ul class="links">
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Shipping</a></li>
+                                        <li>
+                                            <a href="#">Returns & Refunds</a>
+                                        </li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>About</h6>
+                                    <ul class="links">
+                                        <li><a href="#">Our Story</a></li>
+                                        <li><a href="#">Doin' Our Bit</a></li>
+                                        <li>
+                                            <a href="#"
+                                                >Customer Testimonials</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#">Your Go-To Routine</a>
+                                        </li>
+                                        <li><a href="#">Go-To TV</a></li>
+                                        <li><a href="#">Press</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="copyright-col">
+                            <p>Copyrights ©2021 AGOP</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="copyright-col">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li>|</li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li>|</li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- Custom Js -->
-    <script src="js/custom.js"></script>
+        <a href="#" id="back-to-top" title="Back to top"
+            ><i class="ti-arrow-up"></i
+        ></a>
 
-</body>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
 
+        <!-- popper.min -->
+        <script src="js/popper.min.js"></script>
 
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- All Included JavaScript -->
+        <script src="js/stellarnav.min.js"></script>
+        <script src="js/full-overlay.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jarallax.min.js"></script>
+        <script src="js/jquery.pogo-slider.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+        <script src="js/livechat-open-close.js"></script>
+        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/particles-app.js"></script>
+        <script src="js/range-slider.js"></script>
+        <script src="js/slider-with-thumbnail.js"></script>
+        <script src="js/YouTubePopUp.jquery.js"></script>
+
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>

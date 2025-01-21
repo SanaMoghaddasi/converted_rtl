@@ -1,532 +1,881 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
 
-<head>
+        <title>جزییات محصول</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-    <title>Agop Minimal eCommerce HTML Template</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" />
+        <link href="css/font.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <!-- font-awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- themify-icons CSS -->
+        <link href="css/themify-icons.css" rel="stylesheet" />
+        <!-- owl CSS -->
+        <link href="css/owl.css" rel="stylesheet" />
+        <!-- pogo-slider CSS -->
+        <link href="css/pogo-slider.css" rel="stylesheet" />
+        <!-- stellarnav CSS -->
+        <link href="css/stellarnav.min.css" rel="stylesheet" />
+        <!-- lightbox.min CSS -->
+        <link href="css/lightbox.min.css" rel="stylesheet" />
+        <!-- animations.min CSS -->
+        <link href="css/animations.css" rel="stylesheet" />
+        <!-- YouTubePopUp CSS -->
+        <link href="css/YouTubePopUp.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="css/font.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet" />
 
-    <!-- font-awesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- themify-icons CSS -->
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <!-- owl CSS -->
-    <link href="css/owl.css" rel="stylesheet">
-    <!-- pogo-slider CSS -->
-    <link href="css/pogo-slider.css" rel="stylesheet">
-    <!-- stellarnav CSS -->
-    <link href="css/stellarnav.min.css" rel="stylesheet">
-    <!-- lightbox.min CSS -->
-    <link href="css/lightbox.min.css" rel="stylesheet">
-    <!-- animations.min CSS -->
-    <link href="css/animations.css" rel="stylesheet">
-    <!-- YouTubePopUp CSS -->
-    <link href="css/YouTubePopUp.css" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="css/responsive.css" rel="stylesheet" />
 
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Live Chat Start -->
-    <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
-
-    <div class="chat-popup" id="myForm">
-      <form action="https://gico.io/action_page.php" class="form-container">
-        <h4>Live Chat</h4>
-        <input class="form-control mb-3" type="text" placeholder="Your Name">
-        <input class="form-control mb-3" type="email" placeholder="Your Mail">
-        <textarea class="mb-3" placeholder="Type message.." name="msg" required></textarea>
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
-      </form>
-    </div>
-
-    <!-- Overlay Search box -->
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
-      <div class="overlay-content">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text p-0">
-                <button class="btn btn-primary" type="submit">Search</button>
-            </div>
-          </div>
-          <input type="text" class="form-control" placeholder="Search Here">
+    <body>
+           <!-- Live Chat Start -->
+           <button class="open-button" onclick="openForm()">
+            <i class="ti-comments"></i>
+        </button>
+    
+        <div class="chat-popup" id="myForm">
+            <form
+                action="https://gico.io/action_page.php"
+                class="form-container"
+            >
+                <h4>چت انلاین</h4>
+                <input
+                    class="form-control mb-3"
+                    type="text"
+                    placeholder="نام"
+                />
+                <input
+                    class="form-control mb-3"
+                    type="email"
+                    placeholder="ایمیل"
+                />
+                <textarea
+                    class="mb-3"
+                    placeholder="Type message.."
+                    name="msg"
+                    required
+                ></textarea>
+                <button type="submit" class="btn">ارسال</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                    <i class="ti-close"></i>
+                </button>
+            </form>
         </div>
-      </div>
-    </div>
-
-    <!-- Header Start -->
-    <header class="header-area header-inner-area">
-      <div class="header-menubar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="navbar-col">
-                <div id="main-nav" class="stellarnav">
-                  <div class="header-logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
-                  </div>
-                   <ul>
-                      <li><a href="index.html">Home <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="index.html">Home 1</a></li>
-                          <li><a href="index-2.html">Home 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Shop <i class="ti-angle-down"></i></a>
-                          <ul>
-                            <li><a href="shop-1.html">Shop 1</a></li>
-                            <li><a href="shop-2.html">Shop 2</a></li>
-                            <li><a href="shop-3.html">Shop 3</a></li>
-                            <li><a href="shop-4.html">Shop 4</a></li>
-                            <li><a href="#">Shop Related Page <i class="ti-angle-down"></i></a>
-                              <ul>
-                                <li><a href="cart.html">cart page</a></li>
-                                <li><a href="checkout.html">checkout page</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                      </li>
-                      <li><a href="#">product <i class="ti-angle-down"></i></a>
-                          <ul>
-                            <li><a href="product-details-1.html">product details 1</a></li>
-                            <li><a href="product-details-2.html">product details 2</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">Blog <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="blog.html">our blog</a></li>
-                          <li><a href="blog-details.html">blog details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Pages <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="about.html">about us</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">Contact</a></li>
-                   </ul>
-                </div>
-                <div class="menu-right-side">
-                  <ul>
-                    <li><a href="#"><i class="ti-user"></i></a></li>
-                    <li>
-                      <div class="dropdown">
-                        <a href="cart.html">
-                          <i class="ti-shopping-cart"></i>
-                          <span class="cart-items">2</span>
-                        </a>
-                        <div class="cart-dropdown-content">
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>ladies bag</h6>
-                            <p>1 x $49.00</p>
-                          </div>
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>Woman Dress</h6>
-                            <p>1 x $99.00</p>
-                          </div>
-                          <div class="total">
-                            <h6><span>Total</span> $148</h6>
-                            <a href="checkout.html">Checkout</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="search-icon">
-                        <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
-                      </div>
-                    </li>
-                    <li><a href="#"><i class="ti-heart"></i></a></li>
-                  </ul>
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Page Name Start -->
-    <section class="page-name-area jarallax background-image" data-src="images/bg/4.jpg">
-      <div id="particles-js"></div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="page-name-col">
-              <h2>product details 1</h2>
-              <p>Five years ago in a Agop shop, five friends had a drink and an idea: a humble coffee scrub</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product details two Start -->
-    <section class="product-detais-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="product-detais-col">
-              <div class="product-detais-slider">
-                <div class="mySlides">
-                  <img src="images/product/slide-1.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="mySlides">
-                  <img src="images/product/slide-2.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="mySlides">
-                  <img src="images/product/slide-3.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="mySlides">
-                  <img src="images/product/slide-4.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="thumbnail-row">
-                  <div class="column">
-                    <img class="demo cursor img-fluid" src="images/product/thumbnail-1.jpg" onclick="currentSlide(1)" alt="Product view 1">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor img-fluid" src="images/product/thumbnail-2.jpg" onclick="currentSlide(2)" alt="Product view 2">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor img-fluid" src="images/product/thumbnail-3.jpg" onclick="currentSlide(3)" alt="Product view 3">
-                  </div>
-                  <div class="column">
-                    <img class="demo cursor img-fluid" src="images/product/thumbnail-4.jpg" onclick="currentSlide(4)" alt="Product view 4">
-                  </div>
-                  <a class="prev" onclick="plusSlides(-1)"><i class="ti-arrow-circle-left"></i></a>
-                  <a class="next" onclick="plusSlides(1)"><i class="ti-arrow-circle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="product-text-col">
-              <h3>Tinytot Waterproof Backpack</h3>
-              <h2><span>$110.00</span> $70.00</h2>
-              <div class="riview-stars">
-                <ul>
-                  <li><a href="#"><i class="fas fa-star"></i></a></li>
-                  <li><a href="#"><i class="fas fa-star"></i></a></li>
-                  <li><a href="#"><i class="fas fa-star"></i></a></li>
-                  <li><a href="#"><i class="fas fa-star"></i></a></li>
-                  <li><a href="#"><i class="fas fa-star-half-alt"></i></a></li>
-                  <li><a href="#">6 Ratings & 1 Reviews</a></li>
-                </ul>
-              </div>
-              <div class="product-quantity">
-                <input id="demo_vertical"
-                 type="text"
-                 value="0"
-                 name="demo_vertical"
-                 data-bts-min="0"
-                 data-bts-max="100"
-                 data-bts-init-val=""
-                 data-bts-step="1"
-                 data-bts-decimal="0"
-                 data-bts-step-interval="100"
-                 data-bts-force-step-divisibility="round"
-                 data-bts-step-interval-delay="500"
-                 data-bts-prefix=""
-                 data-bts-postfix=""
-                 data-bts-prefix-extra-class=""
-                 data-bts-postfix-extra-class=""
-                 data-bts-booster="true"
-                 data-bts-boostat="10"
-                 data-bts-max-boosted-step="false"
-                 data-bts-mousewheel="true"
-                 data-bts-button-down-class="btn btn-secondary"
-                 data-bts-button-up-class="btn btn-secondary"
-                  />
-                  <div class="my-btns">
-                    <a href="cart.html">Add to Card</a>
-                    <a href="#">Buy Now</a>
-                  </div>
-              </div>
-              <p>This 12.5 litre hiking backpack has the perfect capacity for carrying all your essentials when you are out for just a few hours: a picnic, water and a windcheater! Made of High grade PU coated polyester Fabric. Highly Durable And Long-Lasting Performance.</p>
-              <div class="">
-                <ul>
-                  <li>SKU: 0112</li>
-                  <li>Category: backoack bag</li>
-                  <li>Tags: bag, travel bag</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-info-row">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="product-info-col">
-                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Overview</a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Description</a>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Return Policy</a>
-                  </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active overview-content" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <p>This 12.5 litre hiking backpack has the perfect capacity for carrying all your essentials when you are out for just a few hours: a picnic, water and a windcheater! Made of High grade PU coated polyester Fabric. Highly Durable And Long-Lasting Performance. Unisex Multi-purpose Daypack</p>
-                    <p>This 12.5 litre hiking backpack has the perfect capacity for carrying all your essentials when you are out for just a few hours: a picnic, water and a windcheater! Made of High grade PU coated polyester Fabric. Highly Durable And Long-Lasting Performance. Unisex Multi-purpose Daypack</p>
-                  </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, odit commodi? Voluptates minus laboriosam voluptatem officia, facilis at vitae dolores? Autem, minus? Cumque laudantium tempora iste veritatis! Animi et sequi cupiditate nisi odit ab recusandae. Aperiam deserunt impedit magnam maxime et, quos natus quasi consequatur sed quibusdam consequuntur temporibus. Quas.</p>
-                    <ul class="mt-3 pl-4">
-                      <li>Labore, odit commodi? Voluptates minus</li>
-                      <li>Lorem ipsum dolor sit, amet</li>
-                      <li>Aperiam deserunt impedit magnam maxime</li>
-                      <li>Lorem ipsum dolor sit, amet</li>
-                      <li>Labore, odit commodi? Voluptates minus</li>
-                    </ul>
-                  </div>
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, odit commodi? Voluptates minus laboriosam voluptatem officia, facilis at vitae dolores? Autem, minus? Cumque laudantium tempora iste veritatis! Animi et sequi cupiditate nisi odit ab recusandae. Aperiam deserunt impedit magnam maxime et, quos natus quasi consequatur sed quibusdam consequuntur temporibus. Quas.</p>
-                    <ul class="mt-3 pl-4">
-                      <li>Labore, odit commodi? Voluptates minus</li>
-                      <li>Lorem ipsum dolor sit, amet</li>
-                      <li>Aperiam deserunt impedit magnam maxime</li>
-                      <li>Lorem ipsum dolor sit, amet</li>
-                      <li>Labore, odit commodi? Voluptates minus</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Related products Start -->
-    <section class="related-products-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="related-products-col">
-              <h4 class="text-center mb-5">Related products</h4>
-              <div class="related-products-slider">
-                <div class="related-products-item have-img">
-                  <div class="hover-img">
-                    <img src="images/product/product-1.jpg" alt="" class="img-fluid">
-                  </div>
-                  <h4><a href="product-details-1.html">Killer Waterproof Backpack</a></h4>
-                  <p>$32.30</p>
-                </div>
-                <div class="related-products-item have-img">
-                  <div class="hover-img">
-                    <img src="images/product/product-2.jpg" alt="" class="img-fluid">
-                  </div>
-                  <h4><a href="product-details-1.html">Killer Waterproof Backpack</a></h4>
-                  <p>$32.30</p>
-                </div>
-                <div class="related-products-item have-img">
-                  <div class="hover-img">
-                    <img src="images/product/product-3.jpg" alt="" class="img-fluid">
-                  </div>
-                  <h4><a href="product-details-1.html">Killer Waterproof Backpack</a></h4>
-                  <p>$32.30</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Facility Start -->
-    <section class="facility-area pt-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/1.png" alt="" class="img-fluid">
-              </div>
-              <h5>Connect with verified sellers</h5>
-              <p>Tell us your requirement & let our experts find verified sellers for you</p>
-              <a href="#" class="btn">Verified sellers</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/2.png" alt="" class="img-fluid">
-              </div>
-              <h5>Payment Protection</h5>
-              <p>Tell us your requirement & let our experts find verified sellers for you</p>
-              <a href="#" class="btn">Learn more</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/3.png" alt="" class="img-fluid">
-              </div>
-              <h5>Download our App</h5>
-              <p>Tell us your requirement & let our experts find verified sellers for you</p>
-              <a href="#" class="btn">Download apps</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Start -->
-    <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-7">
-                <div class="newsletter-col">
-                  <h2>Newsletter</h2>
-                  <p>Subscribe for email updates <span>(only once a week)</span></p>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Your email">
+    
+        <!-- Overlay Search box -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="ti-close"></i
+            ></a>
+            <div class="overlay-content">
+                <div class="input-group">
                     <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <button class="btn btn-primary" type="submit">Subscribe</button>
-                      </div>
+                        <div class="input-group-text p-0">
+                            <button class="btn btn-primary" type="submit">
+                                جستجو
+                            </button>
+                        </div>
                     </div>
-                  </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="جستجو کنید"
+                    />
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-7 col-md-6">
-                <div class="footer-col">
-                  <p>75 Arlington St. Suite 500 Boston, MA<br> 02116, USA</p>
-                  <p>infooffice@gmail.com</p>
-                  <ul>
-                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                    <li><a href="#"><i class="ti-dribbble"></i></a></li>
-                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-5 col-md-6">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>Shop</h6>
-                      <ul class="links">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>About</h6>
-                      <ul class="links">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Doin' Our Bit</a></li>
-                        <li><a href="#">Customer Testimonials</a></li>
-                        <li><a href="#">Your Go-To Routine</a></li>
-                        <li><a href="#">Go-To TV</a></li>
-                        <li><a href="#">Press</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row copyright-row">
-              <div class="col-lg-4 col-md-6">
-                <div class="copyright-col">
-                  <p>Copyrights ©2021 AGOP</p>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-6">
-                <div class="copyright-col">
-                  <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Careers</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
         </div>
-    </footer>
+    
+        <!-- Header Start -->
+        <header class="header-area header-inner-area">
+            <div class="header-menubar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="navbar-col">
+                                <div id="main-nav" class="stellarnav">
+                                    <div class="header-logo">
+                                        <a href="index.html"
+                                            ><img
+                                                src="images/logo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"
+                                                ><i class="ti-angle-down"></i
+                                                >خانه</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="index.html"
+                                                        >پیج اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html"
+                                                        >پیج دوم</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop-left">
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >فروشگاه</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="shop-1.html"
+                                                        >فروشگاه اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-2.html"
+                                                        >فروشگاه دوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-3.html"
+                                                        >فروشگاه سوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-4.html"
+                                                        >فروشگاه چهارم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><i
+                                                            class="ti-angle-down"
+                                                        ></i
+                                                        >صفحات مرتبط</a
+                                                    >
+                                                    <ul>
+                                                        <li>
+                                                            <a href="cart.html"
+                                                                >سبد خرید</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="checkout.html"
+                                                                >صفحه نهایی</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >محصول</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="product-details-1.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="product-details-2.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >بلاگ</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="blog.html"
+                                                        >بلاگ شما</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html"
+                                                        >جزییات بلاگ</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >صفحات</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="about.html"
+                                                        >درباره ما</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html"
+                                                >تماس با ما</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-right-side">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-user"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="cart.html">
+                                                    <i
+                                                        class="ti-shopping-cart"
+                                                    ></i>
+                                                    <span class="cart-items"
+                                                        >2</span
+                                                    >
+                                                </a>
+                                                <div
+                                                    class="cart-dropdown-content"
+                                                >
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-1.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>کیف زنانه</h6>
+                                                        <p>1 x تومان 49.00</p>
+                                                    </div>
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-2.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>لباس زنانه</h6>
+                                                        <p>1 x تومان 99.00</p>
+                                                    </div>
+                                                    <div class="total">
+                                                        <h6>
+                                                            <span>کل</span> تومان 148
+                                                        </h6>
+                                                        <a href="checkout.html"
+                                                            >پرداخت</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search-icon">
+                                                <a
+                                                    href="#"
+                                                    class="closebtn"
+                                                    onclick="openNav()"
+                                                    ><i class="ti-search"></i
+                                                ></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-heart"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- Page Name Start -->
+        <section
+            class="page-name-area jarallax background-image"
+            data-src="images/bg/4.jpg"
+        >
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="page-name-col">
+                            <h2>جزییات محصول</h2>
+                            <p>پرداختی سریع و آسان و امن را با ما تجربه کنید
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product details two Start -->
+        <section class="product-detais-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-detais-col">
+                            <div class="product-detais-slider">
+                                <div class="mySlides">
+                                    <img
+                                        src="images/product/slide-1.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="mySlides">
+                                    <img
+                                        src="images/product/slide-2.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="mySlides">
+                                    <img
+                                        src="images/product/slide-3.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="mySlides">
+                                    <img
+                                        src="images/product/slide-4.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="thumbnail-row">
+                                    <div class="column">
+                                        <img
+                                            class="demo cursor img-fluid"
+                                            src="images/product/thumbnail-1.jpg"
+                                            onclick="currentSlide(1)"
+                                            alt="Product view 1"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            class="demo cursor img-fluid"
+                                            src="images/product/thumbnail-2.jpg"
+                                            onclick="currentSlide(2)"
+                                            alt="Product view 2"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            class="demo cursor img-fluid"
+                                            src="images/product/thumbnail-3.jpg"
+                                            onclick="currentSlide(3)"
+                                            alt="Product view 3"
+                                        />
+                                    </div>
+                                    <div class="column">
+                                        <img
+                                            class="demo cursor img-fluid"
+                                            src="images/product/thumbnail-4.jpg"
+                                            onclick="currentSlide(4)"
+                                            alt="Product view 4"
+                                        />
+                                    </div>
+                                    <a class="prev" onclick="plusSlides(-1)"
+                                        ><i class="ti-arrow-circle-left"></i
+                                    ></a>
+                                    <a class="next" onclick="plusSlides(1)"
+                                        ><i class="ti-arrow-circle-right"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product-text-col">
+                            <h3>کیف ضد آب</h3>
+                            <h2><span> تومان110.00</span>  تومان70.00</h2>
+                            <div class="riview-stars">
+                                <ul>
+                                    <li>
+                                        <a href="#"
+                                            ><i class="fas fa-star"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><i class="fas fa-star"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><i class="fas fa-star"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><i class="fas fa-star"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            ><i class="fas fa-star-half-alt"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">یک نظر و 6 امتیاز داده شده</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product-quantity">
+                                <input
+                                    id="demo_vertical"
+                                    type="text"
+                                    value="0"
+                                    name="demo_vertical"
+                                    data-bts-min="0"
+                                    data-bts-max="100"
+                                    data-bts-init-val=""
+                                    data-bts-step="1"
+                                    data-bts-decimal="0"
+                                    data-bts-step-interval="100"
+                                    data-bts-force-step-divisibility="round"
+                                    data-bts-step-interval-delay="500"
+                                    data-bts-prefix=""
+                                    data-bts-postfix=""
+                                    data-bts-prefix-extra-class=""
+                                    data-bts-postfix-extra-class=""
+                                    data-bts-booster="true"
+                                    data-bts-boostat="10"
+                                    data-bts-max-boosted-step="false"
+                                    data-bts-mousewheel="true"
+                                    data-bts-button-down-class="btn btn-secondary"
+                                    data-bts-button-up-class="btn btn-secondary"
+                                />
+                                <div class="my-btns">
+                                    <a href="cart.html">افزودن به سبد</a>
+                                    <a href="#">همین حالا سفارش دهید</a>
+                                </div>
+                            </div>
+                            <p>
+                                کیف آبی مدل کتان یک انتخاب عالی برای همه کسانی است که به دنبال کیف جادار، شیک و کاربردی هستند. این کیف با طراحی ساده و رنگ آبی جذاب خود، برای هر سنی و هر نوع استفاده‌ای مناسب است. چه برای مدرسه، دانشگاه، محیط‌های کاری یا استفاده روزمره، این کیف تمامی نیازهای شما را برآورده می‌کند.
+                            </p>
+                            <div class="">
+                                <ul>
+                                    <li>کالکشن: کیف همه کاره</li>
+                                    <li>تگ: کیف - یونیسکس</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info-row">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product-info-col">
+                                <ul
+                                    class="nav nav-pills justify-content-center"
+                                    id="pills-tab"
+                                    role="tablist"
+                                >
+                                    <li class="nav-item" role="presentation">
+                                        <a
+                                            class="nav-link active"
+                                            id="pills-home-tab"
+                                            data-toggle="pill"
+                                            href="#pills-home"
+                                            role="tab"
+                                            aria-controls="pills-home"
+                                            aria-selected="true"
+                                            >بررسی کلی</a
+                                        >
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a
+                                            class="nav-link"
+                                            id="pills-profile-tab"
+                                            data-toggle="pill"
+                                            href="#pills-profile"
+                                            role="tab"
+                                            aria-controls="pills-profile"
+                                            aria-selected="false"
+                                            >توضیحات</a
+                                        >
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a
+                                            class="nav-link"
+                                            id="pills-contact-tab"
+                                            data-toggle="pill"
+                                            href="#pills-contact"
+                                            role="tab"
+                                            aria-controls="pills-contact"
+                                            aria-selected="false"
+                                            >سیاست بازگشت کالا</a
+                                        >
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div
+                                        class="tab-pane fade show active overview-content"
+                                        id="pills-home"
+                                        role="tabpanel"
+                                        aria-labelledby="pills-home-tab"
+                                    >
 
-    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
+                                        <p>
+                                            این کوله‌پشتی 12.5 لیتری کوهنوردی، با ظرفیت ایده‌آل خود، بهترین انتخاب برای حمل وسایل ضروری‌تان در مدت زمان کوتاه است: یک پیک‌نیک خوش‌طعم، آب و یک بادگیر! این کوله از پارچه‌ی پلی‌استر با پوشش PU با کیفیت عالی ساخته شده که آن را بسیار مقاوم و بادوام می‌کند. این کوله‌پشتی نه تنها به شما امکان حمل راحت و سبک وسایل را می‌دهد، بلکه به دلیل جنس مقاومش، در برابر شرایط مختلف محیطی دوام زیادی دارد و همراهی مطمئن در ماجراجویی‌های شما خواهد بود.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade"
+                                        id="pills-profile"
+                                        role="tabpanel"
+                                        aria-labelledby="pills-profile-tab"
+                                    >
+                                        <p>
+                                            طراحی و جنس:
+جنس بدنه: کیف از جنس کتان با کیفیت بالا ساخته شده است که مقاومت زیادی در برابر سایش و پارگی دارد. سطح آن به گونه‌ای طراحی شده که در برابر آب مقاوم است و به راحتی قابل تمیز کردن است.
+رنگ و ظاهر: رنگ آبی تیره این کیف نه تنها با بیشتر استایل‌ها سازگار است بلکه در عین حال ظاهری مدرن و شیک به آن می‌بخشد. این رنگ برای هر دو فصل تابستان و زمستان مناسب است.
+طراحی کلاسیک و مینیمالیستی: خطوط ساده و طراحی هوشمندانه این کیف باعث می‌شود که به راحتی با انواع لباس‌ها و استایل‌های مختلف هماهنگ شود.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="tab-pane fade"
+                                        id="pills-contact"
+                                        role="tabpanel"
+                                        aria-labelledby="pills-contact-tab"
+                                    >
+                                        <p>
+                                            ما در [نام فروشگاه] متعهد به ارائه محصولات با کیفیت بالا و رضایت مشتریان عزیز هستیم. در صورتی که از خرید خود راضی نباشید، می‌توانید کالای خود را طبق شرایط زیر بازگشت دهید:
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
 
-    <!-- popper.min -->
-    <script src="js/popper.min.js"></script>
+                                        </p>
+                                        <ul class="mt-3 pl-4">
+                                            <li>
+                                                مدت زمان بازگشت: شما می‌توانید کالای خود را حداکثر تا 14 روز پس از دریافت آن بازگشت دهید.
+                                            </li>
+                                            <li>شرایط بازگشت: برای بازگشت کالا، محصول باید در شرایط نو و دست نخورده، همراه با بسته‌بندی اصلی و برچسب‌ها به حالت اولیه بازگردانده شود. همچنین، فاکتور خرید باید همراه با کالا ارسال گردد.</li>
+                                            <li>
+                                                هزینه بازگشت: هزینه ارسال کالای بازگشتی به عهده مشتری است، مگر اینکه کالا معیوب باشد یا مغایر با سفارش شما ارسال شده باشد.
+                                            </li>
+                                            <li>پرداخت هزینه بازگشت: پس از تایید بازگشت کالا، مبلغ پرداختی شما ظرف 7 روز کاری به حساب شما بازگردانده خواهد شد.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Related products Start -->
+        <section class="related-products-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="related-products-col">
+                            <h4 class="text-center mb-5">محصولات مشابه</h4>
+                            <div class="related-products-slider">
+                                <div class="related-products-item have-img">
+                                    <div class="hover-img">
+                                        <img
+                                            src="images/product/product-1.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >کیف ضدآب با دوام</a
+                                        >
+                                    </h4>
+                                    <p>تومان 32.30</p>
+                                </div>
+                                <div class="related-products-item have-img">
+                                    <div class="hover-img">
+                                        <img
+                                            src="images/product/product-2.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >صندلی چوبی پلاستیکی</a
+                                        >
+                                    </h4>
+                                    <p>تومان 32.30</p>
+                                </div>
+                                <div class="related-products-item have-img">
+                                    <div class="hover-img">
+                                        <img
+                                            src="images/product/product-3.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >تت بگ</a
+                                        >
+                                    </h4>
+                                    <p>تومان 32.30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- All Included JavaScript -->
-    <script src="js/stellarnav.min.js"></script>
-    <script src="js/full-overlay.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jquery.pogo-slider.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/css3-animate-it.js"></script>
-    <script src="js/livechat-open-close.js"></script>
-    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles-app.js"></script>
-    <script src="js/range-slider.js"></script>
-    <script src="js/slider-with-thumbnail.js"></script>
-    <script src="js/YouTubePopUp.jquery.js"></script>
+        <section class="facility-area pt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>با ما در تماس باشید</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">متخصصین مجرب</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>امنیت تسویه</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">بیشتر بخوانید</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>دانلود برنامه</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">دانلود برنامه</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Custom Js -->
-    <script src="js/custom.js"></script>
+        <!-- Footer Start -->
+        <footer
+            class="footer-area background-image"
+            data-src="images/bg/footer.jpg"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="newsletter-col">
+                            <h2>روزنامه</h2>
+                            <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                />
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="submit"
+                                        >
+                                            سابسکرایب
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="footer-col">
+                            <p>
+                                تهران - مطهری - خیابان شفا<br />بعد از آژانس
+                                آزالیا
+                            </p>
+                            <p>infooffice@gmail.com</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="ti-twitter-alt"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>فروشگاه</h6>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="#"
+                                                >با ما در ارتباط باشید</a
+                                            >
+                                        </li>
+                                        <li><a href="#">سوالات متداول</a></li>
+                                        <li><a href="#">ارسال</a></li>
+                                        <li><a href="#">برگشت خورده</a></li>
+                                        <li><a href="#">امنیت</a></li>
+                                        <li><a href="#">شیوه استفاده</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>درباره ی ما</h6>
+                                    <ul class="links">
+                                        <li><a href="#">داستان ما</a></li>
+                                        <li><a href="#">گواهی دریافتی</a></li>
+                                        <li><a href="#">رضایت مشتری</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="copyright-col">
+                            <p>Copyrights ©1398 AGOP</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="copyright-col">
+                            <ul>
+                                <li><a href="#">سیاست حفظ حریم</a></li>
+                                <li>|</li>
+                                <li><a href="#">مشاغل</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-</body>
+        <a href="#" id="back-to-top" title="Back to top"
+            ><i class="ti-arrow-up"></i
+        ></a>
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- popper.min -->
+        <script src="js/popper.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- All Included JavaScript -->
+        <script src="js/stellarnav.min.js"></script>
+        <script src="js/full-overlay.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jarallax.min.js"></script>
+        <script src="js/jquery.pogo-slider.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+        <script src="js/livechat-open-close.js"></script>
+        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/particles-app.js"></script>
+        <script src="js/range-slider.js"></script>
+        <script src="js/slider-with-thumbnail.js"></script>
+        <script src="js/YouTubePopUp.jquery.js"></script>
+
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>

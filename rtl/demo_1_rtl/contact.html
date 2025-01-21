@@ -1,388 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
 
+        <title>تماس با ما</title>
 
-<head>
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" />
+        <link href="css/font.css" rel="stylesheet" />
 
-    <title>Agop Minimal eCommerce HTML Template</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <!-- font-awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- themify-icons CSS -->
+        <link href="css/themify-icons.css" rel="stylesheet" />
+        <!-- owl CSS -->
+        <link href="css/owl.css" rel="stylesheet" />
+        <!-- pogo-slider CSS -->
+        <link href="css/pogo-slider.css" rel="stylesheet" />
+        <!-- stellarnav CSS -->
+        <link href="css/stellarnav.min.css" rel="stylesheet" />
+        <!-- lightbox.min CSS -->
+        <link href="css/lightbox.min.css" rel="stylesheet" />
+        <!-- animations.min CSS -->
+        <link href="css/animations.css" rel="stylesheet" />
+        <!-- YouTubePopUp CSS -->
+        <link href="css/YouTubePopUp.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="css/font.css" rel="stylesheet">
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet" />
 
-    <!-- font-awesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- themify-icons CSS -->
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <!-- owl CSS -->
-    <link href="css/owl.css" rel="stylesheet">
-    <!-- pogo-slider CSS -->
-    <link href="css/pogo-slider.css" rel="stylesheet">
-    <!-- stellarnav CSS -->
-    <link href="css/stellarnav.min.css" rel="stylesheet">
-    <!-- lightbox.min CSS -->
-    <link href="css/lightbox.min.css" rel="stylesheet">
-    <!-- animations.min CSS -->
-    <link href="css/animations.css" rel="stylesheet">
-    <!-- YouTubePopUp CSS -->
-    <link href="css/YouTubePopUp.css" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="css/responsive.css" rel="stylesheet" />
 
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <body>
+        <!-- Live Chat Start -->
+        <button class="open-button" onclick="openForm()">
+            <i class="ti-comments"></i>
+        </button>
 
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-  <!-- Live Chat Start -->
-  <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
-
-  <div class="chat-popup" id="myForm">
-    <form action="https://gico.io/action_page.php" class="form-container">
-      <h4>چت انلاین</h4>
-      <input class="form-control mb-3" type="text" placeholder="Your Name">
-      <input class="form-control mb-3" type="email" placeholder="Your Mail">
-      <textarea class="mb-3" placeholder="Type message.." name="msg" required></textarea>
-      <button type="submit" class="btn">ارسال</button>
-      <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
-    </form>
-  </div>
-
-  <!-- Overlay Search box -->
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
-    <div class="overlay-content">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text p-0">
-              <button class="btn btn-primary" type="submit">جستجو</button>
-          </div>
+        <div class="chat-popup" id="myForm">
+            <form
+                action="https://gico.io/action_page.php"
+                class="form-container"
+            >
+                <h4>چت انلاین</h4>
+                <input
+                    class="form-control mb-3"
+                    type="text"
+                    placeholder="Your Name"
+                />
+                <input
+                    class="form-control mb-3"
+                    type="email"
+                    placeholder="Your Mail"
+                />
+                <textarea
+                    class="mb-3"
+                    placeholder="Type message.."
+                    name="msg"
+                    required
+                ></textarea>
+                <button type="submit" class="btn">ارسال</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                    <i class="ti-close"></i>
+                </button>
+            </form>
         </div>
-        <input type="text" class="form-control" placeholder="Search Here">
-      </div>
-    </div>
-  </div>
 
-   <!-- Header Start -->
-   <header class="header-area header-inner-area">
-    <div class="header-menubar">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="navbar-col">
-              <div id="main-nav" class="stellarnav">
-                <div class="header-logo">
-                  <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
-                </div>
-                 <ul>
-                    <li><a href="index.html"><i class="ti-angle-down"></i>خانه</a>
-                      <ul>
-                        <li><a href="index.html">پیج اول</a></li>
-                        <li><a href="index-2.html">پیج دوم</a></li>
-                      </ul>
-                    </li>
-                    <li class="drop-left"><a href="#"><i class="ti-angle-down"></i>فروشگاه</a>
-                        <ul>
-                          <li><a href="shop-1.html">فروشگاه اول</a></li>
-                          <li><a href="shop-2.html">فروشگاه دوم</a></li>
-                          <li><a href="shop-3.html">فروشگاه سوم</a></li>
-                          <li><a href="shop-4.html">فروشگاه چهارم</a></li>
-                          <li><a href="#"><i class="ti-angle-down"></i>صفحات مرتبط</a>
-                            <ul>
-                              <li><a href="cart.html">سبد خرید</a></li>
-                              <li><a href="checkout.html">صفحه نهایی</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="ti-angle-down"></i>محصول</a>
-                        <ul>
-                          <li><a href="product-details-1.html">جزییات محصول</a></li>
-                          <li><a href="product-details-2.html">جزییات محصول</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="ti-angle-down"></i>بلاگ</a>
-                      <ul>
-                        <li><a href="blog.html">بلاگ شما</a></li>
-                        <li><a href="blog-details.html">جزییات بلاگ</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#"><i class="ti-angle-down"></i>صفحات</a>
-                      <ul>
-                        <li><a href="about.html">درباره ما</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="contact.html">تماس با ما</a></li>
-                 </ul>
-              </div>
-              <div class="menu-right-side">
-                <ul>
-                  <li><a href="#"><i class="ti-user"></i></a></li>
-                  <li>
-                    <div class="dropdown">
-                      <a href="cart.html">
-                        <i class="ti-shopping-cart"></i>
-                        <span class="cart-items">2</span>
-                      </a>
-                      <div class="cart-dropdown-content">
-                        <div class="cart-dropdown-item">
-                          <div class="cart-dropdown-img">
-                            <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
-                            <a href="#"><i class="ti-close"></i></a>
-                          </div>
-                          <h6>کیف زنانه</h6>
-                          <p>1 x $49.00</p>
-                        </div>
-                        <div class="cart-dropdown-item">
-                          <div class="cart-dropdown-img">
-                            <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
-                            <a href="#"><i class="ti-close"></i></a>
-                          </div>
-                          <h6>لباس زنانه</h6>
-                          <p>1 x $99.00</p>
-                        </div>
-                        <div class="total">
-                          <h6><span>کل</span> $148</h6>
-                          <a href="checkout.html">پرداخت</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="search-icon">
-                      <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
-                    </div>
-                  </li>
-                  <li><a href="#"><i class="ti-heart"></i></a></li>
-                </ul>
-               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-    <!-- Page Name Start -->
-    <section class="page-name-area jarallax background-image" data-src="images/bg/4.jpg">
-      <div id="particles-js"></div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="page-name-col">
-              <h2>با ما در ارتباط باشید</h2>
-              <p>پنج دوست در کافه‌ای دنج نشسته بودند، فنجان‌های قهوه‌شان را برمی‌داشتند و با شور و شوق از ساختن این سایت حرف می‌زدند؛ جایی که حالا شما در حال خواندن این متن هستید.
-
-
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Start -->
-    <section class="contact-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="contact-col">
-              <div class="location-box">
-                <i class="ti-location-pin"></i>
-                <p>تهران, مطهری</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="contact-col left-space">
-              <form>
-                <input class="form-control" type="text" placeholder="نام">
-                <input class="form-control" type="email" placeholder="آدرس ایمیل">
-                <input class="form-control" type="text" placeholder="موضوع">
-                <textarea class="form-control" rows="4" placeholder="پیام خود را بنویسید"></textarea>
-                <button class="btn btn-primary" type="submit">ارسال درخواست</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Info Start -->
-    <section class="contact-info">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="contact-info-col">
-              <div class="info-icon">
-                <img src="images/icons/info-1.png" alt="" class="img-fluid">
-              </div>
-              <h5>تلفن</h5>
-              <p>پاسخگویی 24 ساعته</p>
-              <p>+01682648101 </p>
-              <p>029292162</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="contact-info-col">
-              <div class="info-icon">
-                <img src="images/icons/info-2.png" alt="" class="img-fluid">
-              </div>
-              <h5>آدرس</h5>
-              <p>حضورا در خدمت هستیم</p>
-              <p>+01682648101 </p>
-              <p>029292162</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="contact-info-col">
-              <div class="info-icon">
-                <img src="images/icons/info-3.png" alt="" class="img-fluid">
-              </div>
-              <h5>ایمیل</h5>
-              <p>سریع ترین زمان</p>
-              <p>infosite@gmail.com</p>
-              <p>help4612@gmail.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Start -->
-    <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
-      <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-7">
-              <div class="newsletter-col">
-                <h2>روزنامه</h2>
-                <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
+        <!-- Overlay Search box -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="ti-close"></i
+            ></a>
+            <div class="overlay-content">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Your email">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <button class="btn btn-primary" type="submit">سابسکرایب</button>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text p-0">
+                            <button class="btn btn-primary" type="submit">
+                                جستجو
+                            </button>
+                        </div>
                     </div>
-                  </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="جستجو کنید"
+                    />
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-7 col-md-6">
-              <div class="footer-col">
-                <p>تهران - مطهری - خیابان شفا<br>بعد از آژانس آزالیا</p>
-                <p>infooffice@gmail.com</p>
-                <ul>
-                  <li><a href="#"><i class="ti-facebook"></i></a></li>
-                  <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                  <li><a href="#"><i class="ti-dribbble"></i></a></li>
-                  <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-6">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="footer-col">
-                    <h6>Shop</h6>
-                    <ul class="links">
-                      <li><a href="#">با ما در ارتباط باشید</a></li>
-                      <li><a href="#">سوالات متداول</a></li>
-                      <li><a href="#">ارسال</a></li>
-                      <li><a href="#">برگشت خورده</a></li>
-                      <li><a href="#">امنیت</a></li>
-                      <li><a href="#">شیوه استفاده</a></li>
-                    </ul>
-                  </div>
+        </div>
+
+        <!-- Header Start -->
+        <header class="header-area header-inner-area">
+            <div class="header-menubar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="navbar-col">
+                                <div id="main-nav" class="stellarnav">
+                                    <div class="header-logo">
+                                        <a href="index.html"
+                                            ><img
+                                                src="images/logo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"
+                                                ><i class="ti-angle-down"></i
+                                                >خانه</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="index.html"
+                                                        >پیج اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html"
+                                                        >پیج دوم</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop-left">
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >فروشگاه</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="shop-1.html"
+                                                        >فروشگاه اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-2.html"
+                                                        >فروشگاه دوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-3.html"
+                                                        >فروشگاه سوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-4.html"
+                                                        >فروشگاه چهارم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><i
+                                                            class="ti-angle-down"
+                                                        ></i
+                                                        >صفحات مرتبط</a
+                                                    >
+                                                    <ul>
+                                                        <li>
+                                                            <a href="cart.html"
+                                                                >سبد خرید</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="checkout.html"
+                                                                >صفحه نهایی</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >محصول</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="product-details-1.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="product-details-2.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >بلاگ</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="blog.html"
+                                                        >بلاگ شما</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html"
+                                                        >جزییات بلاگ</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >صفحات</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="about.html"
+                                                        >درباره ما</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html"
+                                                >تماس با ما</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-right-side">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-user"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="cart.html">
+                                                    <i
+                                                        class="ti-shopping-cart"
+                                                    ></i>
+                                                    <span class="cart-items"
+                                                        >2</span
+                                                    >
+                                                </a>
+                                                <div
+                                                    class="cart-dropdown-content"
+                                                >
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-1.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>کیف زنانه</h6>
+                                                        <p>1 x تومان49.00</p>
+                                                    </div>
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-2.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>لباس زنانه</h6>
+                                                        <p>1 x تومان99.00</p>
+                                                    </div>
+                                                    <div class="total">
+                                                        <h6>
+                                                            <span>کل</span>
+                                                            تومان148
+                                                        </h6>
+                                                        <a href="checkout.html"
+                                                            >پرداخت</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search-icon">
+                                                <a
+                                                    href="#"
+                                                    class="closebtn"
+                                                    onclick="openNav()"
+                                                    ><i class="ti-search"></i
+                                                ></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-heart"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="footer-col">
-                    <h6>درباره ی ما</h6>
-                    <ul class="links">
-                      <li><a href="#">داستان ما</a></li>
-                      <li><a href="#">گواهی دریافتی</a></li>
-                      <li><a href="#">رضایت مشتری</a></li>
-                    </ul>
-                  </div>
+            </div>
+        </header>
+
+        <!-- Page Name Start -->
+        <section
+            class="page-name-area jarallax background-image"
+            data-src="images/bg/4.jpg"
+        >
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="page-name-col">
+                            <h2>با ما در ارتباط باشید</h2>
+                            <p>
+                                پنج دوست در کافه‌ای دنج نشسته بودند، فنجان‌های
+                                قهوه‌شان را برمی‌داشتند و با شور و شوق از ساختن
+                                این سایت حرف می‌زدند؛ جایی که حالا شما در حال
+                                خواندن این متن هستید.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="row copyright-row">
-            <div class="col-lg-4 col-md-6">
-              <div class="copyright-col">
-                <p>Copyrights ©2021 AGOP</p>
-              </div>
+        </section>
+
+        <!-- Contact Start -->
+        <section class="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-col">
+                            <div class="location-box">
+                                <i class="ti-location-pin"></i>
+                                <p>تهران, مطهری</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-col left-space">
+                            <form>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="نام"
+                                />
+                                <input
+                                    class="form-control"
+                                    type="email"
+                                    placeholder="آدرس ایمیل"
+                                />
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="موضوع"
+                                />
+                                <textarea
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="پیام خود را بنویسید"
+                                ></textarea>
+                                <button class="btn btn-primary" type="submit">
+                                    ارسال درخواست
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-8 col-md-6">
-              <div class="copyright-col">
-                <ul>
-                  <li><a href="#">سیاست حفظ حریم</a></li>
-                  <li>|</li>
-                  <li><a href="#">مشاغل</a></li>
-                </ul>
-              </div>
+        </section>
+
+        <!-- Contact Info Start -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-col">
+                            <div class="info-icon">
+                                <img
+                                    src="images/icons/info-1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>تلفن</h5>
+                            <p>پاسخگویی 24 ساعته</p>
+                            <p>+01682648101</p>
+                            <p>029292162</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-col">
+                            <div class="info-icon">
+                                <img
+                                    src="images/icons/info-2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>آدرس</h5>
+                            <p>حضورا در خدمت هستیم</p>
+                            <p>+01682648101</p>
+                            <p>029292162</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-col">
+                            <div class="info-icon">
+                                <img
+                                    src="images/icons/info-3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>ایمیل</h5>
+                            <p>سریع ترین زمان</p>
+                            <p>infosite@gmail.com</p>
+                            <p>help4612@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div>
-  </footer>
+        </section>
 
-    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
+        <!-- Footer Start -->
+        <footer
+            class="footer-area background-image"
+            data-src="images/bg/footer.jpg"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="newsletter-col">
+                            <h2>روزنامه</h2>
+                            <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                />
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="submit"
+                                        >
+                                            سابسکرایب
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="footer-col">
+                            <p>
+                                تهران - مطهری - خیابان شفا<br />بعد از آژانس
+                                آزالیا
+                            </p>
+                            <p>infooffice@gmail.com</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="ti-twitter-alt"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>فروشگاه</h6>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="#"
+                                                >با ما در ارتباط باشید</a
+                                            >
+                                        </li>
+                                        <li><a href="#">سوالات متداول</a></li>
+                                        <li><a href="#">ارسال</a></li>
+                                        <li><a href="#">برگشت خورده</a></li>
+                                        <li><a href="#">امنیت</a></li>
+                                        <li><a href="#">شیوه استفاده</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>درباره ی ما</h6>
+                                    <ul class="links">
+                                        <li><a href="#">داستان ما</a></li>
+                                        <li><a href="#">گواهی دریافتی</a></li>
+                                        <li><a href="#">رضایت مشتری</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="copyright-col">
+                            <p>Copyrights ©2021 AGOP</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="copyright-col">
+                            <ul>
+                                <li><a href="#">سیاست حفظ حریم</a></li>
+                                <li>|</li>
+                                <li><a href="#">مشاغل</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+        <a href="#" id="back-to-top" title="Back to top"
+            ><i class="ti-arrow-up"></i
+        ></a>
 
-    <!-- popper.min -->
-    <script src="js/popper.min.js"></script>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- popper.min -->
+        <script src="js/popper.min.js"></script>
 
-    <!-- All Included JavaScript -->
-    <script src="js/stellarnav.min.js"></script>
-    <script src="js/full-overlay.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jquery.pogo-slider.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/css3-animate-it.js"></script>
-    <script src="js/livechat-open-close.js"></script>
-    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles-app.js"></script>
-    <script src="js/range-slider.js"></script>
-    <script src="js/slider-with-thumbnail.js"></script>
-    <script src="js/YouTubePopUp.jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Js -->
-    <script src="js/custom.js"></script>
+        <!-- All Included JavaScript -->
+        <script src="js/stellarnav.min.js"></script>
+        <script src="js/full-overlay.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jarallax.min.js"></script>
+        <script src="js/jquery.pogo-slider.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+        <script src="js/livechat-open-close.js"></script>
+        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/particles-app.js"></script>
+        <script src="js/range-slider.js"></script>
+        <script src="js/slider-with-thumbnail.js"></script>
+        <script src="js/YouTubePopUp.jquery.js"></script>
 
-</body>
-
-
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>

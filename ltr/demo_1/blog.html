@@ -1,508 +1,963 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
 
+        <title>Agop Minimal eCommerce HTML Template</title>
 
-<head>
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
 
-    <title>Agop Minimal eCommerce HTML Template</title>
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <!-- font-awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- themify-icons CSS -->
+        <link href="css/themify-icons.css" rel="stylesheet" />
+        <!-- owl CSS -->
+        <link href="css/owl.css" rel="stylesheet" />
+        <!-- pogo-slider CSS -->
+        <link href="css/pogo-slider.css" rel="stylesheet" />
+        <!-- stellarnav CSS -->
+        <link href="css/stellarnav.min.css" rel="stylesheet" />
+        <!-- lightbox.min CSS -->
+        <link href="css/lightbox.min.css" rel="stylesheet" />
+        <!-- animations.min CSS -->
+        <link href="css/animations.css" rel="stylesheet" />
+        <!-- YouTubePopUp CSS -->
+        <link href="css/YouTubePopUp.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet" />
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="css/responsive.css" rel="stylesheet" />
 
-    <!-- font-awesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- themify-icons CSS -->
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <!-- owl CSS -->
-    <link href="css/owl.css" rel="stylesheet">
-    <!-- pogo-slider CSS -->
-    <link href="css/pogo-slider.css" rel="stylesheet">
-    <!-- stellarnav CSS -->
-    <link href="css/stellarnav.min.css" rel="stylesheet">
-    <!-- lightbox.min CSS -->
-    <link href="css/lightbox.min.css" rel="stylesheet">
-    <!-- animations.min CSS -->
-    <link href="css/animations.css" rel="stylesheet">
-    <!-- YouTubePopUp CSS -->
-    <link href="css/YouTubePopUp.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
+    <body>
+        <!-- Live Chat Start -->
+        <button class="open-button" onclick="openForm()">
+            <i class="ti-comments"></i>
+        </button>
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Live Chat Start -->
-    <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
-
-    <div class="chat-popup" id="myForm">
-      <form action="https://gico.io/action_page.php" class="form-container">
-        <h4>Live Chat</h4>
-        <input class="form-control mb-3" type="text" placeholder="Your Name">
-        <input class="form-control mb-3" type="email" placeholder="Your Mail">
-        <textarea class="mb-3" placeholder="Type message.." name="msg" required></textarea>
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
-      </form>
-    </div>
-
-    <!-- Overlay Search box -->
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
-      <div class="overlay-content">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search Here">
-          <div class="input-group-prepend">
-            <div class="input-group-text p-0">
-                <button class="btn btn-primary" type="submit">Search</button>
-            </div>
-          </div>
+        <div class="chat-popup" id="myForm">
+            <form
+                action="https://gico.io/action_page.php"
+                class="form-container"
+            >
+                <h4>Live Chat</h4>
+                <input
+                    class="form-control mb-3"
+                    type="text"
+                    placeholder="Your Name"
+                />
+                <input
+                    class="form-control mb-3"
+                    type="email"
+                    placeholder="Your Mail"
+                />
+                <textarea
+                    class="mb-3"
+                    placeholder="Type message.."
+                    name="msg"
+                    required
+                ></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                    <i class="ti-close"></i>
+                </button>
+            </form>
         </div>
-      </div>
-    </div>
 
-    <!-- Header Start -->
-    <header class="header-area header-inner-area">
-      <div class="header-menubar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="navbar-col">
-                <div id="main-nav" class="stellarnav">
-                  <div class="header-logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
-                  </div>
-                   <ul>
-                      <li><a href="index.html">Home <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="index.html">Home 1</a></li>
-                          <li><a href="index-2.html">Home 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Shop <i class="ti-angle-down"></i></a>
-                          <ul>
-                            <li><a href="shop-1.html">Shop 1</a></li>
-                            <li><a href="shop-2.html">Shop 2</a></li>
-                            <li><a href="shop-3.html">Shop 3</a></li>
-                            <li><a href="shop-4.html">Shop 4</a></li>
-                            <li><a href="#">Shop Related Page <i class="ti-angle-down"></i></a>
-                              <ul>
-                                <li><a href="cart.html">cart page</a></li>
-                                <li><a href="checkout.html">checkout page</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                      </li>
-                      <li><a href="#">product <i class="ti-angle-down"></i></a>
-                          <ul>
-                            <li><a href="product-details-1.html">product details 1</a></li>
-                            <li><a href="product-details-2.html">product details 2</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">Blog <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="blog.html">our blog</a></li>
-                          <li><a href="blog-details.html">blog details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Pages <i class="ti-angle-down"></i></a>
-                        <ul>
-                          <li><a href="about.html">about us</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">Contact</a></li>
-                   </ul>
-                </div>
-                <div class="menu-right-side">
-                  <ul>
-                    <li><a href="#"><i class="ti-user"></i></a></li>
-                    <li>
-                      <div class="dropdown">
-                        <a href="cart.html">
-                          <i class="ti-shopping-cart"></i>
-                          <span class="cart-items">2</span>
-                        </a>
-                        <div class="cart-dropdown-content">
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>ladies bag</h6>
-                            <p>1 x $49.00</p>
-                          </div>
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>Woman Dress</h6>
-                            <p>1 x $99.00</p>
-                          </div>
-                          <div class="total">
-                            <h6><span>Total</span> $148</h6>
-                            <a href="checkout.html">Checkout</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="search-icon">
-                        <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
-                      </div>
-                    </li>
-                    <li><a href="#"><i class="ti-heart"></i></a></li>
-                  </ul>
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Page Name Start -->
-    <section class="page-name-area jarallax background-image" data-src="images/bg/4.jpg">
-      <div id="particles-js"></div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="page-name-col">
-              <h2>Our Blog</h2>
-              <p>Five years ago in a Agop shop, five friends had a drink and an idea: a humble coffee scrub</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Start -->
-    <section class="blog-two-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9">
-            <div class="blog-two-col">
-              <div class="blog-two-item have-img">
-                <div class="hover-img">
-                  <img src="images/blog/b-1.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="blog-two-content">
-                  <ul>
-                    <li><a href="#">06 March 2020</a></li>
-                    <li><span>Travel guide</span></li>
-                  </ul>
-                  <h4><a href="blog-details.html">What are the Most Successful Methods to...</a></h4>
-                  <p>Skiing and snowboarding are hugely popular in Japan. As the ski season gets started, we asked long-term Japan resident and self-professed powderhound, Richard McCraken, to share his wisdom on everything from where to ski, how to get there, and how much you can expect to pay.</p>
-                  <a class="btn btn-primary" href="blog-details.html" role="button">Read More <i class="ti-angle-right"></i></a>
-                </div>
-              </div>
-              <div class="blog-two-item have-img">
-                <div class="hover-img">
-                  <img src="images/blog/b-2.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="blog-two-content">
-                  <ul>
-                    <li><a href="#">06 March 2020</a></li>
-                    <li><span>Travel guide</span></li>
-                  </ul>
-                  <h4><a href="blog-details.html">What are the Most Successful Methods to...</a></h4>
-                  <p>Skiing and snowboarding are hugely popular in Japan. As the ski season gets started, we asked long-term Japan resident and self-professed powderhound, Richard McCraken, to share his wisdom on everything from where to ski, how to get there, and how much you can expect to pay.</p>
-                  <a class="btn btn-primary" href="blog-details.html" role="button">Read More <i class="ti-angle-right"></i></a>
-                </div>
-              </div>
-              <div class="blog-two-item have-img">
-                <div class="hover-img">
-                  <img src="images/blog/b-3.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="blog-two-content">
-                  <ul>
-                    <li><a href="#">06 March 2020</a></li>
-                    <li><span>Travel guide</span></li>
-                  </ul>
-                  <h4><a href="blog-details.html">What are the Most Successful Methods to...</a></h4>
-                  <p>Skiing and snowboarding are hugely popular in Japan. As the ski season gets started, we asked long-term Japan resident and self-professed powderhound, Richard McCraken, to share his wisdom on everything from where to ski, how to get there, and how much you can expect to pay.</p>
-                  <a class="btn btn-primary" href="blog-details.html" role="button">Read More <i class="ti-angle-right"></i></a>
-                </div>
-              </div>
-              <div class="blog-two-item have-img">
-                <div class="hover-img">
-                  <img src="images/blog/b-4.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="blog-two-content">
-                  <ul>
-                    <li><a href="#">06 March 2020</a></li>
-                    <li><span>Travel guide</span></li>
-                  </ul>
-                  <h4><a href="blog-details.html">What are the Most Successful Methods to...</a></h4>
-                  <p>Skiing and snowboarding are hugely popular in Japan. As the ski season gets started, we asked long-term Japan resident and self-professed powderhound, Richard McCraken, to share his wisdom on everything from where to ski, how to get there, and how much you can expect to pay.</p>
-                  <a class="btn btn-primary" href="blog-details.html" role="button">Read More <i class="ti-angle-right"></i></a>
-                </div>
-              </div>
-              <div class="blog-two-item m-0 have-img">
-                <div class="hover-img">
-                  <img src="images/blog/b-5.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="blog-two-content">
-                  <ul>
-                    <li><a href="#">06 March 2020</a></li>
-                    <li><span>Travel guide</span></li>
-                  </ul>
-                  <h4><a href="blog-details.html">What are the Most Successful Methods to...</a></h4>
-                  <p>Skiing and snowboarding are hugely popular in Japan. As the ski season gets started, we asked long-term Japan resident and self-professed powderhound, Richard McCraken, to share his wisdom on everything from where to ski, how to get there, and how much you can expect to pay.</p>
-                  <a class="btn btn-primary" href="blog-details.html" role="button">Read More <i class="ti-angle-right"></i></a>
-                </div>
-              </div>
-              <nav aria-label="Page navigation example" class="my-pagination">
-                <ul class="pagination">
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <i class="ti-angle-double-right"></i>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="blog-sidebar">
-              <div class="product-search-box">
-                <h5 class="blog-sidebar-title">Search</h5>
+        <!-- Overlay Search box -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="ti-close"></i
+            ></a>
+            <div class="overlay-content">
                 <div class="input-group">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="جستجو کنید"
+                    />
                     <div class="input-group-prepend">
-                      <input type="text" class="form-control" placeholder="Search...">
-                      <div class="input-group-text p-0">
-                          <button class="btn btn-primary" type="submit"><i class="ti-search"></i></button>
-                      </div>
+                        <div class="input-group-text p-0">
+                            <button class="btn btn-primary" type="submit">
+                                Search
+                            </button>
+                        </div>
                     </div>
                 </div>
-              </div>
-              <div class="blog-categories-box">
-                <h5 class="blog-sidebar-title">Categories</h5>
-                <ul>
-                  <li><a href="#">Event and Travel <span>(45)</span></a></li>
-                  <li><a href="#">Software <span>(02)</span></a></li>
-                  <li><a href="#">Political <span>(15)</span></a></li>
-                  <li><a href="#">Election <span>(20)</span></a></li>
-                  <li><a href="#">Food & drink <span>(05)</span></a></li>
-                  <li><a href="#">Traditional <span>(12)</span></a></li>
-                </ul>
-              </div>
-              <div class="instagram-box">
-                <h5 class="blog-sidebar-title">From Instagram</h5>
-                <div class="instagram-images">
-                  <div><a href="#"><img src="images/instagram/1.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/2.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/3.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/4.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/5.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/6.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/7.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/8.jpg" alt="" class="img-fluid"></a></div>
-                  <div><a href="#"><img src="images/instagram/9.jpg" alt="" class="img-fluid"></a></div>
-                </div>
-              </div>
-              <div class="tag-box">
-                <h5 class="blog-sidebar-title">Tags</h5>
-                <ul>
-                  <li><a href="#">Things</a></li>
-                  <li><a href="#">Culture</a></li>
-                  <li><a href="#">Tradition</a></li>
-                  <li><a href="#">Things</a></li>
-                  <li><a href="#">Travel ca</a></li>
-                  <li><a href="#">Destination</a></li>
-                  <li><a href="#">Tour</a></li>
-                  <li><a href="#">Explore tour</a></li>
-                </ul>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Facility Start -->
-    <section class="facility-area pt-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/1.png" alt="" class="img-fluid">
-              </div>
-              <h5>Connect with verified sellers</h5>
-              <p>Tell us your requirement & let our experts find verified sellers for you</p>
-              <a href="#" class="btn">Verified sellers</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/2.png" alt="" class="img-fluid">
-              </div>
-              <h5>Payment Protection</h5>
-              <p>Tell us your requirement & let our experts find verified sellers for you</p>
-              <a href="#" class="btn">Learn more</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/3.png" alt="" class="img-fluid">
-              </div>
-              <h5>Download our App</h5>
-              <p>Tell us your requirement & let our experts find verified sellers for you</p>
-              <a href="#" class="btn">Download apps</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Start -->
-    <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-7">
-                <div class="newsletter-col">
-                  <h2>Newsletter</h2>
-                  <p>Subscribe for email updates <span>(only once a week)</span></p>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Your email">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <button class="btn btn-primary" type="submit">Subscribe</button>
-                      </div>
+        <!-- Header Start -->
+        <header class="header-area header-inner-area">
+            <div class="header-menubar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="navbar-col">
+                                <div id="main-nav" class="stellarnav">
+                                    <div class="header-logo">
+                                        <a href="index.html"
+                                            ><img
+                                                src="images/logo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"
+                                                >Home
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="index.html"
+                                                        >Home 1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html"
+                                                        >Home 2</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >Shop
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="shop-1.html"
+                                                        >Shop 1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-2.html"
+                                                        >Shop 2</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-3.html"
+                                                        >Shop 3</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-4.html"
+                                                        >Shop 4</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        >Shop Related Page
+                                                        <i
+                                                            class="ti-angle-down"
+                                                        ></i
+                                                    ></a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="cart.html"
+                                                                >cart page</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="checkout.html"
+                                                                >checkout
+                                                                page</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >product
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="product-details-1.html"
+                                                        >product details 1</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="product-details-2.html"
+                                                        >product details 2</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >Blog
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="blog.html"
+                                                        >our blog</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html"
+                                                        >blog details</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >Pages
+                                                <i class="ti-angle-down"></i
+                                            ></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="about.html"
+                                                        >about us</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-right-side">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-user"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="cart.html">
+                                                    <i
+                                                        class="ti-shopping-cart"
+                                                    ></i>
+                                                    <span class="cart-items"
+                                                        >2</span
+                                                    >
+                                                </a>
+                                                <div
+                                                    class="cart-dropdown-content"
+                                                >
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-1.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>ladies bag</h6>
+                                                        <p>1 x $49.00</p>
+                                                    </div>
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-2.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>Woman Dress</h6>
+                                                        <p>1 x $99.00</p>
+                                                    </div>
+                                                    <div class="total">
+                                                        <h6>
+                                                            <span>Total</span>
+                                                            $148
+                                                        </h6>
+                                                        <a href="checkout.html"
+                                                            >Checkout</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search-icon">
+                                                <a
+                                                    href="#"
+                                                    class="closebtn"
+                                                    onclick="openNav()"
+                                                    ><i class="ti-search"></i
+                                                ></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-heart"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div class="row">
-              <div class="col-lg-7 col-md-6">
-                <div class="footer-col">
-                  <p>75 Arlington St. Suite 500 Boston, MA<br> 02116, USA</p>
-                  <p>infooffice@gmail.com</p>
-                  <ul>
-                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                    <li><a href="#"><i class="ti-dribbble"></i></a></li>
-                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                  </ul>
+        </header>
+
+        <!-- Page Name Start -->
+        <section
+            class="page-name-area jarallax background-image"
+            data-src="images/bg/4.jpg"
+        >
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="page-name-col">
+                            <h2>Our Blog</h2>
+                            <p>
+                                Five years ago in a Agop shop, five friends had
+                                a drink and an idea: a humble coffee scrub
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-5 col-md-6">
+            </div>
+        </section>
+
+        <!-- Blog Start -->
+        <section class="blog-two-area">
+            <div class="container">
                 <div class="row">
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>Shop</h6>
-                      <ul class="links">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                      </ul>
+                    <div class="col-lg-9">
+                        <div class="blog-two-col">
+                            <div class="blog-two-item have-img">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/blog/b-1.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="blog-two-content">
+                                    <ul>
+                                        <li><a href="#">06 March 2020</a></li>
+                                        <li><span>Travel guide</span></li>
+                                    </ul>
+                                    <h4>
+                                        <a href="blog-details.html"
+                                            >What are the Most Successful
+                                            Methods to...</a
+                                        >
+                                    </h4>
+                                    <p>
+                                        Skiing and snowboarding are hugely
+                                        popular in Japan. As the ski season gets
+                                        started, we asked long-term Japan
+                                        resident and self-professed powderhound,
+                                        Richard McCraken, to share his wisdom on
+                                        everything from where to ski, how to get
+                                        there, and how much you can expect to
+                                        pay.
+                                    </p>
+                                    <a
+                                        class="btn btn-primary"
+                                        href="blog-details.html"
+                                        role="button"
+                                        >Read More <i class="ti-angle-right"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <div class="blog-two-item have-img">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/blog/b-2.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="blog-two-content">
+                                    <ul>
+                                        <li><a href="#">06 March 2020</a></li>
+                                        <li><span>Travel guide</span></li>
+                                    </ul>
+                                    <h4>
+                                        <a href="blog-details.html"
+                                            >What are the Most Successful
+                                            Methods to...</a
+                                        >
+                                    </h4>
+                                    <p>
+                                        Skiing and snowboarding are hugely
+                                        popular in Japan. As the ski season gets
+                                        started, we asked long-term Japan
+                                        resident and self-professed powderhound,
+                                        Richard McCraken, to share his wisdom on
+                                        everything from where to ski, how to get
+                                        there, and how much you can expect to
+                                        pay.
+                                    </p>
+                                    <a
+                                        class="btn btn-primary"
+                                        href="blog-details.html"
+                                        role="button"
+                                        >Read More <i class="ti-angle-right"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <div class="blog-two-item have-img">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/blog/b-3.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="blog-two-content">
+                                    <ul>
+                                        <li><a href="#">06 March 2020</a></li>
+                                        <li><span>Travel guide</span></li>
+                                    </ul>
+                                    <h4>
+                                        <a href="blog-details.html"
+                                            >What are the Most Successful
+                                            Methods to...</a
+                                        >
+                                    </h4>
+                                    <p>
+                                        Skiing and snowboarding are hugely
+                                        popular in Japan. As the ski season gets
+                                        started, we asked long-term Japan
+                                        resident and self-professed powderhound,
+                                        Richard McCraken, to share his wisdom on
+                                        everything from where to ski, how to get
+                                        there, and how much you can expect to
+                                        pay.
+                                    </p>
+                                    <a
+                                        class="btn btn-primary"
+                                        href="blog-details.html"
+                                        role="button"
+                                        >Read More <i class="ti-angle-right"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <div class="blog-two-item have-img">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/blog/b-4.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="blog-two-content">
+                                    <ul>
+                                        <li><a href="#">06 March 2020</a></li>
+                                        <li><span>Travel guide</span></li>
+                                    </ul>
+                                    <h4>
+                                        <a href="blog-details.html"
+                                            >What are the Most Successful
+                                            Methods to...</a
+                                        >
+                                    </h4>
+                                    <p>
+                                        Skiing and snowboarding are hugely
+                                        popular in Japan. As the ski season gets
+                                        started, we asked long-term Japan
+                                        resident and self-professed powderhound,
+                                        Richard McCraken, to share his wisdom on
+                                        everything from where to ski, how to get
+                                        there, and how much you can expect to
+                                        pay.
+                                    </p>
+                                    <a
+                                        class="btn btn-primary"
+                                        href="blog-details.html"
+                                        role="button"
+                                        >Read More <i class="ti-angle-right"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <div class="blog-two-item m-0 have-img">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/blog/b-5.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                                <div class="blog-two-content">
+                                    <ul>
+                                        <li><a href="#">06 March 2020</a></li>
+                                        <li><span>Travel guide</span></li>
+                                    </ul>
+                                    <h4>
+                                        <a href="blog-details.html"
+                                            >What are the Most Successful
+                                            Methods to...</a
+                                        >
+                                    </h4>
+                                    <p>
+                                        Skiing and snowboarding are hugely
+                                        popular in Japan. As the ski season gets
+                                        started, we asked long-term Japan
+                                        resident and self-professed powderhound,
+                                        Richard McCraken, to share his wisdom on
+                                        everything from where to ski, how to get
+                                        there, and how much you can expect to
+                                        pay.
+                                    </p>
+                                    <a
+                                        class="btn btn-primary"
+                                        href="blog-details.html"
+                                        role="button"
+                                        >Read More <i class="ti-angle-right"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <nav
+                                aria-label="Page navigation example"
+                                class="my-pagination"
+                            >
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a
+                                            class="page-link"
+                                            href="#"
+                                            aria-label="Next"
+                                        >
+                                            <i
+                                                class="ti-angle-double-right"
+                                            ></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>About</h6>
-                      <ul class="links">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Doin' Our Bit</a></li>
-                        <li><a href="#">Customer Testimonials</a></li>
-                        <li><a href="#">Your Go-To Routine</a></li>
-                        <li><a href="#">Go-To TV</a></li>
-                        <li><a href="#">Press</a></li>
-                      </ul>
+                    <div class="col-lg-3">
+                        <div class="blog-sidebar">
+                            <div class="product-search-box">
+                                <h5 class="blog-sidebar-title">Search</h5>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Search..."
+                                        />
+                                        <div class="input-group-text p-0">
+                                            <button
+                                                class="btn btn-primary"
+                                                type="submit"
+                                            >
+                                                <i class="ti-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-categories-box">
+                                <h5 class="blog-sidebar-title">Categories</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#"
+                                            >Event and Travel
+                                            <span>(45)</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Software <span>(02)</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Political <span>(15)</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Election <span>(20)</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Food & drink <span>(05)</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Traditional <span>(12)</span></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="instagram-box">
+                                <h5 class="blog-sidebar-title">
+                                    From Instagram
+                                </h5>
+                                <div class="instagram-images">
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/1.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/2.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/3.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/4.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/5.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/6.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/7.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/8.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            ><img
+                                                src="images/instagram/9.jpg"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag-box">
+                                <h5 class="blog-sidebar-title">Tags</h5>
+                                <ul>
+                                    <li><a href="#">Things</a></li>
+                                    <li><a href="#">Culture</a></li>
+                                    <li><a href="#">Tradition</a></li>
+                                    <li><a href="#">Things</a></li>
+                                    <li><a href="#">Travel ca</a></li>
+                                    <li><a href="#">Destination</a></li>
+                                    <li><a href="#">Tour</a></li>
+                                    <li><a href="#">Explore tour</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div class="row copyright-row">
-              <div class="col-lg-4 col-md-6">
-                <div class="copyright-col">
-                  <p>Copyrights ©2021 AGOP</p>
+        </section>
+
+        <!-- Facility Start -->
+        <section class="facility-area pt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>Connect with verified sellers</h5>
+                            <p>
+                                Tell us your requirement & let our experts find
+                                verified sellers for you
+                            </p>
+                            <a href="#" class="btn">Verified sellers</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>Payment Protection</h5>
+                            <p>
+                                Tell us your requirement & let our experts find
+                                verified sellers for you
+                            </p>
+                            <a href="#" class="btn">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>Download our App</h5>
+                            <p>
+                                Tell us your requirement & let our experts find
+                                verified sellers for you
+                            </p>
+                            <a href="#" class="btn">Download apps</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-8 col-md-6">
-                <div class="copyright-col">
-                  <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li>|</li>
-                    <li><a href="#">Careers</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
+        <!-- Footer Start -->
+        <footer
+            class="footer-area background-image"
+            data-src="images/bg/footer.jpg"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="newsletter-col">
+                            <h2>Newsletter</h2>
+                            <p>
+                                Subscribe for email updates
+                                <span>(only once a week)</span>
+                            </p>
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                />
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="submit"
+                                        >
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="footer-col">
+                            <p>
+                                75 Arlington St. Suite 500 Boston, MA<br />
+                                02116, USA
+                            </p>
+                            <p>infooffice@gmail.com</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="ti-twitter-alt"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>Shop</h6>
+                                    <ul class="links">
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Shipping</a></li>
+                                        <li>
+                                            <a href="#">Returns & Refunds</a>
+                                        </li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>About</h6>
+                                    <ul class="links">
+                                        <li><a href="#">Our Story</a></li>
+                                        <li><a href="#">Doin' Our Bit</a></li>
+                                        <li>
+                                            <a href="#"
+                                                >Customer Testimonials</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#">Your Go-To Routine</a>
+                                        </li>
+                                        <li><a href="#">Go-To TV</a></li>
+                                        <li><a href="#">Press</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="copyright-col">
+                            <p>Copyrights ©2021 AGOP</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="copyright-col">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li>|</li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li>|</li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+        <a href="#" id="back-to-top" title="Back to top"
+            ><i class="ti-arrow-up"></i
+        ></a>
 
-    <!-- popper.min -->
-    <script src="js/popper.min.js"></script>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- popper.min -->
+        <script src="js/popper.min.js"></script>
 
-    <!-- All Included JavaScript -->
-    <script src="js/stellarnav.min.js"></script>
-    <script src="js/full-overlay.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jquery.pogo-slider.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/css3-animate-it.js"></script>
-    <script src="js/livechat-open-close.js"></script>
-    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles-app.js"></script>
-    <script src="js/range-slider.js"></script>
-    <script src="js/slider-with-thumbnail.js"></script>
-    <script src="js/YouTubePopUp.jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Js -->
-    <script src="js/custom.js"></script>
+        <!-- All Included JavaScript -->
+        <script src="js/stellarnav.min.js"></script>
+        <script src="js/full-overlay.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jarallax.min.js"></script>
+        <script src="js/jquery.pogo-slider.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+        <script src="js/livechat-open-close.js"></script>
+        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/particles-app.js"></script>
+        <script src="js/range-slider.js"></script>
+        <script src="js/slider-with-thumbnail.js"></script>
+        <script src="js/YouTubePopUp.jquery.js"></script>
 
-</body>
-
-
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>

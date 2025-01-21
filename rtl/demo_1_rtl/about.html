@@ -1,517 +1,848 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
 
-<head>
+        <title>درباره ما</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-    <title>Agop Minimal eCommerce HTML Template</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com/" />
+        <link href="css/font.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <!-- font-awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- themify-icons CSS -->
+        <link href="css/themify-icons.css" rel="stylesheet" />
+        <!-- owl CSS -->
+        <link href="css/owl.css" rel="stylesheet" />
+        <!-- pogo-slider CSS -->
+        <link href="css/pogo-slider.css" rel="stylesheet" />
+        <!-- stellarnav CSS -->
+        <link href="css/stellarnav.min.css" rel="stylesheet" />
+        <!-- lightbox.min CSS -->
+        <link href="css/lightbox.min.css" rel="stylesheet" />
+        <!-- animations.min CSS -->
+        <link href="css/animations.css" rel="stylesheet" />
+        <!-- YouTubePopUp CSS -->
+        <link href="css/YouTubePopUp.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="css/font.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet" />
 
-    <!-- font-awesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- themify-icons CSS -->
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <!-- owl CSS -->
-    <link href="css/owl.css" rel="stylesheet">
-    <!-- pogo-slider CSS -->
-    <link href="css/pogo-slider.css" rel="stylesheet">
-    <!-- stellarnav CSS -->
-    <link href="css/stellarnav.min.css" rel="stylesheet">
-    <!-- lightbox.min CSS -->
-    <link href="css/lightbox.min.css" rel="stylesheet">
-    <!-- animations.min CSS -->
-    <link href="css/animations.css" rel="stylesheet">
-    <!-- YouTubePopUp CSS -->
-    <link href="css/YouTubePopUp.css" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="css/responsive.css" rel="stylesheet" />
 
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <body>
+        <!-- Live Chat Start -->
+        <button class="open-button" onclick="openForm()">
+            <i class="ti-comments"></i>
+        </button>
 
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Live Chat Start -->
-    <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
-
-    <div class="chat-popup" id="myForm">
-      <form action="https://gico.io/action_page.php" class="form-container">
-        <h4>چت انلاین</h4>
-        <input class="form-control mb-3" type="text" placeholder="نام">
-        <input class="form-control mb-3" type="email" placeholder="ایمیل">
-        <textarea class="mb-3" placeholder="Type message.." name="msg" required></textarea>
-        <button type="submit" class="btn">ارسال</button>
-        <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
-      </form>
-    </div>
-  
-    <!-- Overlay Search box -->
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
-      <div class="overlay-content">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text p-0">
-                <button class="btn btn-primary" type="submit">جستجو</button>
-            </div>
-          </div>
-          <input type="text" class="form-control" placeholder="Search Here">
+        <div class="chat-popup" id="myForm">
+            <form
+                action="https://gico.io/action_page.php"
+                class="form-container"
+            >
+                <h4>چت انلاین</h4>
+                <input
+                    class="form-control mb-3"
+                    type="text"
+                    placeholder="نام"
+                />
+                <input
+                    class="form-control mb-3"
+                    type="email"
+                    placeholder="ایمیل"
+                />
+                <textarea
+                    class="mb-3"
+                    placeholder="Type message.."
+                    name="msg"
+                    required
+                ></textarea>
+                <button type="submit" class="btn">ارسال</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                    <i class="ti-close"></i>
+                </button>
+            </form>
         </div>
-      </div>
-    </div>
-  
-     <!-- Header Start -->
-     <header class="header-area header-inner-area">
-      <div class="header-menubar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="navbar-col">
-                <div id="main-nav" class="stellarnav">
-                  <div class="header-logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
-                  </div>
-                   <ul>
-                      <li><a href="index.html"><i class="ti-angle-down"></i>خانه</a>
-                        <ul>
-                          <li><a href="index.html">پیج اول</a></li>
-                          <li><a href="index-2.html">پیج دوم</a></li>
-                        </ul>
-                      </li>
-                      <li class="drop-left"><a href="#"><i class="ti-angle-down"></i>فروشگاه</a>
-                          <ul>
-                            <li><a href="shop-1.html">فروشگاه اول</a></li>
-                            <li><a href="shop-2.html">فروشگاه دوم</a></li>
-                            <li><a href="shop-3.html">فروشگاه سوم</a></li>
-                            <li><a href="shop-4.html">فروشگاه چهارم</a></li>
-                            <li><a href="#"><i class="ti-angle-down"></i>صفحات مرتبط</a>
-                              <ul>
-                                <li><a href="cart.html">سبد خرید</a></li>
-                                <li><a href="checkout.html">صفحه نهایی</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                      </li>
-                      <li><a href="#"><i class="ti-angle-down"></i>محصول</a>
-                          <ul>
-                            <li><a href="product-details-1.html">جزییات محصول</a></li>
-                            <li><a href="product-details-2.html">جزییات محصول</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#"><i class="ti-angle-down"></i>بلاگ</a>
-                        <ul>
-                          <li><a href="blog.html">بلاگ شما</a></li>
-                          <li><a href="blog-details.html">جزییات بلاگ</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#"><i class="ti-angle-down"></i>صفحات</a>
-                        <ul>
-                          <li><a href="about.html">درباره ما</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">تماس با ما</a></li>
-                   </ul>
-                </div>
-                <div class="menu-right-side">
-                  <ul>
-                    <li><a href="#"><i class="ti-user"></i></a></li>
-                    <li>
-                      <div class="dropdown">
-                        <a href="cart.html">
-                          <i class="ti-shopping-cart"></i>
-                          <span class="cart-items">2</span>
-                        </a>
-                        <div class="cart-dropdown-content">
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>کیف زنانه</h6>
-                            <p>1 x $49.00</p>
-                          </div>
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>لباس زنانه</h6>
-                            <p>1 x $99.00</p>
-                          </div>
-                          <div class="total">
-                            <h6><span>کل</span> $148</h6>
-                            <a href="checkout.html">پرداخت</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="search-icon">
-                        <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
-                      </div>
-                    </li>
-                    <li><a href="#"><i class="ti-heart"></i></a></li>
-                  </ul>
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-  
-  
-      <!-- Page Name Start -->
-      <section class="page-name-area jarallax background-image" data-src="images/bg/4.jpg">
-        <div id="particles-js"></div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6">
-              <div class="page-name-col">
-                <h2>صفحه درباره ما</h2>
-                <p>پنج دوست در کافه‌ای دنج نشسته بودند، فنجان‌های قهوه‌شان را برمی‌داشتند و با شور و شوق از ساختن این سایت حرف می‌زدند؛ جایی که حالا شما در حال خواندن این متن هستید.
-  
-  
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-    <!-- About Start -->
-    <section class="about-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="about-col">
-              <h4>هدف ما جلب رضایت مشتریان عزیزمان از سراسر کشور است<br> <span>خرید را برای شما آسان کردیم</span></h4>
-              <div class="about-banner">
-                <img src="images/about/1.jpg" alt="" class="img-fluid">
-                <div class="about-banner-content">
-                  <a class="btn btn-primary hvr-ripple-out youtube-link videopopup" href="https://www.youtube.com/watch?v=79bFOSzxf88">
-                    <i class="ti-control-play"></i>
-                  </a>
-                  <div class="about-banner-text">
-                    <h3>یک انتخاب برای همه</h3>
-                    <p>این سایت نه تنها محلی برای خرید محصولات باکیفیت است، بلکه تجربه‌ای راحت و بی‌دغدغه از انتخاب و سفارش آنلاین را به شما ارائه می‌دهد؛ جایی که هر آنچه نیاز دارید، در یک کلیک در دسترس است.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Facility Start -->
-    <section class="facility-area pt-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/1.png" alt="" class="img-fluid">
-              </div>
-              <h5>با ما در تماس باشید</h5>
-              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
-              <a href="#" class="btn">متخصصین مجرب</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/2.png" alt="" class="img-fluid">
-              </div>
-              <h5>امنیت تسویه</h5>
-              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
-              <a href="#" class="btn">بیشتر بخوانید</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/3.png" alt="" class="img-fluid">
-              </div>
-              <h5>دانلود برنامه</h5>
-              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
-              <a href="#" class="btn">دانلود برنامه</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Banner Start -->
-    <section class="banner-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="banner-col background-image" data-src="images/bg/2.jpg">
-              <div class="row justify-content-end">
-                <div class="col-lg-6">
-                  <div class="banner-content">
-                    <div class="off-circle hvr-ripple-out">
-                      <img src="images/circle-shape.png" alt="" class="img-fluid">
-                      <h2>30% تخفیف</h2>
-                    </div>
-                    <h4><a href="product-details-1.html">برای همه در انواع طرح</a></h4>
-                    <p>قطعاتی از تمامی برندهای بزرگ و کوچک با ضمانت کیفیت محصول</p>
-                    <img src="images/woman.png" alt="" class="img-fluid woman-img">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About two Start -->
-    <section class="about-two-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-two-col about-two-img-col">
-              <img src="images/about/2.jpg" alt="" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about-two-col">
-              <h4>شهریور 1401<br>شروعی نو در دنیای خرید و فروش انلاین</h4>
-              <p>در سال 2020، گروهی از دوستان با هدف ایجاد تغییری واقعی در بازار محصولات، شرکتی تأسیس کردند که در آن مشتری همیشه در اولویت باشد. آن‌ها تصمیم گرفتند محصولاتی ارائه دهند که نه تنها از نظر کیفیت بی‌نظیر باشند، بلکه با توجه به نیازهای واقعی مردم طراحی شوند.</p>
-              <p>پس از سال‌ها تحقیق و آزمایش، محصولات متنوع و کاربردی‌شان وارد بازار شد. مشتریان به سرعت متوجه شدند که این شرکت به نیازهایشان توجه کرده و هر محصول با دقت و توجه به جزئیات ساخته شده است. </p>
-              <p>این توجه ویژه به مشتری، اعتماد و وفاداری زیادی به همراه آورد و شرکت را در عرصه رقابت برجسته کرد. حالا این برند تبدیل به نمادی از کیفیت و رضایت مشتری در بازار شده است.</p>
-              <p>با ما باشید در درخشیدن‌های بیشتر، جایی که کیفیت و رضایت مشتری همیشه در اولویت است.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonial Start -->
-    <section class="testimonial-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="testimonial-col">
-              <div class="testimonial-slider">
-                <div class="testimonial-item">
-                  <div class="testimonial-img">
-                    <img src="images/about/3.jpg" alt="" class="img-fluid">
-                  </div>
-                  <img src="images/icons/comments.png" alt="" class="img-fluid comment-icon">
-                  <p>ما سال‌ها وقت صرف توسعه و تکمیل فرمول‌هایمان می‌کنیم زیرا به طور عمیق باور داریم که هر محصول باید فراتر از انتظارات باشد و تأثیر واقعی بگذارد.</p>
-                  <a href="#">سپهر برهمی</a>
-                </div>
-                <div class="testimonial-item">
-                  <div class="testimonial-img">
-                    <img src="images/about/3.jpg" alt="" class="img-fluid">
-                  </div>
-                  <img src="images/icons/comments.png" alt="" class="img-fluid comment-icon">
-                  <p>ما سال‌ها وقت صرف توسعه و تکمیل فرمول‌هایمان می‌کنیم زیرا به طور عمیق باور داریم که هر محصول باید فراتر از انتظارات باشد و تأثیر واقعی بگذارد.</p>
-                  <a href="#">سپهر برهمی</a>
-                </div>
-                <div class="testimonial-item">
-                  <div class="testimonial-img">
-                    <img src="images/about/3.jpg" alt="" class="img-fluid">
-                  </div>
-                  <img src="images/icons/comments.png" alt="" class="img-fluid comment-icon">
-                  <p>ما سال‌ها وقت صرف توسعه و تکمیل فرمول‌هایمان می‌کنیم زیرا به طور عمیق باور داریم که هر محصول باید فراتر از انتظارات باشد و تأثیر واقعی بگذارد.</p>
-                  <a href="#">سپهر برهمی</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product Categories Start -->
-    <section class="product-categories-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title text-center">
-              <h2>دسته بندی محصولات</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="product-categories-col have-img">
-              <a href="shop-3.html">
-                <div class="hover-img">
-                  <img src="images/product/c-1.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-categories-col have-img">
-              <a href="shop-3.html">
-                <div class="hover-img">
-                  <img src="images/product/c-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-categories-col have-img">
-              <a href="shop-3.html">
-                <div class="hover-img">
-                  <img src="images/product/c-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-categories-col have-img">
-              <a href="shop-3.html">
-                <div class="hover-img">
-                  <img src="images/product/c-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-      <!-- Footer Start -->
-      <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-7">
-                <div class="newsletter-col">
-                  <h2>روزنامه</h2>
-                  <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Your email">
+        <!-- Overlay Search box -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="ti-close"></i
+            ></a>
+            <div class="overlay-content">
+                <div class="input-group">
                     <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <button class="btn btn-primary" type="submit">سابسکرایب</button>
-                      </div>
+                        <div class="input-group-text p-0">
+                            <button class="btn btn-primary" type="submit">
+                                جستجو
+                            </button>
+                        </div>
                     </div>
-                  </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="جستجو کنید"
+                    />
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-7 col-md-6">
-                <div class="footer-col">
-                  <p>تهران - مطهری - خیابان شفا<br>بعد از آژانس آزالیا</p>
-                  <p>infooffice@gmail.com</p>
-                  <ul>
-                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                    <li><a href="#"><i class="ti-dribbble"></i></a></li>
-                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-5 col-md-6">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>Shop</h6>
-                      <ul class="links">
-                        <li><a href="#">با ما در ارتباط باشید</a></li>
-                        <li><a href="#">سوالات متداول</a></li>
-                        <li><a href="#">ارسال</a></li>
-                        <li><a href="#">برگشت خورده</a></li>
-                        <li><a href="#">امنیت</a></li>
-                        <li><a href="#">شیوه استفاده</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>درباره ی ما</h6>
-                      <ul class="links">
-                        <li><a href="#">داستان ما</a></li>
-                        <li><a href="#">گواهی دریافتی</a></li>
-                        <li><a href="#">رضایت مشتری</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row copyright-row">
-              <div class="col-lg-4 col-md-6">
-                <div class="copyright-col">
-                  <p>Copyrights ©2021 AGOP</p>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-6">
-                <div class="copyright-col">
-                  <ul>
-                    <li><a href="#">سیاست حفظ حریم</a></li>
-                    <li>|</li>
-                    <li><a href="#">مشاغل</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
         </div>
-    </footer>
-    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+        <!-- Header Start -->
+        <header class="header-area header-inner-area">
+            <div class="header-menubar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="navbar-col">
+                                <div id="main-nav" class="stellarnav">
+                                    <div class="header-logo">
+                                        <a href="index.html"
+                                            ><img
+                                                src="images/logo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"
+                                                ><i class="ti-angle-down"></i
+                                                >خانه</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="index.html"
+                                                        >پیج اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html"
+                                                        >پیج دوم</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop-left">
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >فروشگاه</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="shop-1.html"
+                                                        >فروشگاه اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-2.html"
+                                                        >فروشگاه دوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-3.html"
+                                                        >فروشگاه سوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-4.html"
+                                                        >فروشگاه چهارم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><i
+                                                            class="ti-angle-down"
+                                                        ></i
+                                                        >صفحات مرتبط</a
+                                                    >
+                                                    <ul>
+                                                        <li>
+                                                            <a href="cart.html"
+                                                                >سبد خرید</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="checkout.html"
+                                                                >صفحه نهایی</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >محصول</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="product-details-1.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="product-details-2.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >بلاگ</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="blog.html"
+                                                        >بلاگ شما</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html"
+                                                        >جزییات بلاگ</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-angle-down"></i
+                                                >صفحات</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="about.html"
+                                                        >درباره ما</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html"
+                                                >تماس با ما</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-right-side">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-user"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="cart.html">
+                                                    <i
+                                                        class="ti-shopping-cart"
+                                                    ></i>
+                                                    <span class="cart-items"
+                                                        >2</span
+                                                    >
+                                                </a>
+                                                <div
+                                                    class="cart-dropdown-content"
+                                                >
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-1.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>کیف زنانه</h6>
+                                                        <p>1 x $49.00</p>
+                                                    </div>
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-2.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>لباس زنانه</h6>
+                                                        <p>1 x $99.00</p>
+                                                    </div>
+                                                    <div class="total">
+                                                        <h6>
+                                                            <span>کل</span> $148
+                                                        </h6>
+                                                        <a href="checkout.html"
+                                                            >پرداخت</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search-icon">
+                                                <a
+                                                    href="#"
+                                                    class="closebtn"
+                                                    onclick="openNav()"
+                                                    ><i class="ti-search"></i
+                                                ></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-heart"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <!-- popper.min -->
-    <script src="js/popper.min.js"></script>
+        <!-- Page Name Start -->
+        <section
+            class="page-name-area jarallax background-image"
+            data-src="images/bg/4.jpg"
+        >
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="page-name-col">
+                            <h2>صفحه درباره ما</h2>
+                            <p>
+                                پنج دوست در کافه‌ای دنج نشسته بودند، فنجان‌های
+                                قهوه‌شان را برمی‌داشتند و با شور و شوق از ساختن
+                                این سایت حرف می‌زدند؛ جایی که حالا شما در حال
+                                خواندن این متن هستید.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- About Start -->
+        <section class="about-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="about-col">
+                            <h4>
+                                هدف ما جلب رضایت مشتریان عزیزمان از سراسر کشور
+                                است<br />
+                                <span>خرید را برای شما آسان کردیم</span>
+                            </h4>
+                            <div class="about-banner">
+                                <img
+                                    src="images/about/1.jpg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                                <div class="about-banner-content">
+                                    <a
+                                        class="btn btn-primary hvr-ripple-out youtube-link videopopup"
+                                        href="https://www.youtube.com/watch?v=79bFOSzxf88"
+                                    >
+                                        <i class="ti-control-play"></i>
+                                    </a>
+                                    <div class="about-banner-text">
+                                        <h3>یک انتخاب برای همه</h3>
+                                        <p>
+                                            این سایت نه تنها محلی برای خرید
+                                            محصولات باکیفیت است، بلکه تجربه‌ای
+                                            راحت و بی‌دغدغه از انتخاب و سفارش
+                                            آنلاین را به شما ارائه می‌دهد؛ جایی
+                                            که هر آنچه نیاز دارید، در یک کلیک در
+                                            دسترس است.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- All Included JavaScript -->
-    <script src="js/stellarnav.min.js"></script>
-    <script src="js/full-overlay.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jquery.pogo-slider.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/css3-animate-it.js"></script>
-    <script src="js/livechat-open-close.js"></script>
-    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles-app.js"></script>
-    <script src="js/range-slider.js"></script>
-    <script src="js/slider-with-thumbnail.js"></script>
-    <script src="js/YouTubePopUp.jquery.js"></script>
+        <!-- Facility Start -->
+        <section class="facility-area pt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>با ما در تماس باشید</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">متخصصین مجرب</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>امنیت تسویه</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">بیشتر بخوانید</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>دانلود برنامه</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">دانلود برنامه</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Custom Js -->
-    <script src="js/custom.js"></script>
+        <!-- Banner Start -->
+        <section class="banner-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div
+                            class="banner-col background-image"
+                            data-src="images/bg/2.jpg"
+                        >
+                            <div class="row justify-content-end">
+                                <div class="col-lg-6">
+                                    <div class="banner-content">
+                                        <div class="off-circle hvr-ripple-out">
+                                            <img
+                                                src="images/circle-shape.png"
+                                                alt=""
+                                                class="img-fluid"
+                                            />
+                                            <h2>30% تخفیف</h2>
+                                        </div>
+                                        <h4>
+                                            <a href="product-details-1.html"
+                                                >برای همه در انواع طرح</a
+                                            >
+                                        </h4>
+                                        <p>
+                                            قطعاتی از تمامی برندهای بزرگ و کوچک
+                                            با ضمانت کیفیت محصول
+                                        </p>
+                                        <img
+                                            src="images/woman.png"
+                                            alt=""
+                                            class="img-fluid woman-img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</body>
+        <!-- About two Start -->
+        <section class="about-two-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-two-col about-two-img-col">
+                            <img
+                                src="images/about/2.jpg"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-two-col">
+                            <h4>
+                                شهریور 1401<br />شروعی نو در دنیای خرید و فروش
+                                انلاین
+                            </h4>
+                            <p>
+                                در سال 2020، گروهی از دوستان با هدف ایجاد تغییری
+                                واقعی در بازار محصولات، شرکتی تأسیس کردند که در
+                                آن مشتری همیشه در اولویت باشد. آن‌ها تصمیم
+                                گرفتند محصولاتی ارائه دهند که نه تنها از نظر
+                                کیفیت بی‌نظیر باشند، بلکه با توجه به نیازهای
+                                واقعی مردم طراحی شوند.
+                            </p>
+                            <p>
+                                پس از سال‌ها تحقیق و آزمایش، محصولات متنوع و
+                                کاربردی‌شان وارد بازار شد. مشتریان به سرعت متوجه
+                                شدند که این شرکت به نیازهایشان توجه کرده و هر
+                                محصول با دقت و توجه به جزئیات ساخته شده است.
+                            </p>
+                            <p>
+                                این توجه ویژه به مشتری، اعتماد و وفاداری زیادی
+                                به همراه آورد و شرکت را در عرصه رقابت برجسته
+                                کرد. حالا این برند تبدیل به نمادی از کیفیت و
+                                رضایت مشتری در بازار شده است.
+                            </p>
+                            <p>
+                                با ما باشید در درخشیدن‌های بیشتر، جایی که کیفیت
+                                و رضایت مشتری همیشه در اولویت است.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Testimonial Start -->
+        <section class="testimonial-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="testimonial-col">
+                            <div class="testimonial-slider">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-img">
+                                        <img
+                                            src="images/about/3.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                    <img
+                                        src="images/icons/comments.png"
+                                        alt=""
+                                        class="img-fluid comment-icon"
+                                    />
+                                    <p>
+                                        ما سال‌ها وقت صرف توسعه و تکمیل
+                                        فرمول‌هایمان می‌کنیم زیرا به طور عمیق
+                                        باور داریم که هر محصول باید فراتر از
+                                        انتظارات باشد و تأثیر واقعی بگذارد.
+                                    </p>
+                                    <a href="#">سپهر برهمی</a>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-img">
+                                        <img
+                                            src="images/about/3.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                    <img
+                                        src="images/icons/comments.png"
+                                        alt=""
+                                        class="img-fluid comment-icon"
+                                    />
+                                    <p>
+                                        ما سال‌ها وقت صرف توسعه و تکمیل
+                                        فرمول‌هایمان می‌کنیم زیرا به طور عمیق
+                                        باور داریم که هر محصول باید فراتر از
+                                        انتظارات باشد و تأثیر واقعی بگذارد.
+                                    </p>
+                                    <a href="#">سپهر برهمی</a>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-img">
+                                        <img
+                                            src="images/about/3.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                    <img
+                                        src="images/icons/comments.png"
+                                        alt=""
+                                        class="img-fluid comment-icon"
+                                    />
+                                    <p>
+                                        ما سال‌ها وقت صرف توسعه و تکمیل
+                                        فرمول‌هایمان می‌کنیم زیرا به طور عمیق
+                                        باور داریم که هر محصول باید فراتر از
+                                        انتظارات باشد و تأثیر واقعی بگذارد.
+                                    </p>
+                                    <a href="#">سپهر برهمی</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories Start -->
+        <section class="product-categories-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <h2>دسته بندی محصولات</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-categories-col have-img">
+                            <a href="shop-3.html">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/product/c-1.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-categories-col have-img">
+                            <a href="shop-3.html">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/product/c-2.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-categories-col have-img">
+                            <a href="shop-3.html">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/product/c-3.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-categories-col have-img">
+                            <a href="shop-3.html">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/product/c-4.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Start -->
+        <footer
+            class="footer-area background-image"
+            data-src="images/bg/footer.jpg"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="newsletter-col">
+                            <h2>روزنامه</h2>
+                            <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                />
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="submit"
+                                        >
+                                            سابسکرایب
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="footer-col">
+                            <p>
+                                تهران - مطهری - خیابان شفا<br />بعد از آژانس
+                                آزالیا
+                            </p>
+                            <p>infooffice@gmail.com</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="ti-twitter-alt"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>فروشگاه</h6>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="#"
+                                                >با ما در ارتباط باشید</a
+                                            >
+                                        </li>
+                                        <li><a href="#">سوالات متداول</a></li>
+                                        <li><a href="#">ارسال</a></li>
+                                        <li><a href="#">برگشت خورده</a></li>
+                                        <li><a href="#">امنیت</a></li>
+                                        <li><a href="#">شیوه استفاده</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>درباره ی ما</h6>
+                                    <ul class="links">
+                                        <li><a href="#">داستان ما</a></li>
+                                        <li><a href="#">گواهی دریافتی</a></li>
+                                        <li><a href="#">رضایت مشتری</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="copyright-col">
+                            <p>Copyrights ©2021 AGOP</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="copyright-col">
+                            <ul>
+                                <li><a href="#">سیاست حفظ حریم</a></li>
+                                <li>|</li>
+                                <li><a href="#">مشاغل</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" id="back-to-top" title="Back to top"
+            ><i class="ti-arrow-up"></i
+        ></a>
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- popper.min -->
+        <script src="js/popper.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- All Included JavaScript -->
+        <script src="js/stellarnav.min.js"></script>
+        <script src="js/full-overlay.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jarallax.min.js"></script>
+        <script src="js/jquery.pogo-slider.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+        <script src="js/livechat-open-close.js"></script>
+        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/particles-app.js"></script>
+        <script src="js/range-slider.js"></script>
+        <script src="js/slider-with-thumbnail.js"></script>
+        <script src="js/YouTubePopUp.jquery.js"></script>
+
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>

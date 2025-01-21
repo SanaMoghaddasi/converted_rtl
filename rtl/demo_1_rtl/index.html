@@ -1,744 +1,1274 @@
 <!DOCTYPE html>
 <html lang="fa-IR">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
 
+        <title>خانه</title>
 
-<head>
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+        <!-- Google Fonts -->
+        <link href="css/font.css" rel="stylesheet" />
 
-    <title>Agop Minimal eCommerce HTML Template</title>
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <!-- font-awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- themify-icons CSS -->
+        <link href="css/themify-icons.css" rel="stylesheet" />
+        <!-- owl CSS -->
+        <link href="css/owl.css" rel="stylesheet" />
+        <!-- pogo-slider CSS -->
+        <link href="css/pogo-slider.css" rel="stylesheet" />
+        <!-- stellarnav CSS -->
+        <link href="css/stellarnav.min.css" rel="stylesheet" />
+        <!-- lightbox.min CSS -->
+        <link href="css/lightbox.min.css" rel="stylesheet" />
+        <!-- animations.min CSS -->
+        <link href="css/animations.css" rel="stylesheet" />
+        <!-- YouTubePopUp CSS -->
+        <link href="css/YouTubePopUp.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link href="css/font.css" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet" />
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="css/responsive.css" rel="stylesheet" />
 
-    <!-- font-awesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- themify-icons CSS -->
-    <link href="css/themify-icons.css" rel="stylesheet">
-    <!-- owl CSS -->
-    <link href="css/owl.css" rel="stylesheet">
-    <!-- pogo-slider CSS -->
-    <link href="css/pogo-slider.css" rel="stylesheet">
-    <!-- stellarnav CSS -->
-    <link href="css/stellarnav.min.css" rel="stylesheet">
-    <!-- lightbox.min CSS -->
-    <link href="css/lightbox.min.css" rel="stylesheet">
-    <!-- animations.min CSS -->
-    <link href="css/animations.css" rel="stylesheet">
-    <!-- YouTubePopUp CSS -->
-    <link href="css/YouTubePopUp.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <body>
+        <!-- Live Chat Start -->
+        <button class="open-button" onclick="openForm()">
+            <i class="ti-comments"></i>
+        </button>
 
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-   
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Live Chat Start -->
-    <button class="open-button" onclick="openForm()"><i class="ti-comments"></i></button>
-
-    <div class="chat-popup" id="myForm">
-      <form action="https://gico.io/action_page.php" class="form-container">
-        <h4>چت آنلاین</h4>
-        <input class="form-control mb-3" type="text" placeholder="نام">
-        <input class="form-control mb-3" type="email" placeholder="ایمیل">
-        <textarea class="mb-3" placeholder="پیام خود را بنویسید" name="msg" required></textarea>
-        <button type="submit" class="btn">ارسال</button>
-        <button type="button" class="btn cancel" onclick="closeForm()"><i class="ti-close"></i></button>
-      </form>
-    </div>
-
-    <!-- Overlay Search box -->
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="ti-close"></i></a>
-      <div class="overlay-content">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text p-0">
-                <button class="btn btn-primary" type="submit">جستجو</button>
-            </div>
-          </div>
-          <input type="text" class="form-control" placeholder="Search Here">
+        <div class="chat-popup" id="myForm">
+            <form
+                action="https://gico.io/action_page.php"
+                class="form-container"
+            >
+                <h4>چت آنلاین</h4>
+                <input
+                    class="form-control mb-3"
+                    type="text"
+                    placeholder="نام"
+                />
+                <input
+                    class="form-control mb-3"
+                    type="email"
+                    placeholder="ایمیل"
+                />
+                <textarea
+                    class="mb-3"
+                    placeholder="پیام خود را بنویسید"
+                    name="msg"
+                    required
+                ></textarea>
+                <button type="submit" class="btn">ارسال</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+                    <i class="ti-close"></i>
+                </button>
+            </form>
         </div>
-      </div>
-    </div>
 
-    <!-- Header Start -->
-    <header class="header-area">
-      <div class="header-menubar">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="navbar-col">
-                <div id="main-nav" class="stellarnav">
-                  <div class="header-logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a>
-                  </div>
-                   <ul>
-                      <li><a href="index.html"><i class="ti-angle-down"></i>خانه</a>
-                        <ul>
-                          <li><a href="index.html">پیج اول</a></li>
-                          <li><a href="index-2.html">پیج دوم</a></li>
-                        </ul>
-                      </li>
-                      <li class="drop-left"><a href="#"><i class="ti-angle-down"></i>فروشگاه</a>
-                          <ul>
-                            <li><a href="shop-1.html">فروشگاه اول</a></li>
-                            <li><a href="shop-2.html">فروشگاه دوم</a></li>
-                            <li><a href="shop-3.html">فروشگاه سوم</a></li>
-                            <li><a href="shop-4.html">فروشگاه چهارم</a></li>
-                            <li><a href="#"><i class="ti-angle-down"></i>صفحات مرتبط</a>
-                              <ul>
-                                <li><a href="cart.html">سبد خرید</a></li>
-                                <li><a href="checkout.html">صفحه نهایی</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                      </li>
-                      <li><a href="#"><i class="ti-angle-down"></i>محصول</a>
-                          <ul>
-                            <li><a href="product-details-1.html">جزییات محصول</a></li>
-                            <li><a href="product-details-2.html">جزییات محصول</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#"><i class="ti-angle-down"></i>بلاگ</a>
-                        <ul>
-                          <li><a href="blog.html">بلاگ شما</a></li>
-                          <li><a href="blog-details.html">جزییات بلاگ</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#"><i class="ti-angle-down"></i>صفحات</a>
-                        <ul>
-                          <li><a href="about.html">درباره ما</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">تماس با ما</a></li>
-                   </ul>
-                </div>
-                <div class="menu-right-side">
-                  <ul>
-                    <li><a href="#"><i class="ti-user"></i></a></li>
-                    <li>
-                      <div class="dropdown">
-                        <a href="cart.html">
-                          <i class="ti-shopping-cart"></i>
-                          <span class="cart-items">2</span>
-                        </a>
-                        <div class="cart-dropdown-content">
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-1.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>کیف زنانه</h6>
-                            <p>1 x $49.00</p>
-                          </div>
-                          <div class="cart-dropdown-item">
-                            <div class="cart-dropdown-img">
-                              <img src="images/cart-img-2.jpg" alt="" class="img-fluid">
-                              <a href="#"><i class="ti-close"></i></a>
-                            </div>
-                            <h6>لباس زنانه</h6>
-                            <p>1 x $99.00</p>
-                          </div>
-                          <div class="total">
-                            <h6><span>کل</span> $148</h6>
-                            <a href="checkout.html">پرداخت</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="search-icon">
-                        <a href="#" class="closebtn" onclick="openNav()"><i class="ti-search"></i></a>
-                      </div>
-                    </li>
-                    <li><a href="#"><i class="ti-heart"></i></a></li>
-                  </ul>
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Hero Start -->
-    <section class="hero-area background-image" data-src="images/bg/1.jpg">
-      <div id="particles-js"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="hero-col">
-              <!-- Pogo Silder Start -->
-              <div class="pogoSlider" id="pogo-slider">
-                  <div class="pogoSlider-slide" data-transition="fade" data-duration="1000">
-                      <!-- Slider Elements -->
-                      <div class="silder-elements">
-                          <h6 class="pogoSlider-slide-element slider-sub-title" data-in="slideRight" data-out="slideUp" data-duration="1000" data-delay="500">بالای $800</h6>
-                          <h2 class="pogoSlider-slide-element slider-main-title" data-in="slideUp" data-out="slideUp" data-duration="1000" data-delay="500">مبلمان</h2>
-                          <p class="pogoSlider-slide-element slider-para" data-in="slideDown" data-out="slideUp" data-duration="1000" data-delay="500">طراحی داخلی خود را با این مبل زیبا به رنگ آبی دودی تکمیل کنید. روکش پارچه‌ای عملکردی آن، صندلی‌های راحت و خطوط تمیز و طراحی مدرن با بازوهای باریک و پاهای نازک آن را ارائه می‌دهد.</p>
-                          <div class="pogoSlider-slide-element slider-btn" data-in="slideLeft" data-out="slideUp" data-duration="1000" data-delay="500">
-                            <a href="shop-3.html">همین حالا خرید کنید</a>
-                          </div>
-                          <div class="pogoSlider-slide-element slider-img" data-in="expand" data-out="slideUp" data-duration="1000" data-delay="500">
-                              <img src="images/bed.png" alt="" class="img-fluid">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="pogoSlider-slide" data-transition="fade" data-duration="1000">
-                      <!-- Slider Elements -->
-                      <div class="silder-elements">
-                          <h6 class="pogoSlider-slide-element slider-sub-title" data-in="slideRight" data-out="slideUp" data-duration="1000" data-delay="500">بالای $800</h6>
-                          <h2 class="pogoSlider-slide-element slider-main-title" data-in="slideUp" data-out="slideUp" data-duration="1000" data-delay="500">مبلمان</h2>
-                          <p class="pogoSlider-slide-element slider-para" data-in="slideDown" data-out="slideUp" data-duration="1000" data-delay="500">طراحی داخلی خود را با این مبل زیبا به رنگ آبی دودی تکمیل کنید. روکش پارچه‌ای عملکردی آن، صندلی‌های راحت و خطوط تمیز و طراحی مدرن با بازوهای باریک و پاهای نازک آن را ارائه می‌دهد.</p>
-                          <div class="pogoSlider-slide-element slider-btn" data-in="slideLeft" data-out="slideUp" data-duration="1000" data-delay="500">
-                            <a href="shop-3.html">همین حالا خرید کنید</a>
-                          </div>
-                          <div class="pogoSlider-slide-element slider-img" data-in="expand" data-out="slideUp" data-duration="1000" data-delay="500">
-                              <img src="images/bed.png" alt="" class="img-fluid">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="pogoSlider-slide" data-transition="fade" data-duration="1000">
-                      <!-- Slider Elements -->
-                      <div class="silder-elements">
-                          <h6 class="pogoSlider-slide-element slider-sub-title" data-in="slideRight" data-out="slideUp" data-duration="1000" data-delay="500">بالای $800</h6>
-                          <h2 class="pogoSlider-slide-element slider-main-title" data-in="slideUp" data-out="slideUp" data-duration="1000" data-delay="500">مبلمان</h2>
-                          <p class="pogoSlider-slide-element slider-para" data-in="slideDown" data-out="slideUp" data-duration="1000" data-delay="500">طراحی داخلی خود را با این مبل زیبا به رنگ آبی دودی تکمیل کنید. روکش پارچه‌ای عملکردی آن، صندلی‌های راحت و خطوط تمیز و طراحی مدرن با بازوهای باریک و پاهای نازک آن را ارائه می‌دهد.</p>
-                          <div class="pogoSlider-slide-element slider-btn" data-in="slideLeft" data-out="slideUp" data-duration="1000" data-delay="500">
-                            <a href="shop-3.html">همین حالا خرید کنید</a>
-                          </div>
-                          <div class="pogoSlider-slide-element slider-img" data-in="expand" data-out="slideUp" data-duration="1000" data-delay="500">
-                              <img src="images/bed.png" alt="" class="img-fluid">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!--Pogo Silder End -->
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="hero-col hero-col-right">
-              <div class="hero-col-right-img">
-                <img src="images/chair.png" alt="" class="img-fluid">
-                <div class="hover-box">
-                  <a href="#" class="hvr-ripple-out"><i class="ti-plus"></i></a>
-                  <div class="hover-box-content">
-                    <h3>صندلی</h3>
-                    <p>فکر می‌کردم مانند عکس‌های محصول، یک رنگ سبز روشن خوب سفارش می‌دهم</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="helo-social">
-        <ul>
-          <li>
-            <a href="#" target="_blank"><span>فیسبوک</span></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><span>توییتر</span></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><span>پینترست</span></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><span>اینستاگرام</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="layer abstract-img shape-img-1" data-speed="8">
-        <img src="images/shape-1.png" alt="" class="img-fluid">
-      </div>
-    </section>
-
-    <!-- Featured Product -->
-    <section class="features-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="features-col have-img">
-              <div class="hover-img">
-                <img src="images/product/p-1.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="features-content">
-                <h4>یک کوله پشتی<br>کلاسیک</h4>
-                <span>$17.99</span>
-                <a href="shop-3.html">همین حالا خرید کنید</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="features-col have-img">
-              <div class="hover-img">
-                <img src="images/product/p-2.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="features-content">
-                <h4>تت بگ<br>با دوام</h4>
-                <span>$17.99</span>
-                <a href="shop-3.html">همین حالا خرید کنید</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Banner Start -->
-    <section class="banner-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="banner-col background-image" data-src="images/bg/2.jpg">
-              <div class="row justify-content-end">
-                <div class="col-lg-6">
-                  <div class="banner-content">
-                    <div class="off-circle hvr-ripple-out">
-                      <img src="images/circle-shape.png" alt="" class="img-fluid">
-                      <h2>30% تخفیف</h2>
-                    </div>
-                    <h4><a href="shop-3.html">مبلمان برای هر فضایی با هر سبکی</a></h4>
-                    <p>قطعات انعطاف پذیر از برندهای برتر</p>
-                    <img src="images/woman.png" alt="" class="img-fluid woman-img">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product Start -->
-    <section class="product-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <h2><a href="shop-3.html">مجموعه محصولات زنانه پرطرفدار</a></h2>
-              <p>چند محصول اخیرا منتشر شده</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="product-col">
-              <div class="product-slider">
-                <div class="product-item have-img">
-                  <div class="product-img hover-img">
-                    <img src="images/product/1.jpg" alt="" class="img-fluid">
-                    <div class="product-item-text">
-                      <p>$12.45 <span>فوق العاده</span></p>
-                    </div>
-                  </div>
-                  <h4><a href="product-details-1.html">LiftKits Women's 1.25 inch Shoe</a></h4>
-                  <span>کفش زنانه</span>
-                  <a href="product-details-1.html">همین حالا خرید کنید</a>
-                </div>
-                <div class="product-item have-img">
-                  <div class="product-img hover-img">
-                    <img src="images/product/2.jpg" alt="" class="img-fluid">
-                    <div class="product-item-text">
-                      <p>$72.16 <span>Hot</span></p>
-                    </div>
-                  </div>
-                  <h4><a href="product-details-1.html">رژ لب 6 رنگه</a></h4>
-                  <span>رژ لب</span>
-                  <a href="product-details-1.html">همین حالا خرید کنید</a>
-                </div>
-                <div class="product-item have-img">
-                  <div class="product-img hover-img">
-                    <img src="images/product/3.jpg" alt="" class="img-fluid">
-                    <div class="product-item-text">
-                      <p>$142 <span>Hot</span></p>
-                    </div>
-                  </div>
-                  <h4><a href="product-details-1.html">Les Secrets Laduree & LeSportsac</a></h4>
-                  <span>کیف زنانه</span>
-                  <a href="product-details-1.html">همین حالا خرید کنید</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product Start -->
-    <section class="product-area product-two-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <h2><a href="shop-3.html">مبلمان های محبوب</a></h2>
-              <p>چند محصول اخیرا منتشر شده</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="product-col">
-              <div class="product-slider">
-                <div class="product-item have-img">
-                  <div class="product-img hover-img">
-                    <img src="images/product/4.jpg" alt="" class="img-fluid">
-                    <div class="product-item-text">
-                      <p>$12.45 <span>فوق العاده</span></p>
-                    </div>
-                  </div>
-                  <h4><a href="product-details-1.html">کالکشن صندلی چوبی</a></h4>
-                  <span>صندلی</span>
-                  <a href="product-details-1.html">همین حالا خرید کنید</a>
-                </div>
-                <div class="product-item have-img">
-                  <div class="product-img hover-img">
-                    <img src="images/product/5.jpg" alt="" class="img-fluid">
-                    <div class="product-item-text">
-                      <p>$72.16 <span>فوق العاده</span></p>
-                    </div>
-                  </div>
-                  <h4><a href="product-details-1.html">کالکشن صندلی چوبی</a></h4>
-                  <span>صندلی</span>
-                  <a href="product-details-1.html">همین حالا خرید کنید</a>
-                </div>
-                <div class="product-item have-img">
-                  <div class="product-img hover-img">
-                    <img src="images/product/6.jpg" alt="" class="img-fluid">
-                    <div class="product-item-text">
-                      <p>$142 <span>فوق العاده</span></p>
-                    </div>
-                  </div>
-                  <h4><a href="product-details-1.html">کالکشن صندلی</a></h4>
-                  <span>صندلی</span>
-                  <a href="product-details-1.html">همین حالا خرید کنید</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Banner Two Start -->
-    <section class="banner-two-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="banner-two-col p-0">
-              <div class="banner-two-img">
-                <img src="images/chair-2.png" alt="" class="img-fluid rotating">
-                <img src="images/shape-2.png" alt="" class="img-fluid bg-shape-img">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="banner-two-col">
-              <p>$84.15- $90</p>
-              <h2>صندلی موجود در چند رنگ</h2>
-              <a href="cart.html">اضافه به سبد خرید</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="layer abstract-img woman-img-two" data-speed="-5">
-        <img src="images/woman-2.png" alt="" class="img-fluid">
-      </div>
-    </section>
-
-    <!-- Product Categories Start -->
-    <section class="product-categories-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title text-center">
-              <h2>کالکشن محصولات</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="product-categories-col have-img">
-              <a href="shop-3.html">
-                <div class="hover-img">
-                  <img src="images/product/c-1.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <p><a href="shop-3.html">ساعت</a></p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-categories-col have-img">
-              <a href="shop-3.html">
-                <div class="hover-img">
-                  <img src="images/product/c-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <p><a href="shop-3.html">مبلمان</a></p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-categories-col have-img">
-              <a href="shop-3.html">
-                <div class="hover-img">
-                  <img src="images/product/c-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <p><a href="#">کفش</a></p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="product-categories-col have-img">
-              <a href="shop-3.html">
-                <div class="hover-img">
-                  <img src="images/product/c-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <p><a href="#">کیف</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Start -->
-    <section class="blog-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title text-center">
-              <h2>اخبار امروز</h2>
-              <p>اخبار جدید اینجاست</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="blog-col have-img">
-              <div class="hover-img">
-                <img src="images/blog/1.jpg" alt="" class="img-fluid">
-              </div>
-              <h5><a href="blog-details.html">ترندهای سال جدید چیست؟</a></h5>
-              <ul>
-                <li> توسط<a href="#"> علی منصوری</a></li>
-                <li>|</li>
-                <li>Dec 31, 2021</li>
-                <li>|</li>
-                <li><a href="#">دکور</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="blog-col have-img">
-              <div class="hover-img">
-                <img src="images/blog/2.jpg" alt="" class="img-fluid">
-              </div>
-              <h5><a href="blog-details.html">پذیرایی خود را با انچه به لایف استایلتان نزدیک است دیزاین کنید</a></h5>
-              <ul>
-                <li> توسط<a href="#"> صالح کشاورز</a></li>
-                <li>|</li>
-                <li>Dec 31, 2021</li>
-                <li>|</li>
-                <li><a href="#">دکور</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="blog-col have-img">
-              <div class="hover-img">
-                <img src="images/blog/3.jpg" alt="" class="img-fluid">
-              </div>
-              <h5><a href="blog-details.html">خانه ای تابستانه برای خود بسازید</a></h5>
-              <ul>
-                <li>توسط <a href="#">سپهرفراهانی</a></li>
-                <li>|</li>
-                <li>Dec 31, 2021</li>
-                <li>|</li>
-                <li><a href="#">دکور</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Facility Start -->
-    <section class="facility-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/1.png" alt="" class="img-fluid">
-              </div>
-              <h5>با ما در تماس باشید</h5>
-              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
-              <a href="#" class="btn">متخصصین مجرب</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/2.png" alt="" class="img-fluid">
-              </div>
-              <h5>امنیت تسویه</h5>
-              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
-              <a href="#" class="btn">بیشتر بخوانید</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="text-center facility-col">
-              <div class="facility-icon">
-                <img src="images/icons/3.png" alt="" class="img-fluid">
-              </div>
-              <h5>دانلود برنامه</h5>
-              <p>نیاز های خود را به ما بگویید و متخصصین ما به کمک شما می آیند</p>
-              <a href="#" class="btn">دانلود برنامه</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Start -->
-    <footer class="footer-area background-image" data-src="images/bg/footer.jpg">
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-7">
-                <div class="newsletter-col">
-                  <h2>روزنامه</h2>
-                  <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Your email">
+        <!-- Overlay Search box -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="ti-close"></i
+            ></a>
+            <div class="overlay-content">
+                <div class="input-group">
                     <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <button class="btn btn-primary" type="submit">سابسکرایب</button>
-                      </div>
+                        <div class="input-group-text p-0">
+                            <button class="btn btn-primary" type="submit">
+                                جستجو
+                            </button>
+                        </div>
                     </div>
-                  </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="جستجو کنید"
+                    />
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-7 col-md-6">
-                <div class="footer-col">
-                  <p>تهران - مطهری - خیابان شفا<br>بعد از آژانس آزالیا</p>
-                  <p>infooffice@gmail.com</p>
-                  <ul>
-                    <li><a href="#"><i class="ti-facebook"></i></a></li>
-                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                    <li><a href="#"><i class="ti-dribbble"></i></a></li>
-                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-5 col-md-6">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>Shop</h6>
-                      <ul class="links">
-                        <li><a href="#">با ما در ارتباط باشید</a></li>
-                        <li><a href="#">سوالات متداول</a></li>
-                        <li><a href="#">ارسال</a></li>
-                        <li><a href="#">برگشت خورده</a></li>
-                        <li><a href="#">امنیت</a></li>
-                        <li><a href="#">شیوه استفاده</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="footer-col">
-                      <h6>درباره ی ما</h6>
-                      <ul class="links">
-                        <li><a href="#">داستان ما</a></li>
-                        <li><a href="#">گواهی دریافتی</a></li>
-                        <li><a href="#">رضایت مشتری</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row copyright-row">
-              <div class="col-lg-4 col-md-6">
-                <div class="copyright-col">
-                  <p>Copyrights ©2021 AGOP</p>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-6">
-                <div class="copyright-col">
-                  <ul>
-                    <li><a href="#">سیاست حفظ حریم</a></li>
-                    <li>|</li>
-                    <li><a href="#">مشاغل</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
         </div>
-    </footer>
 
-    <a href="#" id="back-to-top" title="Back to top"><i class="ti-arrow-up"></i></a>
+        <!-- Header Start -->
+        <header class="header-area">
+            <div class="header-menubar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="navbar-col">
+                                <div id="main-nav" class="stellarnav">
+                                    <div class="header-logo">
+                                        <a href="index.html"
+                                            ><img
+                                                src="images/logo.png"
+                                                alt=""
+                                                class="img-fluid"
+                                        /></a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html"
+                                                >خانه
+                                                <i class="ti-angle-down"></i
+                                                  >
+                                                </a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="index.html"
+                                                        >پیج اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="index-2.html"
+                                                        >پیج دوم</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop-left">
+                                            <a href="#"
+                                                >فروشگاه
+                                                <i class="ti-angle-down"></i
+                                                  >
+                                                </a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="shop-1.html"
+                                                        >فروشگاه اول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-2.html"
+                                                        >فروشگاه دوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-3.html"
+                                                        >فروشگاه سوم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop-4.html"
+                                                        >فروشگاه چهارم</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        ><i
+                                                            class="ti-angle-down"
+                                                        ></i
+                                                        >صفحات مرتبط</a
+                                                    >
+                                                    <ul>
+                                                        <li>
+                                                            <a href="cart.html"
+                                                                >سبد خرید</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="checkout.html"
+                                                                >صفحه نهایی</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >
+                                                محصول
+                                                <i class="ti-angle-down"></i
+                                                  >
+                                                </a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="product-details-1.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="product-details-2.html"
+                                                        >جزییات محصول</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >
+                                                بلاگ
+                                                <i class="ti-angle-down"></i
+                                                  >
+                                                </a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="blog.html"
+                                                        >بلاگ شما</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html"
+                                                        >جزییات بلاگ</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >
+                                                صفحات
+                                                <i class="ti-angle-down"></i
+                                                  >
+                                                </a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a href="about.html"
+                                                        >درباره ما</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html"
+                                                >تماس با ما</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-right-side">
+                                    <ul>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-user"></i
+                                            ></a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="cart.html">
+                                                    <i
+                                                        class="ti-shopping-cart"
+                                                    ></i>
+                                                    <span class="cart-items"
+                                                        >2</span
+                                                    >
+                                                </a>
+                                                <div
+                                                    class="cart-dropdown-content"
+                                                >
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-1.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>کیف زنانه</h6>
+                                                        <p>1 x تومان 49.00</p>
+                                                    </div>
+                                                    <div
+                                                        class="cart-dropdown-item"
+                                                    >
+                                                        <div
+                                                            class="cart-dropdown-img"
+                                                        >
+                                                            <img
+                                                                src="images/cart-img-2.jpg"
+                                                                alt=""
+                                                                class="img-fluid"
+                                                            />
+                                                            <a href="#"
+                                                                ><i
+                                                                    class="ti-close"
+                                                                ></i
+                                                            ></a>
+                                                        </div>
+                                                        <h6>لباس زنانه</h6>
+                                                        <p>1 x تومان 99.00</p>
+                                                    </div>
+                                                    <div class="total">
+                                                        <h6>
+                                                            <span>کل</span>
+                                                            تومان 148
+                                                        </h6>
+                                                        <a href="checkout.html"
+                                                            >پرداخت</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search-icon">
+                                                <a
+                                                    href="#"
+                                                    class="closebtn"
+                                                    onclick="openNav()"
+                                                    ><i class="ti-search"></i
+                                                ></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                ><i class="ti-heart"></i
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/persianNum.jquery-2.min.js"></script>
+        <!-- Hero Start -->
+        <section class="hero-area background-image" data-src="images/bg/1.jpg">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="hero-col">
+                            <!-- Pogo Silder Start -->
+                            <div class="pogoSlider" id="pogo-slider">
+                                <div
+                                    class="pogoSlider-slide"
+                                    data-transition="fade"
+                                    data-duration="1000"
+                                >
+                                    <!-- Slider Elements -->
+                                    <div class="silder-elements">
+                                        <h6
+                                            class="pogoSlider-slide-element slider-sub-title"
+                                            data-in="slideRight"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            بالای تومان 800
+                                        </h6>
+                                        <h2
+                                            class="pogoSlider-slide-element slider-main-title"
+                                            data-in="slideUp"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            مبلمان
+                                        </h2>
+                                        <p
+                                            class="pogoSlider-slide-element slider-para"
+                                            data-in="slideDown"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            طراحی داخلی خود را با این مبل زیبا
+                                            به رنگ آبی دودی تکمیل کنید. روکش
+                                            پارچه‌ای عملکردی آن، صندلی‌های راحت
+                                            و خطوط تمیز و طراحی مدرن با بازوهای
+                                            باریک و پاهای نازک آن را ارائه
+                                            می‌دهد.
+                                        </p>
+                                        <div
+                                            class="pogoSlider-slide-element slider-btn"
+                                            data-in="slideLeft"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            <a href="shop-3.html"
+                                                >همین حالا خرید کنید</a
+                                            >
+                                        </div>
+                                        <div
+                                            class="pogoSlider-slide-element slider-img"
+                                            data-in="expand"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            <img
+                                                src="images/bed.png"
+                                                alt=""
+                                                class="img-fluid"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="pogoSlider-slide"
+                                    data-transition="fade"
+                                    data-duration="1000"
+                                >
+                                    <!-- Slider Elements -->
+                                    <div class="silder-elements">
+                                        <h6
+                                            class="pogoSlider-slide-element slider-sub-title"
+                                            data-in="slideRight"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            بالای تومان 800
+                                        </h6>
+                                        <h2
+                                            class="pogoSlider-slide-element slider-main-title"
+                                            data-in="slideUp"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            مبلمان
+                                        </h2>
+                                        <p
+                                            class="pogoSlider-slide-element slider-para"
+                                            data-in="slideDown"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            طراحی داخلی خود را با این مبل زیبا
+                                            به رنگ آبی دودی تکمیل کنید. روکش
+                                            پارچه‌ای عملکردی آن، صندلی‌های راحت
+                                            و خطوط تمیز و طراحی مدرن با بازوهای
+                                            باریک و پاهای نازک آن را ارائه
+                                            می‌دهد.
+                                        </p>
+                                        <div
+                                            class="pogoSlider-slide-element slider-btn"
+                                            data-in="slideLeft"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            <a href="shop-3.html"
+                                                >همین حالا خرید کنید</a
+                                            >
+                                        </div>
+                                        <div
+                                            class="pogoSlider-slide-element slider-img"
+                                            data-in="expand"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            <img
+                                                src="images/bed.png"
+                                                alt=""
+                                                class="img-fluid"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="pogoSlider-slide"
+                                    data-transition="fade"
+                                    data-duration="1000"
+                                >
+                                    <!-- Slider Elements -->
+                                    <div class="silder-elements">
+                                        <h6
+                                            class="pogoSlider-slide-element slider-sub-title"
+                                            data-in="slideRight"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            بالای تومان 800
+                                        </h6>
+                                        <h2
+                                            class="pogoSlider-slide-element slider-main-title"
+                                            data-in="slideUp"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            مبلمان
+                                        </h2>
+                                        <p
+                                            class="pogoSlider-slide-element slider-para"
+                                            data-in="slideDown"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            طراحی داخلی خود را با این مبل زیبا
+                                            به رنگ آبی دودی تکمیل کنید. روکش
+                                            پارچه‌ای عملکردی آن، صندلی‌های راحت
+                                            و خطوط تمیز و طراحی مدرن با بازوهای
+                                            باریک و پاهای نازک آن را ارائه
+                                            می‌دهد.
+                                        </p>
+                                        <div
+                                            class="pogoSlider-slide-element slider-btn"
+                                            data-in="slideLeft"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            <a href="shop-3.html"
+                                                >همین حالا خرید کنید</a
+                                            >
+                                        </div>
+                                        <div
+                                            class="pogoSlider-slide-element slider-img"
+                                            data-in="expand"
+                                            data-out="slideUp"
+                                            data-duration="1000"
+                                            data-delay="500"
+                                        >
+                                            <img
+                                                src="images/bed.png"
+                                                alt=""
+                                                class="img-fluid"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pogo Silder End -->
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="hero-col hero-col-right">
+                            <div class="hero-col-right-img">
+                                <img
+                                    src="images/chair.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                                <div class="hover-box">
+                                    <a href="#" class="hvr-ripple-out"
+                                        ><i class="ti-plus"></i
+                                    ></a>
+                                    <div class="hover-box-content">
+                                        <h3>صندلی</h3>
+                                        <p>
+                                            فکر می‌کردم مانند عکس‌های محصول، یک
+                                            رنگ سبز روشن خوب سفارش می‌دهم
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="helo-social">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank"><span>فیسبوک</span></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><span>توییتر</span></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><span>پینترست</span></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><span>اینستاگرام</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="layer abstract-img shape-img-1" data-speed="8">
+                <img src="images/shape-1.png" alt="" class="img-fluid" />
+            </div>
+        </section>
 
-    <!-- popper.min -->
-    <script src="js/popper.min.js"></script>
+        <!-- Featured Product -->
+        <section class="features-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="features-col have-img">
+                            <div class="hover-img">
+                                <img
+                                    src="images/product/p-1.jpg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="features-content">
+                                <h4>یک کوله پشتی<br />کلاسیک</h4>
+                                <span>تومان 17.99</span>
+                                <a href="shop-3.html">همین حالا خرید کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="features-col have-img">
+                            <div class="hover-img">
+                                <img
+                                    src="images/product/p-2.jpg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="features-content">
+                                <h4>تت بگ<br />با دوام</h4>
+                                <span>تومان 17.99</span>
+                                <a href="shop-3.html">همین حالا خرید کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Banner Start -->
+        <section class="banner-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div
+                            class="banner-col background-image"
+                            data-src="images/bg/2.jpg"
+                        >
+                            <div class="row justify-content-end">
+                                <div class="col-lg-6">
+                                    <div class="banner-content">
+                                        <div class="off-circle hvr-ripple-out">
+                                            <img
+                                                src="images/circle-shape.png"
+                                                alt=""
+                                                class="img-fluid"
+                                            />
+                                            <h2>30% تخفیف</h2>
+                                        </div>
+                                        <h4>
+                                            <a href="shop-3.html"
+                                                >مبلمان برای هر فضایی با هر
+                                                سبکی</a
+                                            >
+                                        </h4>
+                                        <p>قطعات انعطاف پذیر از برندهای برتر</p>
+                                        <img
+                                            src="images/woman.png"
+                                            alt=""
+                                            class="img-fluid woman-img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- All Included JavaScript -->
-    <script src="js/stellarnav.min.js"></script>
-    <script src="js/full-overlay.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jarallax.min.js"></script>
-    <script src="js/jquery.pogo-slider.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/css3-animate-it.js"></script>
-    <script src="js/livechat-open-close.js"></script>
-    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/particles-app.js"></script>
-    <script src="js/range-slider.js"></script>
-    <script src="js/slider-with-thumbnail.js"></script>
-    <script src="js/YouTubePopUp.jquery.js"></script>
+        <!-- Product Start -->
+        <section class="product-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>
+                                <a href="shop-3.html"
+                                    >مجموعه محصولات زنانه پرطرفدار</a
+                                >
+                            </h2>
+                            <p>چند محصول اخیرا منتشر شده</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product-col">
+                            <div class="product-slider">
+                                <div class="product-item have-img">
+                                    <div class="product-img hover-img">
+                                        <img
+                                            src="images/product/1.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                        <div class="product-item-text">
+                                            <p>
+                                                تومان 12.45
+                                                <span>فوق العاده</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >LiftKits Women's 1.25 inch Shoe</a
+                                        >
+                                    </h4>
+                                    <span>کفش زنانه</span>
+                                    <a href="product-details-1.html"
+                                        >همین حالا خرید کنید</a
+                                    >
+                                </div>
+                                <div class="product-item have-img">
+                                    <div class="product-img hover-img">
+                                        <img
+                                            src="images/product/2.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                        <div class="product-item-text">
+                                            <p>تومان 72.16 <span>Hot</span></p>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >رژ لب 6 رنگه</a
+                                        >
+                                    </h4>
+                                    <span>رژ لب</span>
+                                    <a href="product-details-1.html"
+                                        >همین حالا خرید کنید</a
+                                    >
+                                </div>
+                                <div class="product-item have-img">
+                                    <div class="product-img hover-img">
+                                        <img
+                                            src="images/product/3.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                        <div class="product-item-text">
+                                            <p>تومان 142 <span>Hot</span></p>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >Les Secrets Laduree & LeSportsac</a
+                                        >
+                                    </h4>
+                                    <span>کیف زنانه</span>
+                                    <a href="product-details-1.html"
+                                        >همین حالا خرید کنید</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Product Start -->
+        <section class="product-area product-two-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2><a href="shop-3.html">مبلمان های محبوب</a></h2>
+                            <p>چند محصول اخیرا منتشر شده</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product-col">
+                            <div class="product-slider">
+                                <div class="product-item have-img">
+                                    <div class="product-img hover-img">
+                                        <img
+                                            src="images/product/4.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                        <div class="product-item-text">
+                                            <p>
+                                                تومان 12.45
+                                                <span>فوق العاده</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >کالکشن صندلی چوبی</a
+                                        >
+                                    </h4>
+                                    <span>صندلی</span>
+                                    <a href="product-details-1.html"
+                                        >همین حالا خرید کنید</a
+                                    >
+                                </div>
+                                <div class="product-item have-img">
+                                    <div class="product-img hover-img">
+                                        <img
+                                            src="images/product/5.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                        <div class="product-item-text">
+                                            <p>
+                                                تومان 72.16
+                                                <span>فوق العاده</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >کالکشن صندلی چوبی</a
+                                        >
+                                    </h4>
+                                    <span>صندلی</span>
+                                    <a href="product-details-1.html"
+                                        >همین حالا خرید کنید</a
+                                    >
+                                </div>
+                                <div class="product-item have-img">
+                                    <div class="product-img hover-img">
+                                        <img
+                                            src="images/product/6.jpg"
+                                            alt=""
+                                            class="img-fluid"
+                                        />
+                                        <div class="product-item-text">
+                                            <p>
+                                                تومان 142
+                                                <span>فوق العاده</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        <a href="product-details-1.html"
+                                            >کالکشن صندلی</a
+                                        >
+                                    </h4>
+                                    <span>صندلی</span>
+                                    <a href="product-details-1.html"
+                                        >همین حالا خرید کنید</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Custom Js -->
-    <script src="js/custom.js">
-    </script>
+        <!-- Banner Two Start -->
+        <section class="banner-two-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="banner-two-col p-0">
+                            <div class="banner-two-img">
+                                <img
+                                    src="images/chair-2.png"
+                                    alt=""
+                                    class="img-fluid rotating"
+                                />
+                                <img
+                                    src="images/shape-2.png"
+                                    alt=""
+                                    class="img-fluid bg-shape-img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="banner-two-col">
+                            <p>تومان 84.15- تومان 90</p>
+                            <h2>صندلی موجود در چند رنگ</h2>
+                            <a href="cart.html">اضافه به سبد خرید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layer abstract-img woman-img-two" data-speed="-5">
+                <img src="images/woman-2.png" alt="" class="img-fluid" />
+            </div>
+        </section>
 
-</body>
+        <!-- Product Categories Start -->
+        <section class="product-categories-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <h2>کالکشن محصولات</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-categories-col have-img">
+                            <a href="shop-3.html">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/product/c-1.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </a>
+                            <p><a href="shop-3.html">ساعت</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-categories-col have-img">
+                            <a href="shop-3.html">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/product/c-2.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </a>
+                            <p><a href="shop-3.html">مبلمان</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-categories-col have-img">
+                            <a href="shop-3.html">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/product/c-3.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </a>
+                            <p><a href="#">کفش</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-categories-col have-img">
+                            <a href="shop-3.html">
+                                <div class="hover-img">
+                                    <img
+                                        src="images/product/c-4.jpg"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+                                </div>
+                            </a>
+                            <p><a href="#">کیف</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Blog Start -->
+        <section class="blog-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <h2>اخبار امروز</h2>
+                            <p>اخبار جدید اینجاست</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-col have-img">
+                            <div class="hover-img">
+                                <img
+                                    src="images/blog/1.jpg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>
+                                <a href="blog-details.html"
+                                    >ترندهای سال جدید چیست؟</a
+                                >
+                            </h5>
+                            <ul>
+                                <li>توسط<a href="#"> علی منصوری</a></li>
+                                <li>|</li>
+                                <li>شهریور 31, 1398</li>
+                                <li>|</li>
+                                <li><a href="#">دکور</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-col have-img">
+                            <div class="hover-img">
+                                <img
+                                    src="images/blog/2.jpg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>
+                                <a href="blog-details.html"
+                                    >پذیرایی خود را به لایف استایلتان نزدیک
+                                    کنید</a
+                                >
+                            </h5>
+                            <ul>
+                                <li>توسط<a href="#"> صالح کشاورز</a></li>
+                                <li>|</li>
+                                <li>شهریور 31, 1398</li>
+                                <li>|</li>
+                                <li><a href="#">دکور</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-col have-img">
+                            <div class="hover-img">
+                                <img
+                                    src="images/blog/3.jpg"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>
+                                <a href="blog-details.html"
+                                    >خانه ای تابستانه برای خود بسازید</a
+                                >
+                            </h5>
+                            <ul>
+                                <li>توسط <a href="#">سپهرفراهانی</a></li>
+                                <li>|</li>
+                                <li>شهریور 31, 1398</li>
+                                <li>|</li>
+                                <li><a href="#">دکور</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Facility Start -->
+        <section class="facility-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/1.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>با ما در تماس باشید</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">متخصصین مجرب</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/2.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>امنیت تسویه</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">بیشتر بخوانید</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="text-center facility-col">
+                            <div class="facility-icon">
+                                <img
+                                    src="images/icons/3.png"
+                                    alt=""
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h5>دانلود برنامه</h5>
+                            <p>
+                                نیاز های خود را به ما بگویید و متخصصین ما به کمک
+                                شما می آیند
+                            </p>
+                            <a href="#" class="btn">دانلود برنامه</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Start -->
+        <footer
+            class="footer-area background-image"
+            data-src="images/bg/footer.jpg"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="newsletter-col">
+                            <h2>روزنامه</h2>
+                            <p>سابسکرایب کنید<span>(هفته نامه)</span></p>
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Your email"
+                                />
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <button
+                                            class="btn btn-primary"
+                                            type="submit"
+                                        >
+                                            سابسکرایب
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="footer-col">
+                            <p>
+                                تهران - مطهری - خیابان شفا<br />بعد از آژانس
+                                آزالیا
+                            </p>
+                            <p>infooffice@gmail.com</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="ti-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="ti-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="ti-twitter-alt"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>فروشگاه</h6>
+                                    <ul class="links">
+                                        <li>
+                                            <a href="#"
+                                                >با ما در ارتباط باشید</a
+                                            >
+                                        </li>
+                                        <li><a href="#">سوالات متداول</a></li>
+                                        <li><a href="#">ارسال</a></li>
+                                        <li><a href="#">برگشت خورده</a></li>
+                                        <li><a href="#">امنیت</a></li>
+                                        <li><a href="#">شیوه استفاده</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-col">
+                                    <h6>درباره ی ما</h6>
+                                    <ul class="links">
+                                        <li><a href="#">داستان ما</a></li>
+                                        <li><a href="#">گواهی دریافتی</a></li>
+                                        <li><a href="#">رضایت مشتری</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="copyright-col">
+                            <p>Copyrights ©1398 AGOP</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="copyright-col">
+                            <ul>
+                                <li><a href="#">سیاست حفظ حریم</a></li>
+                                <li>|</li>
+                                <li><a href="#">مشاغل</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" id="back-to-top" title="Back to top"
+            ><i class="ti-arrow-up"></i
+        ></a>
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/persianNum.jquery-2.min.js"></script>
+
+        <!-- popper.min -->
+        <script src="js/popper.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- All Included JavaScript -->
+        <script src="js/stellarnav.min.js"></script>
+        <script src="js/full-overlay.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jarallax.min.js"></script>
+        <script src="js/jquery.pogo-slider.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+        <script src="js/livechat-open-close.js"></script>
+        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/particles-app.js"></script>
+        <script src="js/range-slider.js"></script>
+        <script src="js/slider-with-thumbnail.js"></script>
+        <script src="js/YouTubePopUp.jquery.js"></script>
+
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>
